@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/algorithms/algorithms.iml" filepath="$PROJECT_DIR$/algorithms/algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javascript/bootstrap/bootstrap.iml" filepath="$PROJECT_DIR$/javascript/bootstrap/bootstrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gabe/gabe.iml" filepath="$PROJECT_DIR$/gabe/gabe.iml" />
+    </modules>
+  </component>
+</project>
+
