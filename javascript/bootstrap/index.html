@@ -1,11 +1,43 @@
 <!doctype html>
-<html>
+<html ng-app="boot">
 <head>
-    <link rel="stylesheet" href="css/bootstrap.css"></link>
-    <script type="text/javascript" src="js/bootstrap.js.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script type="text/javascript" src="lib/bootstrap.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
     <script type="text/javascript" src="js/b1.js"></script>
 </head>
-<body>
+<body ng-controller="StoreController as store">
 <h1>Hello From Bootstrap</h1>
+<div class="list-group-item" ng-repeat="product in store.products">
+    <h3>{{product.name}}</h3>
+    <section class="tab" ng-controller="TabController as tab">
+        <ul class="nav nav-pills">
+            <li ng-class="{active:tab.isSet(1)}"><a href ng-click="tab.setTab(1)">Description</a></li>
+            <li ng-class="{active:tab.isSet(2)}"><a href ng-click="tab.setTab(2)">Specs</a></li>
+            <li ng-class="{active:tab.isSet(3)}"><a href ng-click="tab.setTab(3)">Reviews</a></li>
+        </ul>
+        <div ng-show="tab.isSet(1)">
+            <h4>Description</h4>
+            <blockquote>{{product.description}}</blockquote>
+        </div>
+        <div ng-show="tab.isSet(2)">
+            <h4>Specs</h4>
+            <blockquote>specs</blockquote>
+        </div>
+        <div ng-show="tab.isSet(3)">
+            <h4>Reviews</h4>
+            <blockquote>reviews</blockquote>
+        </div>
+    </section>
+    <div ng-controller="UnController as unc">
+        <p>This has an unaliased controller with data in a header below</p>
+        <h2>My Data: {{unc.mydata}}</h2>
+    </div>
+    <div ng-controller="ExScopeController">
+        <p>This div has an explicit $scope passed into the functions call</p>
+        <h2>My Data: {{mydata}}</h2>
+    </div>
+</div>
 </body>
 </html>
