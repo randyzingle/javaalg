@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="boot">
+<head>
+    <script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/b2.css"/>
+    <script type="text/javascript" src="lib/bootstrap.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/table.js"></script>
+</head>
+<body ng-controller="TableCtrl">
+    <h1>{{tdata.user}}</h1>
+    <table class="table table-striped">
+        <tbody>
+        <tr ng-repeat="item in tdata.data">
+            <td>{{item.name}}</td><td>{{item.value}}</td>
+            <td><input type="checkbox" ng-model="item.likes" ng-change="recount()"> </td>
+        </tr>
+        </tbody>
+    </table>
+    <div>
+        <span class="label label-default" ng-hide="recount() == 0">
+            Number of things {{tdata.user}} does not like: {{tdata.count}}
+        </span>
+
+    </div>
+    <input class="btn" type="button" value="Recount" ng-click="recount()">
+</body>
+</html>
