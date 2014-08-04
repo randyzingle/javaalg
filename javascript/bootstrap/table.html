@@ -7,23 +7,48 @@
     <script type="text/javascript" src="lib/bootstrap.js"></script>
     <script type="text/javascript" src="lib/angular.min.js"></script>
     <script type="text/javascript" src="js/table.js"></script>
+    <script type="text/javascript" src="js/item.js"></script>
 </head>
 <body ng-controller="TableCtrl">
-    <h1>{{tdata.user}}</h1>
+    <h1>Things {{tdata.user}} Doesn't Like 
+        <span ng-hide='recount() == 0' class='label label-default' ng-class='warning()'>{{tdata.count}}</span>
+    </h1>
+    <div class='checkbox-inline'>
+        <label>
+            <input type='checkbox' ng-model='showLikes'>Show Things {{tdata.user}} Likes</input>
+        </label>
+    </div>
     <table class="table table-striped">
         <tbody>
-        <tr ng-repeat="item in tdata.data">
-            <td>{{item.name}}</td><td>{{item.value}}</td>
-            <td><input type="checkbox" ng-model="item.likes" ng-change="recount()"> </td>
-        </tr>
+            <tr><th>Name</th><th>Value</th><th>Likes</th></tr>
+            <tr ng-repeat="item in tdata.data | likesFilter:showLikes | orderBy:'name'">
+                <td>{{item.name}}</td><td>{{item.value}}</td>
+                <td><input type="checkbox" ng-model="item.likes" ng-change="recount()"> </td>
+            </tr>
         </tbody>
     </table>
+
     <div>
         <span class="label label-default" ng-hide="recount() == 0">
             Number of things {{tdata.user}} does not like: {{tdata.count}}
         </span>
 
     </div>
-    <input class="btn" type="button" value="Recount" ng-click="recount()">
+    <div class='panel' style='width:600px;'>
+        <h3>Add a new thing that {{tdata.user}} doesn't like:</h3>
+        <div class='input-group'>
+            <input class='form-control' ng-model='name'/>
+            <input class='form-control' ng-model='value'/>
+            <span class='input-group-btn'>
+                <button class='btn btn-default' ng-click='addNewRow()'>Add Row</button>
+            </span>
+        </div>
+    </div>
+    <div class='subdivholder'>
+        <button class='btn btn-default' ng-click='loadSubDiv1()'>Load Sub Div1</button>
+        <button class='btn btn-default' ng-click='loadSubDiv2()'>Load Sub Div2</button>
+        <div id='subdivx'></div>
+    </div>
+
 </body>
 </html>
