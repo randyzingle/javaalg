@@ -1,0 +1,7 @@
+[
+	{"name": "Dog", "value": "Mymir", "likes": true},
+	{"name": "Dog", "value": "Sam", "likes": true},
+	{"name": "Dog", "value": "Butters", "likes": true},
+	{"name": "Dog", "value": "Killer", "likes": false},
+	{"name": "Dog", "value": "Fang", "likes": false}
+]
