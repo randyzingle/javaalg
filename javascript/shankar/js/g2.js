@@ -1,12 +1,22 @@
 // use the graphics context obtained for the second canvas to draw some images
 
-var drawImage = function() {
+var skadi;
+
+var loadImage = function() {
+	var img = new Image();
+	img.src = '../images/skadi.jpg';
+	img.onload = function() {
+		skadi = img;
+		drawImage(skadi);
+	};
+
+};
+
+var drawImage = function(img) {
 	// get the graphics context
 	var c = $('#canvasg2')[0].getContext('2d');
 
 	// now draw some images
-	var image = $('#skadi');
-	var img = image[0];
 	// image ref, x, y
 	c.drawImage(img,0,0);
 

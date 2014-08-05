@@ -3,19 +3,42 @@
 <head>
 	<title>Simple HTML 5 Game</title>
 	<script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="js/g1.js"></script>
-	<script type="text/javascript" src="js/g2.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+	<link rel="stylesheet" href="css/styles.css" type="text/css" charset="utf-8">
 </head>
-<body onload='init()'>
-	<h1 id="bob">Simple Canvas Below</h1>
-	<canvas width="640" height="580" id="canvasg1" style="border:black 1px solid;">
-		Can you see me?
-	</canvas>
-	<canvas width="600" height="580" id="canvasg2" style="border:black 1px solid;">
-		How about me?
-	</canvas>
-	<br>
-	<button onClick="drawImage()">Do Other Valuable Things</button>
-	<image src='images/skadi.jpg' id='skadi'>
+<body>
+	<div id="gamecontainer">
+
+		<canvas id="gamecanvas" class="gamelayer" width="640" height="480"></canvas>
+
+		<div id="scorescreen" class="gamelayer">
+			<img id="togglemusic" src="images/icons/sound.png">
+			<img src="images/icons/prev.png">
+			<span id="score">Score: 0</span>
+		</div>
+
+		<div id="gamestartscreen" class="gamelayer">
+			<img src="images/icons/play.png" onclick="game.showLevelScreen();">
+			<br>
+			<img src="images/icons/settings.png">
+		</div>
+
+		<div id="levelselectionscreen" class="gamelayer">
+		</div>
+
+		<div id="loadingscreen" class="gamelayer">
+			<div id="loadingmessage"></div>
+		</div>
+
+		<div id="endingscreen" class="gamelayer">
+			<div>
+				<p id="endingmessage">The Level is Over Message</p>
+				<p id="playcurrentlevel"><img src="images/icons/prev.png"> Replay Current Level</p>
+				<p id="playnextlevel"><img src="images/icons/next.png"> Play Next Level</p>
+				<p id="showlevelscreen"><img src="images/icons/return.png"> Return to Level Screen</p>
+			</div>
+		</div>
+
+	</div>
 </body>
 </html>

@@ -3,10 +3,6 @@ var gt = {};
 
 var init = function() {
 
-	// hide the image that i've loaded in the html page
-	var image = $('#skadi');
-	image.hide();
-
 	var canvas = $('#canvasg1')[0];
 	gt.c = canvas.getContext('2d');
 
@@ -83,7 +79,7 @@ var init = function() {
 	c.fillRect(450,180,100,50);
 
 	// draw the images
-	drawImage();
+	loadImage();
 
 
 };
