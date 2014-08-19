@@ -1,0 +1,13 @@
+<html>
+<body>
+<script type="text/javascript" src="http://www.desmos.com/api/v0.3/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+
+<h1>DGraph</h1>
+<div id="calculator" style="width: 300px; height: 300px;"></div>
+<script>
+	var el = document.getElementById("calculator");
+	var calc = Desmos.Calculator(el);
+	calc.setExpression({id:"graph1", latex:"y=x^2"});
+</script>
+</body>
+</html>
