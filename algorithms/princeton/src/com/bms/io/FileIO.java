@@ -21,7 +21,7 @@ public class FileIO {
 				System.out.println(file.getCanonicalPath());
 			}
 			// open a file in the data directory
-			File txt = new File("data/runtime1.txt");
+			File txt = new File("data/runtime2.txt");
 			System.out.println(txt);
 			if (txt != null) {
 				// read a file, line by line
@@ -41,8 +41,17 @@ public class FileIO {
 				for (int i=0; i<al.size()-1; i++) {
 					double d1 = al.get(i);
 					double d2 = al.get(i+1);
-					if (d1 != 0.0) System.out.println(i + ": " + d2 / d1);
+					if (d1 != 0.0) {
+						System.out.println(i + ": " + d2 / d1);
+					}
 				}
+				int cnt = 0;
+				double sum = 0.0;
+				for (int i=al.size()/2; i<al.size()-1; i++) {
+					cnt++;
+					sum += (al.get(i+1)/ al.get(i));
+				}
+				System.out.printf("count: %d, average: %1.3f", cnt, sum/cnt);
 				br.close();
 				fr.close();
 			}

@@ -2,14 +2,15 @@
 
     var app = angular.module('boot', []);
 
-    var gems = [
+    var dogs = [
         {name: 'Baldur', description: 'Large belligerent male labradoodle'},
         {name: 'Mymir', description: 'Kindly female labradoodle'},
-        {name: 'Butters', description: 'Large belligerent male labrador'}
+        {name: 'Butters', description: 'Large belligerent male labrador'},
+        {name: 'Sam', description: 'Large golden retriever'}
     ];
 
     app.controller('StoreController', function() {
-        this.products = gems;
+        this.products = dogs;
     });
 
     app.controller('TabController', function() {

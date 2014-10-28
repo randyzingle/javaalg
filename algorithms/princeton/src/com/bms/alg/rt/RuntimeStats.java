@@ -31,7 +31,7 @@ public class RuntimeStats {
 		String s2 = "bbbbbb the start of times";
 		String s3 = "";
 		for (long i=0; i<nloop; i++) {
-//			s3 = s1 + s2;
+			s3 = s1 + s2;
 		}
 
 		long et = System.currentTimeMillis();

@@ -1,0 +1,62 @@
+<!doctype html>
+<html ng-app="bar">
+	<head>
+		<title>Bar Chart</title>
+		<script src="lib/Chart.js"></script>
+		<script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
+	    <script type="text/javascript" src="lib/bootstrap.js"></script>
+	    <script type="text/javascript" src="lib/angular.min.js"></script>
+	    <script type="text/javascript" src="js/bar.js"></script>
+	    <script type="text/javascript" src="js/barx.js"></script>
+	    <link rel="stylesheet" href="css/bar.css"/>
+	    <link rel="stylesheet" href="css/bootstrap.css"/>
+		<meta name = "viewport" content = "initial-scale = 1, user-scalable = no">
+	</head>
+	<body ng-controller="MasterCtrl">
+		<div>
+			<h2>{{title}}</h2>
+			<button class="btn" ng-click="makeChart()">Show Chart</button>
+			<button class="btn" ng-click="makePie()">Show Pie</button>
+			<button class="btn" ng-click="makeGrid()">Show Grid</button>
+		</div>
+		<div id="overlaydiv" ng-show="overlay" class="overlay">
+
+			<div class="overlay-inner">
+				<div class="container-fluid">
+
+					<div id="rightpanel">
+						<div>
+							<button class="btn closeBtn" ng-click="hideOverlay()">Hide</button>
+						</div>
+						<div>
+							<ul id="inputlist">
+								<li>
+									<label for='i1'>Grid Size: </label>
+									<input id="i1" class="nice-input" style="width: 40px;" ng-model="ngrid"></input>
+								</li>
+								<li>
+									<button class="btn" ng-click="drawGrid()">Draw Grid</button>
+								</li>
+								<li><span class="thin-space"></span></li>
+								<li>
+									<label for='i2'>row: </label>
+									<input id="i2" class="nice-input" style="width: 40px;" ng-model="row"></input>
+								</li>
+								<li>
+									<label for='i3'>col: </label>
+									<input id="i3" class="nice-input" style="width: 40px;" ng-model="col"></input>
+								</li>
+								<li><button class="btn" ng-click="openCell(row,col)">Clear Cell</button></li>
+							</ul>
+						</div>
+					</div>
+
+					<div id="leftpanel">
+						<canvas id="mycanvas" height="450" width="600""></canvas>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

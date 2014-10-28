@@ -1,0 +1,173 @@
+<!doctype html>
+<html ng-app="baldur">
+	<head>
+		<title>Baldur Software</title>
+		<script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
+	    <script type="text/javascript" src="lib/bootstrap.js"></script>
+	    <script type="text/javascript" src="lib/angular.min.js"></script>
+	    <link rel="stylesheet" href="css/bootstrap.css"/>
+
+	    <script type="text/javascript" src="js/index.js"></script>
+	    <link rel="stylesheet" href="css/index.css"/>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand text-muted" href="#">Baldursoft</a>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li class="dropdown"><a data-toggle="dropdown" data-target="#">Labs
+							<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Eat Treat</a></li>
+								<li><a href="#">Bark</a></li>
+								<li><a href="#">Howl</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Bark &amp; Howl</a></li>
+							</ul>
+						</li>
+						<li><a href="#textmodal" data-toggle="modal" data-target="#textmodal">Sign Up</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- End Navbar -->
+
+		<!-- Modal -->
+		<div class="modal fade" id="textmodal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Sign up</h4>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="email1">Email address</label>
+								<input type="email" id="email1" class="form-control" placeholder="Enter email">
+							</div>
+							<div class="form-group">
+								<label for="pass1">Password</label>
+								<input type="password" id="pass1" class="form-control" placeholder="Enter password">
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Send</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- End Modal -->
+
+		<!-- Carousel -->
+		<div id="mycarousel" class="carousel slide jumbotron">
+			<div class="container">
+				<ol class="carousel-indicators">
+					<li class="active" data-target="#mycarousel" data-slide-to="0"></li>
+					<li data-target="#mycarousel" data-slide-to="1"></li>
+					<li data-target="#mycarousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<h1>Dog-written applications for dogs</h1>
+						<p>Learn how to teach your dog to write Android applications!</p>
+						<p class="btn-group">
+							<a class="btn btn-success btn-lg" href="#">Download the pdf now!</a>
+							<a class="btn btn-default btn-lg" href"#">Pay Baldur Now</a>
+						<p>
+					</div>
+					<div class="item">
+						<h1>Dog-built apps for Android</h1>
+						<p class="lead">Baldur will teach you how to build it with style!</p>
+					</div>
+					<div class="item">
+						<h1>Dog-built apps for iOS</h1>
+						<p class="lead">Baldur will teach you how to build it with style!</p>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#mycarousel" data-target="prev">
+				<span class="icon-prev"></span>
+			</a>
+			<a class="right carousel-control" href="#mycarousel" data-target="next">
+				<span class="icon-next"></span>
+			</a>
+		</div>
+		<!-- End Carousel -->
+
+		<div class="container-fluid"  ng-controller="MainCtrl">
+			<h3>{{company}}</h3>
+
+			<div class="jumbotron">
+				<h1>Dog-written applications for dogs</h1>
+				<p>Learn how to teach your dog to write Android applications!</p>
+				<p class="btn-group">
+					<a class="btn btn-success btn-lg" href="#">Download the pdf now!</a>
+					<a class="btn btn-default btn-lg" href"#">Pay Baldur Now</a>
+				<p>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-4">
+
+					<b class="glyphicon glyphicon-tower"></b>
+					<h2> Marcellus </h2>
+
+					<p>Horatio says 'tis but our fantasy,
+						And will not let belief take hold of him
+						Touching this dreaded sight, twice seen of us:
+						Therefore I have entreated him along
+						With us to watch the minutes of this night;
+						That if again this apparition come,
+						He may approve our eyes and speak to it.
+					</p>
+				</div>
+				<div class="col-xs-4">
+					<b class="glyphicon glyphicon-fire"></b>
+					<h2> Horatio </h2>
+					<p>Tush, tush, 'twill not appear.
+					</p>
+					<p>Beware the Jabberwock, my son!
+						The jaws that bite, the claws that catch!
+						Beware the Jubjub bird, and shun
+						The frumious Bandersnatch!
+					</p>
+				</div>
+				<div class="col-xs-4">
+					<span class="glyphicon glyphicon-bell"></span>
+					<h2> Bernardo </h2>
+					<p>Sit down awhile;
+						And let us once again assail your ears,
+						That are so fortified against our story
+						What we have two nights seen.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 hidden-sm">
+					<h2>Left Low Column</h2>
+					<img class="img-responsive" src="images/mel.jpg">
+				</div>
+				<div class="col-sm-6">
+					<h2>Right Low Column</h2>
+					<p>And this is the sum of all things</p>
+				</div>
+			</div>
+
+			<div class="row"><p style="margin-left: 10px;">&copy; 2014 BMS</p></div>
+		</div>
+	</body>
+</html>
+	    
