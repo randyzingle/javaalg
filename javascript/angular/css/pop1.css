@@ -1,0 +1,70 @@
+.popblock {
+	display: inline-block;
+	height: 20px;
+	width: 400px;
+	padding: 0px;
+}
+
+h2:hover {
+	border-top: 2px solid red;
+}
+
+.cname {
+	min-width: 200px;
+	display: inline-block;
+	text-align: left;
+	background-color: rgba(0,0,255,0.2);
+	margin: 0px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.pop {
+	min-width: 200px;
+	display: inline-block;
+	text-align: right;
+	background-color: rgba(0,255,255,0.2);
+	margin: 0px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.greybox {
+	width: 400px;
+	height: 200px;
+	background-color: grey;
+	position: relative;
+}
+
+.greybox:hover {
+	border-top: 2px solid red;
+}
+
+.yellowbox:hover {
+	border-top: 2px solid red;
+}
+
+.yellowbox {
+	box-sizing: border-box;
+	display: inline-block;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	border: 1px solid red;
+}
+
+.redbox {
+	
+	display: inline-block;
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	left: 200px;
+	top: 0px;
+	background-color: red;
+	border: 8px solid black;
+	padding: 10px;
+}
