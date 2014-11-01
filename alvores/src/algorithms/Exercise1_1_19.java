@@ -9,8 +9,9 @@ public class Exercise1_1_19 {
 		}
 	
 	public static void main(String[] args) {
-		for (int N = 0; N < 100; N++) 
+		for (int N = 0; N < 100; N++) {
 			System.out.println(N + " " + F(N));
+		}
 
 	}
 
