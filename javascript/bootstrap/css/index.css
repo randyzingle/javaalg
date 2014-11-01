@@ -1,0 +1,67 @@
+body {
+	padding-top: 50px;
+}
+
+.jumbotron {
+	text-align: center;
+}
+
+.glyphicon {
+	font-size: 3em;
+	display: block;
+	margin: auto;
+	color: #3a87ad;
+	text-align: center;
+}
+
+.carousel-inner .item {
+	min-height: 288px;
+}
+
+.carousel-indicators {
+	bottom: 0;
+}
+
+.carousel-indicators .active {
+	background-color: #222;
+}
+
+.carousel-indicators .li {
+	background-color: #222;
+}
+
+/*
+display: block; -> starts on a new line and stretches as far to the right and left as it can (div, p, form, header, ...)
+display: inline; -> does not disrupt the flow, (span, a, strong, ...)
+display: none; -> hides the element (page will be rendered as if the element does NOT exist - unlike visibility: hidden)
+display: inline-block; -> you can use height, width, margin, padding, but the elements are inline
+
+#centerme {
+	width: 600px; prevents this from stretching out to the left and right
+	max-width: 600px; if we use this instead of width it will shrink if browser made smaller rather than scrollbars
+	margin: 0 auto; using auto for left and right centers the block, will cause scrollbar if browser is smaller
+}
+
+-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; if we use box sizing, the width will be the width of the element+padding+border
+          rather than just the element as per normal
+
+position: relative; behaves the same as static(default) UNLESS you add some extra properties:
+top: 20px;
+left: 20px; this will adjust the element away from its normal postion but the rest of the content will 
+continue to flow as if it was in it's original slot
+
+position: fixed; -> fixed wrt the VIEWPORT - it does NOT move with scrolling, does NOT leave a gap in the flow, 
+as with relative uses top, right, bottom, left
+
+position: absolute; -> behaves like fixed except relative to the nearest positioned ancestor (or if none <body>),
+moves as user scrolls
+
+moving divs within other divs with float
+float: right; move the div to the right
+overflow: auto; expand the containing div so that it is at least as large as the floated item
+
+width: 50%; make the contained block 50% the size of the container no matter how the browser is resized
+
+*/

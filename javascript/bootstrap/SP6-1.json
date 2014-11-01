@@ -1,0 +1,1021 @@
+{
+    "lessonId" : "SP6-1",
+    "lessonNumber" : 1,
+    "lessonTitle" : "Mean",
+    "phases" : [
+        {
+            "sequence" : "1",
+            "displaySequence" : "H",
+            "title" : "Lesson SP6-1: Mean",
+            "type" : "home",
+            "itemStacks" : [
+                {
+                    "items" : [
+                        {
+                            "type" : "goals",
+                            "text" : [
+                                "By sorting physical objects and using calculation students will find and use the mean of a data set."
+                            ]
+                        },
+                        {
+                            "type" : "standards",
+                            "text" : [
+                                "6.SP.A.2",
+                                "6.SP.A.3", 
+                                "6.SP.B.5a",
+                                "6.SP.B.5b", 
+                                "6.SP.B.5c"
+                            ]
+                        },
+                        {
+                            "type" : "priorKnowledge",
+                            "text" : [
+                                "Can divide multi-digit whole numbers by one-digit numbers",
+                                "Can divide whole numbers by 10",
+                                "Can compare and order whole numbers"
+                            ]
+                        },
+                        {
+                            "type" : "studentLessonMaterials",
+                            "text" : [
+                                "15 blocks (or other counters)",
+                                "BLM Moving Beads to Find the Mean (p. P-19)",
+                                "blocks (or other counters) and sheets of paper (see Activity 1)",
+                                "grid paper"
+                            ]
+                        },
+                        {
+                            "type" : "vocabulary",
+                            "text" : [
+                                {
+                                    "term" : "average",
+                                    "important" : false
+                                },
+                                {
+                                    "term" : "center",
+                                    "important" : false
+                                },
+                                {
+                                    "term" : "data point",
+                                    "important" : false
+                                },
+                                {
+                                    "term" : "data set",
+                                    "important" : false
+                                },
+                                {
+                                    "term" : "mean",
+                                    "important" : false
+                                },
+                                {
+                                    "term" : "set of data",
+                                    "important" : false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "sequence" : "2",
+            "displaySequence" : "1",
+            "title" : "Introduce Mean",
+            "type" : "step",
+            "itemStacks" : [
+                {
+                    "teacherItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "5 people want to evenly share the plums they picked. People with a lot could give some to people with fewer until everyone has the same number, or someone could deal them out like cards."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Mathematicians call this finding the mean or average number of plums."
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Each number is called a data point and a group or a collection of data points is called a data set or set of data."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "The data points in a set all refer to the same thing; in this case, 4, 2, 6, 1, and 2 all refer to the number of plums each person picked."
+                            }
+                        ]
+                    ],
+                    "studentItems" : [
+                        [
+                            {
+                                "type" : "img",
+                                "imgUrl" : "../images/Unit7/SP6-1/Screen Shot 2014-03-17 at 3.09.06 PM.png"
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "5 people want to evenly share the plums they picked."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Each number is called a data point and a group or a collection of data points is called a data set or set of data."
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "sequence" : "3",
+            "displaySequence" : "2",
+            "title" : "Two methods to find the mean without calculations",
+            "type" : "step",
+            "itemStacks" : [
+                {
+                    "title" : "Step 1",
+                    "teacherItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "The 5 groups of blocks below represent the plums each person picked. Have a volunteer move blocks until the groups are equal."
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "How many blocks are in each group? (3)"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "If the plums were shared evenly, everyone would get 3 plums, so the mean is 3."
+                            }
+                        ]
+                    ],
+                    "studentItems" : [
+                        [
+                            {
+                                "type" : "html",
+                                "text" : "<h3>Method 1A: Moving Objects</h3>"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "The blocks represent the number of plums each person picked. Move the blocks until the groups are equal."
+                            },
+                            {
+                                "type" : "block-group",
+                                "values" : [
+                                    4,
+                                    2,
+                                    6,
+                                    1,
+                                    2
+                                ],
+                                "backgroundImgUrl" : "./images/Unit7/SP6-1/paper2.jpg",
+                                "blockImgUrl" : "./images/Unit7/SP6-1/plum.svg",
+                                "containerImgUrl" : "./images/Unit7/SP6-1/basket.svg",
+                                "blockImgScale" : 0.13,
+                                "containerImgScale" : 0.050
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "title" : "Step 2",
+                    "teacherItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Explain that since we don’t always have blocks, we can also use drawings to ﬁnd the mean. The numbers along the top are the plum data and show how many plums each person picked."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "We ﬁnd the mean as we did with blocks: We move beads, one by one, between stacks, until the stacks are equal, from the stack(s) with the most beads to the stack(s) with the fewest."
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "We cross out the bead we are moving, and draw in and shade a new bead."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Move one bead at a time until your drawing looks like the picture at the right. The row of 3s shows how many plums each person would get if they were evenly shared."
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "img",
+                                "imgUrl" : "../images/Unit7/SP6-1/SP61-P2bottom.png"
+                            }
+                        ]
+                    ],
+                    "studentItems" : [
+                        [
+                            {
+                                "type" : "html",
+                                "text" : "<h3>Method 1B: Drawing</h3>"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Move the beads from the stacks with the most beads to the stacks with the fewest."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Cross out moved beads and shade in new beads."
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "img",
+                                "imgUrl" : "../images/Unit7/SP6-1/beads-01.jpg"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "title" : "Step 3",
+                    "teacherItems" : [
+
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Exercise."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Give students BLM Moving Beads to Fiund"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Have students move beads to ﬁnd the mean using Method 1b - drawing."
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "img",
+                                "text" : "6-1.3.DrawingSolution",
+                                "imgUrl" : "../images/Unit7/SP6-1/SP61-BLMmovingBeadsAnswers.png"
+                            }
+                        ]
+                    ],
+                    "studentItems" : [
+                        [
+                            {
+                                "type" : "html",
+                                "text" : "<h3>Exercise</h3>"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Method 1B: Drawing"
+                            },
+                            {
+                                "type" : "img",
+                                "imgUrl" : "../images/Unit7/SP6-1/Screen Shot 2014-05-06 at 1.27.11 PM.png"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "title" : "Step 4",
+                    "teacherItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "The ﬁve boxes below, represent one box for each friend."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Ask a volunteer to distribute the dots evenly into the ﬁve boxes."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "How many dots are on each box? (3)"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Is this the answer we got before? (yes)"
+                            }
+                        ]
+                    ],
+                    "studentItems" : [
+                        [
+                            {
+                                "type" : "html",
+                                "text" : "<h3>Method 2: Distributing Objects</h3>"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Distribute the circles evenly amongst the friends."
+                            },
+                            {
+                                "type" : "img",
+                                "imgUrl" : "6-1.3.Dots"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "How many dots are in each box?"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "title" : "Step 5",
+                    "teacherItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Put students into groups of 4. Give each group 28 counters and 7 sheets of paper. Have them ﬁnd the mean of the 4 sets shown in the margin using Method 2. They should work through the sets one set at a time, each student doing one set."
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "If there is time remaining, they can work through the sets again, each student doing a diferent set this time. Have students record their answers by writing the set and its mean; for example, (3, 1, 2, 2, 8, 8) mean = 4."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "NOTE: The number of sheets must always equal the number of data points in the set."
+                            }
+                        ]
+                    ],
+                    "studentItems" : [
+                        [
+                            {
+                                "type" : "html",
+                                "text" : "<h3>Activity</h3>"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "In groups of four, ﬁnd the mean of each of the data sets at the right by distributing your counters to the sheets of paper evenly."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Each group member gets a turn to do a set."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Write down each set and its mean."
+                            }
+                        ],
+                        [
+                            
+                            {
+                                "type" : "html",
+                                "text" : "<h1>(3, 1, 2, 2, 8, 8)<h1>"
+                            },
+                            {
+                                "type" : "html",
+                                "text" : "<h1>(5, 2, 7, 6)</h1>"
+                            },
+                            {
+                                "type" : "html",
+                                "text" : "<h1>(6, 1, 2, 3, 9, 5, 2)</h1>"
+                            },
+                            {
+                                "type" : "html",
+                                "text" : "<h1>(10, 3, 2, 4, 5)</h1>"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "sequence" : "4",
+            "displaySequence" : "3",
+            "title" : "Calculating the Mean",
+            "type" : "step",
+            "itemStacks" : [
+                {
+                    "title" : "Step 1",
+                    "teacherItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Get 5 volunteer “plum pickers.” Give them blocks to represent the plums they picked (4, 2, 6, 1, 2). One by one, in any order, have students give you all their plums. Write the numbers in the blanks."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "ASK: How many blocks do I have now? (15) Write: total = 15."
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "SAY: Now I'd like to give them out evenly."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "ASK: Between how many people will I divide them? (5) Write divide by 5."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "ASK: How do we use 15 and 5 to find the mean? (15 / 5) Write: 15 / 5 = ___."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "ASK: What is the mean? (3) Write it in the blank."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "SAY: Again, the mean is 3."
+                            }
+                        ]
+                    ],
+                    "studentItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Put the plum values into the following equation:"
+                            },
+                            {
+                                "type" : "html",
+                                "text" : "<h1>(4, 2, 6, 1, 2)<h1>"
+                            },
+                            {
+                                "type" : "html",
+                                "text" : "<h1>___+___+___+___+___</h1>"
+                            },
+                            {
+                                "type" : "html",
+                                "text" : "<h1>___÷___=___</h1>"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "title" : "Step 2",
+                    "teacherItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Repeat the same process. This time with data from Exercise a) in BLM Moving Beads to Find the Mean."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Have students do part b) and part c) and check the answers for their calculations against their previously executed BLM diagrams."
+                            }
+                        ]
+                    ],
+                    "studentItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Calculate the mean:"
+                            },
+                            {
+                                "type" : "html",
+                                "text" : "<h1>(8, 5, 2)</h1>"
+                            },
+                            {
+                                "type" : "html",
+                                "text" : "<h1>__+__+__=__</h1>"
+                            },
+                            {
+                                "type" : "html",
+                                "text" : "<h1>__÷__=__</h1>"
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Practice:"
+                            },
+                            {
+                                "type" : "html",
+                                "text" : "<h1>(7, 2, 5, 2)</h1>"
+                            },
+                            {
+                                "type" : "html",
+                                "text" : "<h1>(1, 3, 9, 3)</h1>"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "title" : "Step 3",
+                    "teacherItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Exercise"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Have students calculate the mean, and signal answers with their fingers."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Answers:"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "a) 3"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "b) 8"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Bonus: 14"
+                            }
+                        ]
+                    ],
+                    "studentItems" : [
+                        [
+                            {
+                                "type" : "html",
+                                "text" : "<h3>Exercise</h3>"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Calculate the mean."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Signal your answers with your fingers."
+                            },
+                            {
+                                "type" : "html",
+                                "text" : "<h1>a) 4, 7, 2, 1, 1</h1>"
+                            },
+                            {
+                                "type" : "html",
+                                "text" : "<h1>b) 10, 12, 3, 7</h1>"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Bonus: 0, 8, 15, 16, 16, 19, 24"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "sequence" : "5",
+            "displaySequence" : "4",
+            "title" : "Showing the Mean with a Horizontal Line",
+            "type" : "step",
+            "itemStacks" : [
+                {
+                    "title" : "Step 1",
+                    "teacherItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Have students find the mean by calculating and by drawing. (5) When they are finished, illustrate the drawing process as shown at right. Then draw the mean line."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "ASK: Which stack did you take beads from? (7) Which did you move beads to? (3)"
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "SAY: So the tall stack had 2 beads above the mean line and the short stack had 2 spaces below it."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "ASK: Did you move those 2 beads from the tall stack into the spaces in the short stack? (yes)"
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "img",
+                                "imgUrl" : "../images/Unit7/SP6-1/Screen Shot 2014-05-06 at 2.26.44 PMb.png"
+                            }
+                        ]
+                    ],
+                    "studentItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Find the mean by:"
+                            },
+                            {
+                                "type" : "html",
+                                "text" : "<h1>1) calculating</h1>"
+                            },
+                            {
+                                "type" : "html",
+                                "text" : "<h1>2) drawing</h1>"
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "img",
+                                "imgUrl" : "../images/Unit7/SP6-1/beads_4-1.png"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "title" : "Step 2",
+                    "teacherItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Write “3, 0, 4, 6, 2” on the board."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Have students calculate the mean and signal the answer. (3)"
+                            }
+                        ]
+                    ],
+                    "studentItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Calculate the mean for this data set."
+                            },
+                            {
+                                "type" : "html",
+                                "text" : "<h1>3, 0, 4, 6, 2</h1>"
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "img",
+                                "imgUrl" : "../images/Unit7/SP6-1/beads_4-2.png"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "title" : "Step 3",
+                    "teacherItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "ASK: From your calculation, where does the mean line go? (3). Draw it and then draw the 4 Xs."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "SAY: Just as there were empty spaces below the mean line in the short stack in the previous example, there are empty spaces below the mean line here too. The Xs show those empty spaces."
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "ASK: Are there the same number of beads above the mean line as spaces below it? (yes) Could we fill up all the spaces below the mean line with the beads that are above it? (yes)"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "SAY: When there are exactly the correct number of beads above the mean line to fill up all the spaces below the mean line, we know the line is in the right position to show the mean."
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "img",
+                                "imgUrl" : "../images/Unit7/SP6-1/Screen Shot 2014-05-06 at 3.01.14 PM.png"
+                            }
+                        ]
+                    ],
+                    "studentItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "From your calculation, where does the mean line go?"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "When there are exactly the correct number of beads above the mean line to fill up all the spaces below the mean line, we know the line is in the right position to show the mean."
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "img",
+                                "imgUrl" : "../images/Unit7/SP6-1/beads_4-2.png"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "title" : "Step 4",
+                    "teacherItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "SAY: Last time we used a solid line for the mean because we knew what it was from your calculations. Now I’m making it dotted to show that it may not be in the correct position; after all, we haven’t calculated the mean this time. Draw the picture at the right."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "ASK: How many beads are above the dotted line? (4)"
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "How many spaces are below it? (9) Could the beads that are above the dotted line exactly fill all the spaces below it? (no)"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "SAY: So that tells us that the dotted line isn’t in the correct position to show the mean."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "SAY: Let’s move the line down one and count everything again. Move the line down and erase any Xs that are above it. (see margin)"
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "img",
+                                "imgUrl" : "../images/Unit7/SP6-1/Screen Shot 2014-05-06 at 3.10.53 PM.png"
+                            }
+                        ]
+                    ],
+                    "studentItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "By drawing a dotted line, predict the location of the mean line."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "How do we know if its in the right place?"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Are the number of beads above the line equal to the number of spaces below the line?"
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "img",
+                                "imgUrl" : "../images/Unit7/SP6-1/beads_4-4.png"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "title" : "Step 5",
+                    "teacherItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Give students BLM Finding the correct Position for the Mean line."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Instruct them to draw Xs in the spaces under the line, write the number of spaces that are below the line, and write the number of beads that are above the line."
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Ask students to circle the one picture in each row that has the line in the correct position. In the last row, they will need to use a ruler to draw the lines."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Students should check their answers by calculating the mean of each set."
+                            }
+                        ]
+                    ],
+                    "studentItems" : [
+                        [
+                            {
+                                "type" : "html",
+                                "text" : "<h3>Activity</h3>"
+                            },
+                            {
+                                "type" : "img",
+                                "imgUrl" : "../images/Unit7/SP6-1/BLM_4-5.png"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "sequence" : "6",
+            "displaySequence" : "5",
+            "title" : "Seeing the mean in context",
+            "type" : "step",
+            "itemStacks" : [
+                {
+                    "teacherItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Hold up a pencil and ask students to describe it. Prompt with questions about color, length, uses, and so on. Explain that we can’t describe everything about it, but a person who couldn’t see it would likely know it was a pencil."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "SAY: Just as we can describe pencils (or shoes, or animals, or anything), we can describe sets of data, and the mean is part of that description. It tells us about the center of the set."
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Explain that the mean is always useful to know, but it is especially useful for very large sets of data. Let’s say, for example, that we know (from asking 1,000 people) that the mean age when a child loses her first tooth is 6. If the mother of a 1-year-old who has just lost his first tooth knows this mean, she may decide to take the child to a doctor to see if everything is okay."
+                            }
+                        ]
+                    ],
+                    "studentItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "What is mean for?"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Can we describe this pencil?"
+                            },
+                            {
+                                "type" : "img",
+                                "imgUrl" : "../images/Unit7/SP6-1/pencil.png"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Mean tells us about the center of a data set."
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "What about a 1-year old baby who starts losing teeth?"
+                            },
+                            {
+                                "type" : "img",
+                                "imgUrl" : "../images/Unit7/SP6-1/head-baby.png"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "teacherItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Explain that sometimes we need to be able to compare the mean of a set of data with one or more of the data points in the set."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "SAY: For example, let’s say the mean weight of newborn babies is 7 pounds."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "ASK: Is a 2-pound newborn below the mean weight, equal to it, or above it? (below)"
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "What about a 6-pound baby? (below)"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Which is further from the mean? (the 2-pound baby)"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "SAY: Doctors know that babies who weigh a lot less than the mean often need extra care, so knowing the mean weight of newborns helps us decide which babies might need a little extra care."
+                            }
+                        ]
+                    ],
+                    "studentItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Comparing the mean with data points from the set."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "The mean weight of a newborn babies is 7 pounds."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Is a 2-pound newborn below the mean weight, equal to it, or above it?"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "What about a 6lb baby?"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Which is further from the mean?"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Doctors compare a babies’ characteristics to the mean to determine which babies may need extra care."
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "teacherItems" : [
+                        [  
+                            {
+                                "type" : "text",
+                                "text" : "Explain that sometimes it’s useful to compare means with each other."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "SAY: There are many kinds of large, medium-sized, and small cars. The table shows the mean cost of driving each size of car 100 miles."
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Though people may not know exactly how much they drive their own cars, knowing these means can give us an idea of how much money we could save if we drove a smaller car."
+                            }
+                        ]
+                    ],
+                    "studentItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Comparing means with each other."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "Though people may not know exactly how much they drive their own cars, knowing these means can give us an idea of how much money we could save if we drove a smaller car."
+                            }
+                        ],
+                        [
+                            {
+                                "type" : "img",
+                                "imgUrl" : "../images/Unit7/SP6-1/Screen Shot 2014-05-06 at 6.34.19 PM.png"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "teacherItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "Have students do Question 10 on AP Book 6.2 p. 125."
+                            }
+                        ]
+                    ],
+                    "studentItems" : [
+                        [
+                            {
+                                "type" : "img",
+                                "imgUrl" : "../images/Unit7/SP6-1/Screen Shot 2014-05-06 at 6.37.41 PM.png"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "sequence" : "7",
+            "displaySequence" : "E",
+            "title" : "Extensions",
+            "type" : "extension",
+            "itemStacks" : [
+                {
+                    "teacherItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "<left empty>"
+                            }
+                        ]
+                    ],
+                    "studentItems" : [
+                        [
+                            {
+                                "type" : "text",
+                                "text" : "1. Divide 1 by a fraction by writing 1 as a fraction with the same denominator."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "For example, 1 ÷ 52 = 5 5 ÷ 52"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "So just like: 5 apples ÷ 2 apples in each group = 52 groups"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "We also have: 5 fifths ÷ 2 fifths in each group = 5 groups 2"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "So you can just divide the numerators: 1 ÷ 52 = 5 5 ÷ 52 = 5 ÷ 2 = 52"
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "2. Divide 1 by a fraction by multiplying both terms by the denominator."
+                            },
+                            {
+                                "type" : "text",
+                                "text" : "1÷2=5÷2=5 52"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+}
+

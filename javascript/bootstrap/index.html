@@ -1,0 +1,73 @@
+<!doctype html>
+<html ng-app="baldur">
+	<head>
+		<title>Baldur Software</title>
+		<script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
+	    <script type="text/javascript" src="lib/bootstrap.js"></script>
+	    <script type="text/javascript" src="lib/angular.min.js"></script>
+	    <link rel="stylesheet" href="css/bootstrap.css"/>
+
+	    <script type="text/javascript" src="js/index.js"></script>
+	    <link rel="stylesheet" href="css/index.css"/>
+	</head>
+	<body>
+		<div class="container-fluid"  ng-controller="MainCtrl">
+			<header class="page-header">
+				<ul class="nav nav-tabs pull-right">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">About Baldursoft</a></li>
+					<li><a href="#">Labs</a></li>
+				</ul>
+				<h3>{{company}}</h3>
+			</header>
+			<div class="jumbotron">
+				<h1>Dog-written applications for dogs</h1>
+				<p>Learn how to teach your dog to write Android applications!</p>
+				<p class="btn-group">
+					<a class="btn btn-success btn-lg" href="#">Download the pdf now!</a>
+					<a class="btn btn-default btn-lg" href"#">Pay Baldur Now</a>
+				<p>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-4">
+					<h2> Marcellus </h2>
+					<p>Horatio says 'tis but our fantasy,
+						And will not let belief take hold of him
+						Touching this dreaded sight, twice seen of us:
+						Therefore I have entreated him along
+						With us to watch the minutes of this night;
+						That if again this apparition come,
+						He may approve our eyes and speak to it.
+					</p>
+				</div>
+				<div class="col-xs-4">
+					<h2> Horatio </h2>
+					<p>Tush, tush, 'twill not appear.
+					</p>
+				</div>
+				<div class="col-xs-4">
+					<h2> Bernardo </h2>
+					<p>Sit down awhile;
+						And let us once again assail your ears,
+						That are so fortified against our story
+						What we have two nights seen.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 hidden-sm">
+					<h2>Left Low Column</h2>
+					<img class="img-responsive" src="images/mel.jpg">
+				</div>
+				<div class="col-sm-6">
+					<h2>Right Low Column</h2>
+					<p>And this is the sum of all things</p>
+				</div>
+			</div>
+
+			<div class="row"><p style="margin-left: 10px;">&copy; 2014 BMS</p></div>
+		</div>
+	</body>
+</html>
+	    

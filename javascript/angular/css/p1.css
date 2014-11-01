@@ -1,0 +1,88 @@
+body {
+	/* center the page, make it a fixed width, and let margins fill with whitespace */
+	width: 80%;
+	height: 100%;
+	margin: 0 auto; /* top & bottom 0, left & right auto */
+	/* end of page centering code */
+	margin-top: 20px;
+	background-color: #BBBBBB;
+
+	/* background-image: url(../images/parchment.jpg); sets background image */
+}
+
+h1 {
+	font-weight: normal;
+	color: #666666;
+	font-size: 2em;
+}
+
+h2 {
+	font-weight: normal;
+	color: #666666;
+}
+
+/* style for all three of the following element types */
+h1, h2, p {
+	font-family: 'Gravitas One', 'Arial Black', serif;
+}
+
+/* select a class */
+.intro {
+	color: olive;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	padding: 5px;
+	margin-bottom: 25px;
+	background-color: #AAAAAA;
+
+}
+
+/* select an id - note navigate to this via page1.html#footer*/
+#footer {
+	height: 90px;
+	width: 80%;
+	background-color: black;
+	color: white;
+	font-size: 1.3em;
+}
+
+/* style for all p IN a #footer -> this is how you do DESCENDENT SELECTORS */
+#footer p { /* note #footer * will select ALL elements in the footer */
+	width: 50%;
+	margins: 0 auto;
+	text-align: center;
+	background-color: rgba(220,0,0,0.25);
+}
+/* note #footer > p would only select p's that are DIRECT children */
+
+/* using a pseudo-class selector : */
+.intro:hover {
+	/* change the look on hover */
+	box-shadow: 10px 10px 5px #888888;
+	background-image: url(../images/parchment.jpg);
+}
+
+/* we also have pseudo selectors like
+:first-letter
+:first-line
+:focus
+:hover
+:first-child
+:last-child
+:before -> puts content before an element;
+*/
+.intro:first-letter {
+	font-size: 1.4em;
+	color: red;
+}
+p.tip:before {content: "Hi There!"} /* p with class tip get this content*/
+
+input[type="text"] {
+	/* this will select a tag like <input type="text"> */
+	width: 500px;
+	font-size: 1.4em;
+}
+
+
+
+

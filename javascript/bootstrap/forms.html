@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="boot">
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/b2.css"/>
+    <script type="text/javascript" src="lib/bootstrap.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/b2.js"></script>
+</head>
+<body ng-controller="FormController as form">
+    <h1>Age {{form.age}}</h1>
+
+    <p>form is below</p>
+    <span class="dotList-item-link"></span>
+    <span class="dotList-item-link"></span>
+    <span class="dotList-item-link"></span>
+    <form name="reviewForm" ng-controller="ReviewController as reviewCtrl"
+        ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate>
+        <fieldset class="form-group">
+            <select class="form-control" ng-model="reviewCtrl.review.stars" required>
+                <option value="1">1 star</option>
+                <option value="2">2 star</option>
+                <option value="3">3 star</option>
+                <option value="4">4 star</option>
+                <option value="5">5 star</option>
+            </select>
+        </fieldset>
+        <fieldset class="form-group">
+            <textarea class="form-control" name="body" ng-model="reviewCtrl.review.body" required></textarea>
+        </fieldset>
+        <fieldset class="form-group">
+            <input class="form-control" type="email" name="author" ng-model="reviewCtrl.review.author" required/>
+        </fieldset>
+        <fieldset class="form-group">
+            <input class="btn btn-primary pull-right" type="submit" value="Submit"/>
+        </fieldset>
+        <div>reviewForm is {{reviewForm.$valid}}</div>
+    </form>
+</body>
+</html>

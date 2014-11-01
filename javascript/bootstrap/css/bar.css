@@ -1,0 +1,64 @@
+.overlay {
+    position: absolute;
+    z-index: 10000;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0,0,0,0.75);
+    padding: 20px;
+}
+
+
+
+.overlay-inner {
+    background-color: rgb(255,255,255);
+    padding: 20px;
+    border: 20px sold rgb(255,255,255);
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+}
+
+.thin-space {
+    min-height: 11px;
+    min-width: 100%;
+    border-top: 1px solid;
+    margin-top: 10px;
+    border-color: rgba(204,204,204,0.5);
+    display: inline-block;
+}
+
+.nice-input {
+    height: 30px;
+    margin: 2px 0px;
+    padding: 5px 12px;
+    font-size: 14px;
+    color: rgb(85,85,85);
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: rgb(204,204,204);
+}
+
+#leftpanel {
+    width: 650px;
+    height: 100%;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#rightpanel {
+    float: right;
+    width: 20%;
+    height: 100%;
+}
+
+#inputlist {
+    list-style-type: none;
+    margin: 30px 0px 20px 0px;
+    padding: 10px;
+}
