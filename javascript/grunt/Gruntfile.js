@@ -31,6 +31,20 @@ module.exports = function(grunt) {
 		}, 
 
 		uglify: {
+			// remove DEBUG code first
+			options: {
+				// create a source map
+				sourceMap: true,
+				sourceMapName: 'build/app.min.js.map',
+				// conditional compilation to remove debug statements
+				// this isn't working ....
+				compress: {
+					global_defs: {
+						"DEBUG": false
+					},
+					dead_code: true,
+				}
+			},
 			target1: {
 				src: 'build/app.js',
 				dest: 'build/app.min.js'
