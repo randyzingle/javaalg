@@ -7,7 +7,7 @@ $(window).load(function() {
 var game = {
 	init: function() {
 		// hide all gamelayers and show start screen
-		$('.gamelayers').hide();
+		$('.gamelayer').hide();
 		$('#gamestartscreen').show();
 		// intialize the levels
 		levels.init();
@@ -94,12 +94,18 @@ var levels = {
 			foreground:'desert-foreground',
 			background:'clouds-background',
 			entities:[]
+		},
+		{
+			foreground:'desert-foreground',
+			background:'clouds-background',
+			entities:[]
 		}
 	],
 	init: function() {
 		// create the level selection buttons
 		var html = '';
 		for (var i=0; i<levels.data.length; i++) {
+
 			html += '<input type="button" value="'+(i+1)+'">';
 		};
 		$('#levelselectionscreen').html(html);
@@ -117,12 +123,12 @@ var levels = {
 		$('#score').html('Score: ' + game.score);
 		var level = levels.data[levelnumber];
 		// load background, foreground, and slingshot images
-		game.currentLevel.backgroundImage = loader.loadImage('images/backgrounds/'
+		game.currentLevel.backgroundImage = loader.loadImage('../images/backgrounds/'
 			+ level.background + '.png');
-		game.currentLevel.foregroundImage = loader.loadImage('images/backgrounds/'
+		game.currentLevel.foregroundImage = loader.loadImage('../images/backgrounds/'
 			+ level.foreground + '.png');
-		game.slingshotImage = loader.loadImage('images/slingshot.png');
-		game.slingshotFrontImage = loader.loadImage('images/slingshot-front.png');
+		game.slingshotImage = loader.loadImage('../images/slingshot.png');
+		game.slingshotFrontImage = loader.loadImage('../images/slingshot-front.png');
 
 		if (loader.loaded) {
 			game.start();

@@ -4,6 +4,8 @@
 	<title>To Do List</title>
 	<script type="text/javascript" src="lib/jquery.min.js"></script>
 	<script type="text/javascript" src="lib/angular.min.js"></script>
+	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
 	<script type="text/javascript" src="js/pop1.js"></script>
 	<script type="text/javascript" src="js/pop2.js"></script>
 	<link rel="stylesheet" href="lib/bootstrap.css"/>
@@ -13,6 +15,8 @@
 <body ng-app="baldur" ng-controller="MainCtrl" class="container">
 	<h1>{{dog}}</h1>
 	<ul class="nav">
+		<input ng-model="message"></input>
+		<button class="btn" ng-click="sendMessage()">Send Message</button>
 		<li ng-repeat="country in europop">
 			<span class="popblock">
 				<span class="cname">{{country.name}}</span> 

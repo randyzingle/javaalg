@@ -47,6 +47,6 @@
 	text-align:center;
 	height:48px;
 	color:white;
-	background:url(..images/loader.gif) no-repeat center;
+	background:url(../images/loader.gif) no-repeat center;
 	font:12px Arial;
 }
