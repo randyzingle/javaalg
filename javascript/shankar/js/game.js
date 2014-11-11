@@ -22,6 +22,43 @@ var game = {
 	showLevelScreen: function() {
 		$('.gamelayer').hide();
 		$('#levelselectionscreen').show('slow');
+	}, 
+
+	//mode: 'intro',
+	slingshotx: 140,
+	slingshoty: 280,
+	start: function() {
+		$('.gamelayer').hide();
+		$('#gamecanvas').show();
+		$('#scorescreen').show();
+		game.mode = 'intro';
+		game.offsetLeft = 0;
+		game.ended = false;
+		game.animationFrame = window.requestAnimationFrame(game.animate, game.canvas);
+	},
+	handlePanning: function() {
+		game.offsetLeft++;
+	},
+	animate: function() {
+		//animate the background
+		game.handlePanning();
+		//animate the characters
+
+		//draw the background with parallax scrolling
+		game.context.drawImage(game.currentLevel.backgroundImage,
+		 game.offsetLeft/4,0,640,480,0,0,640,480);
+		game.context.drawImage(game.currentLevel.foregroundImage, 
+			game.offsetLeft,0,640,480,0,0,640,480);
+
+		//draw the slingshot
+		game.context.drawImage(game.slingshotImage,
+			game.slingshotx-game.offsetLeft, game.slingshoty);
+		game.context.drawImage(game.slingshotFrontImage, 
+			game.slingshotx - game.offsetLeft, game.slingshoty);
+
+		if (!game.ended) {
+			game.animationFrame = window.requestAnimationFrame(game.animate, game.canvas);
+		}
 	}
 };
 
@@ -76,7 +113,7 @@ var loader = {
     		loader.loaded = true;
     		$('#loadingscreen').hide();
     		if(loader.onload) {
-    			loaded.onload();
+    			loader.onload();
     			loader.onload = undefined;
     		}
     	}

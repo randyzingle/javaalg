@@ -8,16 +8,44 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-aws');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-htmlmin');
+	grunt.loadNpmTasks('grunt-serve');
+	grunt.loadNpmTasks('grunt-contrib-sass');
 
 	grunt.initConfig({
 		// all javascript source files
 		srcFiles: ['src/**/*.js'],
 
+		sass: {
+			dist: {
+				options: {
+					style: 'expanded'
+				},
+				files: {
+					'build/app.css' : 'css/temp.scss'
+				}
+			}
+		},
+
 		watch: {
-			target1: {
+			// livereload option to push changes to browser
+			options: {
+				livereload: true
+			},
+			scripts: {
 				files: "<%= srcFiles %>",
 				tasks: ['clean','jshint']
+			}, 
+			styles: {
+				files: "css/**/*.scss",
+				tasks: "sass"
+			},
+			views: {
+				files: "views/**/*.html",
+				tasks: "htmlmin"
 			}
+			
 		},
 
 		jshint: {
@@ -30,6 +58,31 @@ module.exports = function(grunt) {
 			piano: ['src/test.js']
 		}, 
 
+		// compress the css files
+		cssmin: {
+			compress: {
+				src: 'build/app.css',
+				dest: 'build/app.min.css'
+			}
+		},
+
+		// compress the html files
+		htmlmin: {
+			options: {
+				removeComments: true,
+				collapseWhitespace: true,
+				collapseBooleanAtrributes: true,
+				removeAttributeQuotes: true,
+				removeRedundantAttributes: true,
+				removeOptionalTags: true
+			},
+			compress: {
+				src: 'index.html',
+				dest: 'index-min.html'
+			}
+		},
+
+		// compress the javascript files
 		uglify: {
 			// remove DEBUG code first
 			options: {
@@ -82,6 +135,11 @@ module.exports = function(grunt) {
 		var message = 'Deployment on ' + new Date();
 		fs.appendFileSync('deploy.log', message + '\n');
 		grunt.log.writeln('Appended "' + message + '"');
+		// run grunt with --env=prod
+		var env = grunt.option('env');
+		if (env === 'prod') {
+			grunt.log.writeln(env);
+		}
 	});
 
 	grunt.registerTask('webget', 'Description - download a file from the web', function() {
