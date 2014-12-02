@@ -1,14 +1,20 @@
-.popup {
-	display: none;
-	position: absolute;
-	height: 300px;
-	width: 300px;
-	left: -moz-calc(50% - 150px);
-	left: -webkit-calc(50% - 150px);
-	left: calc(50% - 150px);
-	top: -moz-calc(50% - 150px);
-	top: -webkit-calc(50% - 150px);
-	top: calc(50% - 150px);
-	background-color: #000000;
-	color: #FFFFFF;
+#messageList li {
+	list-style-type: none;
+    padding: 10px;
+    margin: 0px;
+}
+
+.dgreym {
+	background-color: #999;
+}
+
+.lgreym {
+	background-color: #eee;
+}
+
+.small {
+	width: 50%;
+	height: 260px;
+	max-height: 260px;
+	overflow-y: auto;
 }

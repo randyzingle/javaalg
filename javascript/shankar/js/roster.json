@@ -1,3 +1,15 @@
-[
-{"name":"teachanator", "role":"ROLE_TEACHER"},{"name":"mymir", "role":"ROLE_STUDENT"},{"name":"baldur", "role":"ROLE_STUDENT"},
-]
+platform/curriculum_services
+platform/web
+platform/reporting
+platform/activity-plugin
+platform/gradebook-plugin
+platform/services-common-plugin
+platform/component-hub
+platform/event_capture
+platform/student-profile-plugin
+platform/component-hierarchy-plugin
+platform/curriculum_content_api
+platform/data-generation-tool
+platform/web-gradebook
+platform/data-creation-plugin
+platform/data-creation-shell
