@@ -1,5 +1,6 @@
 var config = {
-	port: 80,
+	host: process.env.HOST,
+	port: 8000,
 	secret: 'secret',
 	redisUrl: 'redis://localhost',
 	redisHost: 'localhost',

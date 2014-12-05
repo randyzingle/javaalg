@@ -1,47 +1,9 @@
-/*
-* run with debugging: DEBUG=socket.io:* node app.js
-*/
-
 var express = require('express');
 var app = express();
-var path = require('path');
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-var cookieParser = require('cookie-parser');
-var session = require('express-session');
-var RedisStore = require('connect-redis')(session);
 var config = require('./config');
-var cookie = require('cookie');
-var redis = require('redis');
-var redisSession = new RedisStore({host: config.redisHost, port: config.redisPort});
 var redisAdapter = require('socket.io-redis');
-
-//app.use(express.static(path.join(__dirname, 'public')));
-app.use(cookieParser());
-app.use(session({
-  secret: config.secret,
-  resave: false,
-  saveUninitialized: true,
-  store: new RedisStore(
-  	{host: config.redisHost, port: config.redisPort})
-}));
-
-app.get('/', function(req,res) {
-	console.log(__dirname + '/public/index.html');
-	res.cookie('dogcookie','baldur is a dog');
-	res.sendFile(__dirname + '/public/index.html');
-});
-// use the above path for / and the below paths for everything else
-app.use(function(req, res, next) {
-	if(req.session.pageCount) {
-		req.session.pageCount++;
-	} else {
-		req.session.pageCount = 1;
-	}
-	console.log('pageCount: ' + req.session.pageCount);
-	next(); // this will forward to the next app.use
-});
-app.use(express.static(path.join(__dirname, 'public')));
 
 var users = {};
 
@@ -52,31 +14,11 @@ io.adapter(redisAdapter({host: config.redisHost, port: config.redisPort}));
 var math = io.of('/math');
 
 // set up authenticate for the math namespace
-var socketAuth = function(socket, next) {
-	// socket io passes in handshake data (including cookies) when the connection
-	// is being established
-	var handshakeData = socket.request;
-	// get all the cookies, one will be the signed connect.sid cookie
-	var parsedCookie = cookie.parse(handshakeData.headers.cookie);
-	console.log(parsedCookie);
-	// decrypt cookie
-	var sid = cookieParser.signedCookie(parsedCookie['connect.sid'], config.secret);
-	console.log('-->' + sid);
-	console.log('-->' + parsedCookie['connect.sid']);
-
-	redisSession.get(sid, function(err, session) {
-		console.log(session);
-		if (session && session.isAuthenticated) {
-			socket.user = session.user;
-			socket.sid = sid;
-			return next();
-		}
-	});
-	 
+var socketAuth = function(socket, next) {	
+	// in the client app we need to set up the cookies that have user id, section, etc. 
 	// return next() without anything and the middleware chain will continue
 	// return next(Error) and the chain will stop
 	return next(); 
-	//return next(new Error('User not Authorized'));
 };
 
 // use the auth function
@@ -119,7 +61,7 @@ math.on('connection', function(socket) {
 	});
 
 	socket.on('register', function(msg) {
-		console.log(msg);
+		console.log(msg+' woof');
 		var reg = JSON.parse(msg);
 		var name = reg.name;
 		// attach the name to the socket
@@ -146,8 +88,6 @@ math.on('connection', function(socket) {
 
 	});
 });
-
-
 
 http.listen(config.port,function() {
 	console.log('listening on *:'+config.port);
