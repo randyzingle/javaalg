@@ -1,11 +1,26 @@
-var express = require('express')();
+var express = require('express');
+var app = express();
 var http = require('http').Server(express);
 var io = require('socket.io')(http);
+var session = require('express-session');
+var redisstore = require('connect-redis')(session);
+var redisio = require('socket.io-redis');
+var redis = require('redis');
 var config = require('./config');
 var log = require('log4js').getLogger();
-var redis = require('socket.io-redis');
 
-var users = {};
+var redisClient = redis.createClient();
+
+// store express session in redis instead of the local node server memory
+app.use(session({
+  secret: config.secret,
+  resave: false,
+  saveUninitialized: true,
+  store: new redisstore({host: config.redisHost, port: config.redisPort})
+}));
+
+// store socket.io info in redis
+io.adapter(redisio({host: config.redisHost, port: config.redisPort}));
 
 // set up math namespace 
 var math = io.of('/math');
@@ -19,7 +34,7 @@ math.on('connection', function(socket) {
 	// io.of('/math').connected contains all sockets in the math namespace
 
 	socket.on('disconnect', function(data) {
-		console.log('lost the user: ' + socket.name);
+		log.info('lost the user: ' + socket.name);
 		// tell all the other users
 		socket.broadcast.emit('math-message',socket.name + ' has left the building');
 	});
@@ -28,7 +43,7 @@ math.on('connection', function(socket) {
 	socket.emit('math-message', 'welcome to the math room...');
 
 	socket.on('math-message', function(msg, done) {
-		console.log(msg, socket.id);
+		log.info(msg, socket.id);
 		// when a message comes in on this socket, send to everyone in this namespace
 		math.emit('math-message', users[socket.id] + ": " + msg);
 		done('ack');
@@ -39,16 +54,16 @@ math.on('connection', function(socket) {
 		// get associative array (keys are socket ids) of all sockets in a room
 		// io.sockets.adapter.rooms -> all rooms and all clients that are in that room
 		var rms = io.nsps['/math'].adapter.rooms;
-		//console.log(rms);
+		//log.info(rms);
 		var rm = rms['Red'];
-		console.log('Red: ' + JSON.stringify(rm));
+		log.info('Red: ' + JSON.stringify(rm));
 		rm = rms['Green'];
-		console.log('Green: ' + JSON.stringify(rm));
+		log.info('Green: ' + JSON.stringify(rm));
 	});
 
 	socket.on('register', function(msg) {
-		console.log(msg);
-		console.log('host: ' + config.host);
+		log.info(msg);
+		log.info('host: ' + config.host);
 		var reg = JSON.parse(msg);
 		var name = reg.name;
 		// attach the name to the socket
@@ -56,12 +71,12 @@ math.on('connection', function(socket) {
 		users[socket.id] = name;
 		// send message back JUST to connecting socket
 		socket.emit('math-message','thank you for registering ' + name);
-		console.log('sent message back to ' + name);
+		log.info('sent message back to ' + name);
 		// send a note to all users (except the initiating socket) 
 		// that *name* has joined - BROADCAST sends to everyone BUT you
 		var welcome = name + ' has joined the server';
 		socket.broadcast.emit('math-message', welcome);
-		console.log(welcome);
+		log.info(welcome);
 		// join the room the user selected - the room will be created if
 		// it does not already exist
 		var room = reg.room;
@@ -77,5 +92,5 @@ math.on('connection', function(socket) {
 });
 
 http.listen(config.port,function() {
-	console.log('listening on *:'+config.port);
+	log.info(config.host+'-listening on *:'+config.port);
 });

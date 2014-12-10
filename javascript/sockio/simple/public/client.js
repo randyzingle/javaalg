@@ -11,7 +11,8 @@ app.run(function() {
 	console.log('firing up sockets...');
 	// Socket.io socket lifecycle
 	// connecting, connected, disconnecting, disconnected
-	socket = io.connect('http://local.amplify.com/math');
+	// socket = io.connect('http://local.amplify.com/math');
+	socket = io.connect('http://local.amplify.com:3000/math', {foo: "bar"});
 	socket.on('connect', function() {
 		console.log('connected...');
 		// this is where the socket id is stored on the client - available after connect

@@ -1,0 +1,50 @@
+
+<div ng-controller='RegisterController'>
+  <h2>Please Register</h2>
+
+  <!-- Registration Form -->
+  <form class='form-horizontal' role='form' ng-show='!reginfo.registered'>
+    <div class='row'>
+      <div class="col-xs-1"><label for="fname" class="control-label">First Name</label></div>
+      <div class="col-xs-4">
+        <input type="text" class="form-control" id="fname" ng-model="fname" placeholder="Enter first name">
+      </div>
+    </div>
+    <div class='row'>
+      <div class="col-xs-1"><label for="lname" class="span2 control-label">Last Name</label></div>
+      <div class="col-xs-4">
+        <input type="text" class="form-control" id="lname" ng-model="lname" placeholder="Enter last name">
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col-xs-1"><label for="role" class="span2 control-label">Role</label></div>
+      <div class='col-xs-4' style="margin-top:4px">
+        <select class="form-control" ng-model='role'>
+          <option value="">-- choose role --</option>
+          <option>teacher</option>
+          <option>student</option>
+        </select>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col-xs-1"><label for="room" class="span2 control-label">Classroom</label></div>
+      <div class='col-xs-4' style="margin-top:4px">
+        <select class="form-control" ng-model='room'>
+          <option value="">-- choose classroom --</option>
+          <option>East Haven: JMMS Grade 6 Math</option>
+          <option>Boston: Washington Irving: Grade 6 Math</option>
+        </select>
+      </div>
+    </div>
+    <div class='row'>
+      <div class="col-xs-4">
+        <a class='btn btn-primary' ng-click="register()"  style="margin-top:4px">Register</a>
+      </div>
+    </div>
+
+    </div>
+
+  </form>
+</div>

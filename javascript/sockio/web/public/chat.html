@@ -1,70 +1,25 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Socket.IO chat</title>
-    <link rel="stylesheet" href="chat.css"/>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  </head>
-  <body ng-app='chatApp'>
-    <div class='container' ng-controller='mainCtrl'>
 
-      <div class='radio'>
-        <label>
-          <input type='radio' name='ns' id='chatns1' value='chat' checked ng-model='namespace'>
-          Use the *chat* namespace
-        </label>
-      </div>
-        <div class='radio'>
-        <label><input type='radio' name='ns' id='chatns2' value='admin' ng-model='namespace'>
-          Use the *admin* namespace
-        </label>
-      </div>
-      <button class='btn' ng-click='listRooms()'>List Rooms</button>
-      <button class='btn' ng-click='openSocket()'>Open Socket</button>
-      <!-- Registration Form -->
-      <form class='form-horizontal' role='form' ng-show='!registered'>
-          <div class='form-group'>
-              <label for="name" class="col-xs-2 control-label">Name</label>
-              <div class="col-xs-10">
-                <input type="text" class="form-control" id="name" ng-model="name" placeholder="Enter name">
-              </div>
-          </div>
-          <div class='form-group'>
-              <label for="role" class="col-xs-2 control-label">Role</label>
-              <div class="col-xs-10">
-                <input type="text" class="form-control" id="role" ng-model="role" placeholder="Enter role">
-              </div>
-          </div>
-        <select class="form-control" ng-model='room'>
-          <option value="">-- choose room --</option>
-          <option>Red</option>
-          <option>Green</option>
-          <option>Blue</option>
-        </select>
-        <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <button class='btn' ng-click="register()">Register</button>
-          </div>
-        </div>
-      </form>
-      <!-- END Registration Form -->
-
-      <h3 ng-show='registered'>{{name}}-{{role}}-{{room}}</h3>
-      <form role="form" ng-show='registered'>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <input type="text" class="form-control" id="message" ng-model="message" placeholder="Enter message">
-          <button class="btn" ng-click="sendMessage()">Send</button>
-        </div>
-      </form>
-      <ul class='small' id='messageList' ng-cloak>
-        <li ng-repeat="msg in messages track by $index" ng-class="getClass($even)" ng-bind="msg"></li>
-      </ul>
+<div ng-show='registered' ng-controller='ChatController'>
+  <h2>Welcome {{user.fname}}!</h2>
+  <h3>{{user.fname}} {{user.lname}} :{{user.room}}</h3>
+  <div class="row">
+    <div class='col-xs-8'>
+      <input type="text" class="form-control" id="message" ng-model="message" placeholder="Enter message">
+      <button style='margin: 4px 0px' class="btn" ng-click="sendMessage()">Send</button>
     </div>
+  </div>
+  <div class='row' ng-show='teacher'>
 
-    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
-    <script src="client.js"></script>
-  </body>
-</html>
+    <ul class='small col-xs-8' id='messageList' ng-cloak>
+      <li ng-repeat="msg in messages track by $index" ng-class="getClass($even)" ng-bind="msg"></li>
+    </ul>
+      <!--Student Connection Status-->
+      <div class='col-xs-4'>
+        <div class='student' ng-repeat="student in students track by $index">
+          <span class='student-name'>{{student.firstName}} {{student.lastName}}</span>
+          <span class='student-connected' ng-class='studentConnected(student)'></span>
+        </div>
+      </div>
+
+  </div>
+</div>

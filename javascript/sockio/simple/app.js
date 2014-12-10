@@ -51,6 +51,14 @@ io.adapter(redisAdapter({host: config.redisHost, port: config.redisPort}));
 // set up math namespace 
 var math = io.of('/math');
 
+// get the query parameters
+math.use(function(socket, next) {
+	var handshakeData = socket.request;
+	console.log('handshake data:');
+	// log some intersting stuff here ...
+	next();
+});
+
 // set up authenticate for the math namespace
 var socketAuth = function(socket, next) {
 	// socket io passes in handshake data (including cookies) when the connection

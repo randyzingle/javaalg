@@ -1,5 +1,5 @@
 var config = {
-	host: process.env.HOST,
+	host: 'baldur',
 	port: 8000,
 	secret: 'secret',
 	redisUrl: 'redis://localhost',

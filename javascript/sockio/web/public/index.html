@@ -1,9 +1,21 @@
 <html>
 <head>
-<title>Simple Chat Application</title>
+  <head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="chat.css"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  </head>
 </head>
-<body>
-<h1>Simple Chat Application</h1>
-<a href="chat.html">Chat app...</a>
+<body ng-app='chatApp'>
+	<h1>Awesome Chat App</h1>
+	<div class='container'>
+		<ng-view/>
+	</div>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.min.js "></script>
+    <script src="students.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -3,6 +3,7 @@
 * localStorage.debug = 'socket.io:*' 
 * turn off debugging:
 * localStorage.debug = ''
+note is is temporary junk stuff - everything in this file
 */
 var app = angular.module('chatApp', []);
 var socket = "";
