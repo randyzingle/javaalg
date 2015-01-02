@@ -4,6 +4,14 @@ if (!window.bms) {
 }
 
 (function(bms) {	
+	// Socket IO Stuff
+	var socket = io.connect('http://localhost:3000');
+
+	socket.on('chat message', function(msg) {
+		
+	});
+	// END Socket IO Stuff
+
 	bms.dog = 'baldur';
 	var app = angular.module('baldur',[]);
 	app.controller('MainCtrl', function($scope) {
@@ -18,6 +26,11 @@ if (!window.bms) {
 			{name: "Poland", population: 38548000},
 			{name: "Romania", population: 19858000}
 		];
+
+		$scope.message = 'hello';
+		$scope.sendMessage = function() {
+			socket.emit('chat message', $scope.message);
+		}
 
 		$scope.calcTotalPop = function() {
 			var pop = 0;

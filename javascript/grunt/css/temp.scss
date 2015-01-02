@@ -1,0 +1,23 @@
+$primary-color: #333;
+
+body {
+	margin: 100 auto;
+	width: 90%;
+	color: $primary-color;
+	padding: 20px;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+$standard-inset: 5px;
+
+.box { 
+	@include border-radius(10px); 
+	border: 1px solid black;
+	padding: $standard-inset;
+}

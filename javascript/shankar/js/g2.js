@@ -8,6 +8,7 @@ var loadImage = function() {
 	img.onload = function() {
 		skadi = img;
 		drawImage(skadi);
+		console.log('image drawn');
 	};
 
 };

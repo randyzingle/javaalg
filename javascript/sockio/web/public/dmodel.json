@@ -1,0 +1,208 @@
+{
+  "_comment1" : "lesson fields will come from call to CS",
+  "lessonId" : "dataModel",
+  "lessonNumber" : 1,
+  "lessonTitle" : "Dividing Fractions by Unit Fractions",
+  "optional" : "false",
+  "_comment2" : "everything below here comes from authoring",
+  "steps": [
+    {
+        "sequence" : "1",
+        "displaySequence" : "B",
+        "title" : "Lesson Brief Placeholder",
+        "type" : "home",
+        "itemStacks" : [
+            {
+                "items" : [
+                    {
+                        "type" : "goals",
+                        "objects" : [
+                            "This is a goal. The goal is to win."
+                        ]
+                    },
+                    {
+                        "type" : "standards",
+                        "objects" : [
+                            "Standards go here"
+                        ]
+                    },
+                    {
+                        "type" : "priorKnowledge",
+                        "objects" : [
+                            "Know the maths"
+                        ]
+                    },
+                    {
+                        "type" : "studentLessonMaterials",
+                        "objects" : [
+                            {
+                                "text" : "Amplify my materials",
+                                "url" : "www.amplify.com"
+                            }
+                        ]
+                    },
+                    {
+                        "type" : "vocabulary",
+                        "objects" : [
+                            {
+                                "term" : "math",
+                                "important" : false
+                            },
+                            {
+                                "term" : "equation",
+                                "important" : false
+                            },
+                            {
+                                "term" : "division",
+                                "important" : false
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+      "sequence" : "2",
+      "displaySequence" : "1",
+      "title" : "Step1",
+      "type" : "step",
+      "solutionText": "Solution Text 1",
+      "showWorkspaceLink": "true",
+      "itemStacks" : [
+        {
+          "studentItems": [
+            [
+              {
+                "type" : "text",
+                "text" : "JUMP6Ex_U5L2_4_s04",
+                "name": "JUMP6Ex_U5L2_4_s04",
+                "type": "default",
+                "textSize": "normal",
+                "title": "item 1 title",
+                "subtitle": "item 1 subtitle"
+              },
+              {
+                "type" : "text",
+                "text" : "Jump6EX_U5L4_4_s2",
+                "name": "Jump6EX_U5L4_4_s2",
+                "type": "concept",
+                "textSize": "large",
+                "title": "item 2 title",
+                "subtitle": "item 2 subtitle"
+              },
+              {
+                "type" : "text",
+                "text" : "Jump6EX_U5L4_4_t2",
+                "name": "Jump6EX_U5L4_4_t2",
+                "type": "bonus",
+                "textSize": "normal",
+                "title": "",
+                "subtitle": ""
+              },
+              {
+                "type" : "text",
+                "text" : "Jump6EX_U5L5_2_b1",
+                "name": "Jump6EX_U5L5_2_b1",
+                "type": "concept",
+                "textSize": "normal",
+                "title": "",
+                "subtitle": ""
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sequence" : "3",
+      "displaySequence" : "2",
+      "title" : "Step2",
+      "type" : "step",
+      "solutionText": "Solution Text 2",
+      "showWorkspaceLink": "false",
+      "itemStacks" : [
+        {
+          "studentItems": [
+            [
+              {
+                "type" : "text",
+                "text" : "Jump6EX_U5L5_2_s1",
+                "name": "Jump6EX_U5L5_2_s1",
+                "type": "bonus",
+                "textSize": "normal",
+                "title": "step 2 item 1 title",
+                "subtitle": "stpe 2 item 1 subtitle"
+              },
+              {
+                "type" : "text",
+                "text" : "Jump6EX_U5L5_2_s2",
+                "name": "Jump6EX_U5L5_2_s2",
+                "type": "concept",
+                "textSize": "normal",
+                "title": "",
+                "subtitle": ""
+              },
+              {
+                "type" : "text",
+                "text" : "Jump6EX_U5L5_2_s3",
+                "name": "Jump6EX_U5L5_2_s3",
+                "type": "default",
+                "textSize": "normal",
+                "title": "step 2 item 3 title",
+                "subtitle": ""
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sequence" : "4",
+      "displaySequence" : "3",
+      "title" : "Step3",
+      "type" : "step",
+      "solutionText": "Solution Text 3",
+      "showWorkspaceLink": "false",
+      "itemStacks" : [
+        {
+          "studentItems": [
+            [
+              {
+                "type" : "text",
+                "text" : "Jump6EX_U5L4_4_t2",
+                "name": "Jump6EX_U5L4_4_t2",
+                "type": "bonus",
+                "textSize": "normal",
+                "title": "",
+                "subtitle": ""
+              },
+              {
+                "type" : "text",
+                "text" : "Jump6EX_U5L5_2_b1",
+                "name": "Jump6EX_U5L5_2_b1",
+                "type": "bonus",
+                "textSize": "normal",
+                "title": "",
+                "subtitle": ""
+              },
+              {
+                "type" : "text",
+                "text" : "Jump6EX_U5L5_2_b2",
+                "name": "Jump6EX_U5L5_2_b2",
+
+                "type": "bonus",
+                "textSize": "small",
+                "title": "step 3 itme 3 title",
+                "subtitle": "stpe 3 item 3 subtitle"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "0.0.1",
+  "widgetName": "activity_jump_module",
+  "cdnUrl": "http:\/\/d27fmlpthdfl1u.cloudfront.net\/activities"
+}

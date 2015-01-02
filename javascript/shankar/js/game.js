@@ -7,12 +7,14 @@ $(window).load(function() {
 var game = {
 	init: function() {
 		// hide all gamelayers and show start screen
-		$('.gamelayers').hide();
+		$('.gamelayer').hide();
 		$('#gamestartscreen').show();
 		// intialize the levels
 		levels.init();
 		// load the game assets
 		loader.init();
+		// setup mouse event handlers
+		mouse.init();
 
 		// get handle for game canvas and context
 		game.canvas = $('#gamecanvas')[0];
@@ -22,8 +24,75 @@ var game = {
 	showLevelScreen: function() {
 		$('.gamelayer').hide();
 		$('#levelselectionscreen').show('slow');
+	}, 
+
+	//mode: 'intro',
+	slingshotx: 140,
+	slingshoty: 280,
+	start: function() {
+		$('.gamelayer').hide();
+		$('#gamecanvas').show();
+		$('#scorescreen').show();
+		game.mode = 'intro';
+		game.offsetLeft = 0;
+		game.ended = false;
+		game.animationFrame = window.requestAnimationFrame(game.animate, game.canvas);
+	},
+	handlePanning: function() {
+		game.offsetLeft++;
+	},
+	animate: function() {
+		//animate the background
+		game.handlePanning();
+		//animate the characters
+
+		//draw the background with parallax scrolling
+		game.context.drawImage(game.currentLevel.backgroundImage,
+		 game.offsetLeft/4,0,640,480,0,0,640,480);
+		game.context.drawImage(game.currentLevel.foregroundImage, 
+			game.offsetLeft,0,640,480,0,0,640,480);
+
+		//draw the slingshot
+		game.context.drawImage(game.slingshotImage,
+			game.slingshotx-game.offsetLeft, game.slingshoty);
+		game.context.drawImage(game.slingshotFrontImage, 
+			game.slingshotx - game.offsetLeft, game.slingshoty);
+
+		if (!game.ended) {
+			game.animationFrame = window.requestAnimationFrame(game.animate, game.canvas);
+		}
 	}
 };
+
+var mouse = {
+	x: 0,
+	y: 0,
+	down: false,
+	init: function() {
+		$('#gamecanvas').mousemove(mouse.mousemovehandler);
+		$('#gamecanvas').mousedown(mouse.mousedownhandler);
+		$('#gamecanvas').mouseup(mouse.mouseuphandler);
+		$('#gamecanvas').mouseout(mouse.mouseuphandler);
+	},
+	mousemovehandler: function(ev) {
+		var offset = $('#gamecanvas').offset();
+		mouse.x = ev.pageX - offset.left;
+		mouse.y = ev.pageY - offset.top;
+		if (mouse.down) {
+			mouse.dragging = true;
+		}
+	}, 
+	mousedownhandler: function(ev) {
+		mouse.down = true;
+		mouse.downX = mouse.x;
+		mouse.downY = mouse.y;
+		ev.originalEvent.preventDefault();
+	}, 
+	mouseuphandler: function(ev) {
+		mouse.down = false;
+		mouse.dragging = false;
+	}
+}
 
 var loader = {
 	loaded: true,
@@ -76,7 +145,7 @@ var loader = {
     		loader.loaded = true;
     		$('#loadingscreen').hide();
     		if(loader.onload) {
-    			loaded.onload();
+    			loader.onload();
     			loader.onload = undefined;
     		}
     	}
@@ -94,12 +163,18 @@ var levels = {
 			foreground:'desert-foreground',
 			background:'clouds-background',
 			entities:[]
+		},
+		{
+			foreground:'desert-foreground',
+			background:'clouds-background',
+			entities:[]
 		}
 	],
 	init: function() {
 		// create the level selection buttons
 		var html = '';
 		for (var i=0; i<levels.data.length; i++) {
+
 			html += '<input type="button" value="'+(i+1)+'">';
 		};
 		$('#levelselectionscreen').html(html);
@@ -117,12 +192,12 @@ var levels = {
 		$('#score').html('Score: ' + game.score);
 		var level = levels.data[levelnumber];
 		// load background, foreground, and slingshot images
-		game.currentLevel.backgroundImage = loader.loadImage('images/backgrounds/'
+		game.currentLevel.backgroundImage = loader.loadImage('../images/backgrounds/'
 			+ level.background + '.png');
-		game.currentLevel.foregroundImage = loader.loadImage('images/backgrounds/'
+		game.currentLevel.foregroundImage = loader.loadImage('../images/backgrounds/'
 			+ level.foreground + '.png');
-		game.slingshotImage = loader.loadImage('images/slingshot.png');
-		game.slingshotFrontImage = loader.loadImage('images/slingshot-front.png');
+		game.slingshotImage = loader.loadImage('../images/slingshot.png');
+		game.slingshotFrontImage = loader.loadImage('../images/slingshot-front.png');
 
 		if (loader.loaded) {
 			game.start();
