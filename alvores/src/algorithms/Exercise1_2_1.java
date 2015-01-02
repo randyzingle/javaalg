@@ -9,28 +9,40 @@ public class Exercise1_2_1 {
 		Random rand = new Random();
 
 		Scanner input = new Scanner(System.in);
-		int n;
+		int n = 0;
 		int distance;
 
-		System.out.println("Enter a value for N: "); // Number of random points
-		n = input.nextInt();
-		input.close();
-		
+		if (n <= 0) {
+			System.out.println("Enter a value for N: "); // Number of random
+															// points
+			n = input.nextInt();
+			input.close();
+		}
+
 		Point2D.Double[] pointArray = new Point2D.Double[n];
 
 		for (int i = 0; i < n; i++) {
-			double x = rand.nextInt();
-			double y = rand.nextInt();
+			double x = rand.nextDouble() * 10;
+			double y = rand.nextDouble() * 10;
 			Point2D.Double psd = new Point2D.Double(x, y);
 			pointArray[i] = psd;
+
 		}
-		
-		for (int i = 0; i < n; i++) {
-			distance(double px, double py);
+
+		double smallDistance = Double.MAX_VALUE;
+
+		for (int j = 0; j < pointArray.length - 1; j++) {
+			for (int i = j + 1; i < pointArray.length; i++) {
+				Point2D.Double one = pointArray[j];
+				Point2D.Double two = pointArray[i];
+				double d = one.distance(two);
+				if (d < smallDistance) {
+					smallDistance = d;
+				}
+//System.out.printf("j=%d, i=%d%n",j,i);
+			}
 		}
-		//distance(double px, double py)
-		//Returns the distance from this Point2D to a specified point.
-		
+		System.out.println("The smallest distance is: " + smallDistance);
 
 	}
 }
