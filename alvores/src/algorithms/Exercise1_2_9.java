@@ -5,15 +5,17 @@ import java.util.Arrays;
 public class Exercise1_2_9 {
 
 	public static void main(String[] args) {
-		int[] whitelist = In.readInts(args[0]);
+		String file1 = "data/tinyW.txt";
+		String file2 = "data/tinyT.txt";
+		FileHelper fh = new FileHelper();
+		int[] whitelist = fh.getIntegerArrayFromFile(file1);
+		int[] otherlist = fh.getIntegerArrayFromFile(file2);
 		
+		System.out.println(Arrays.toString(whitelist));
 		Arrays.sort(whitelist);
+		System.out.println(Arrays.toString(whitelist));
 		
-		while (!StdIn.isEmpty()) {
-			int key = StdIn.readInt();
-			if (rank(key, whitelist) < 0)
-				StdOut.println(key);
-		}
+
 	}
 	
 	public static int rank(int key, int[] a) {
