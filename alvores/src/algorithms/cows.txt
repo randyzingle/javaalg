@@ -1,0 +1,20 @@
+Cows Project
+
+Redo Ex 1.2.1 with cows instead of Point2D.Double(s)
+
+Create a Cow class
+==================
+give it the following methods
+
+getPosition (returns Point2D.Double)
+setPosition (give it a Point2D.Double)
+
+get/set name (ex. Bessie)
+get/set number (a simple integer associated with the cow)
+
+
+Create a Class that makes 2..n Cows
+================================== 
+positions them, then calculates 
+the cows that are closest to eachother and prints out the distance and 
+the names of the two cows
