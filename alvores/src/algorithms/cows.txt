@@ -16,5 +16,5 @@ get/set number (a simple integer associated with the cow)
 Create a Class that makes 2..n Cows
 ================================== 
 positions them, then calculates 
-the cows that are closest to eachother and prints out the distance and 
+the cows that are closest to each other and prints out the distance and 
 the names of the two cows
