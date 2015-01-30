@@ -1,5 +1,5 @@
 
-define([], function() {
+(function() {
 
 	'use strict';
 
@@ -16,7 +16,9 @@ define([], function() {
 		};
 
 		$scope.send = function() {
-			console.log('send');
+			if ($scope.message.body === null || $scope.message.body === "") return;
+			console.log('sending:');
+			console.log($scope.message.body);
 		};
 
 		$scope.clear = function() {
@@ -26,4 +28,4 @@ define([], function() {
 
 	});
 
-});
+})();

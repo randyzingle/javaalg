@@ -1,0 +1,9 @@
+Horse % Is it bigger than you?
+bunny % Is it furry?
+mouse % Does it eat cheese?
+null
+null
+null
+moose % Does it have antlers?
+null
+null

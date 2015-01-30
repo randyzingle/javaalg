@@ -1,0 +1,2099 @@
+Randy Zingle
+rzingle@amplify.com
+Pulling updates for /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/Bukkit/.git
+Successfully pulled updates!
+Pulling updates for /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/CraftBukkit/.git
+Successfully pulled updates!
+Pulling updates for /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/Spigot/.git
+Successfully pulled updates!
+Pulling updates for /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/BuildData/.git
+Successfully pulled updates!
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install-file (default-cli) @ standalone-pom ---
+[INFO] Installing /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/work/mapped.8eb82bde.jar to /Users/rzingle/.m2/repository/org/spigotmc/minecraft-server/1.8-SNAPSHOT/minecraft-server-1.8-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.547 s
+[INFO] Finished at: 2015-01-19T15:40:44-05:00
+[INFO] Final Memory: 6M/74M
+[INFO] ------------------------------------------------------------------------
+Applying CraftBukkit Patches
+Backing up NMS dir
+Patching with BiomeDecorator.patch
+Patching with BiomeTheEndDecorator.patch
+Patching with Block.patch
+Patching with BlockBloodStone.patch
+Patching with BlockButtonAbstract.patch
+Patching with BlockCactus.patch
+Patching with BlockCake.patch
+Patching with BlockCocoa.patch
+Patching with BlockCommand.patch
+Patching with BlockCrops.patch
+Patching with BlockDaylightDetector.patch
+Patching with BlockDiodeAbstract.patch
+Patching with BlockDispenser.patch
+Patching with BlockDoor.patch
+Patching with BlockDragonEgg.patch
+Patching with BlockDropper.patch
+Patching with BlockEnderPortal.patch
+Patching with BlockFire.patch
+Patching with BlockFlowing.patch
+Patching with BlockGrass.patch
+Patching with BlockIce.patch
+Patching with BlockLeaves.patch
+Patching with BlockLever.patch
+Patching with BlockMinecartDetector.patch
+Patching with BlockMobSpawner.patch
+Patching with BlockMonsterEggs.patch
+Patching with BlockMushroom.patch
+Patching with BlockMycel.patch
+Patching with BlockNetherWart.patch
+Patching with BlockOre.patch
+Patching with BlockPiston.patch
+Patching with BlockPortal.patch
+Patching with BlockPoweredRail.patch
+Patching with BlockPressurePlateAbstract.patch
+Patching with BlockPressurePlateBinary.patch
+Patching with BlockPressurePlateWeighted.patch
+Patching with BlockPumpkin.patch
+Patching with BlockRedstoneLamp.patch
+Patching with BlockRedstoneOre.patch
+Patching with BlockRedstoneTorch.patch
+Patching with BlockRedstoneWire.patch
+Patching with BlockReed.patch
+Patching with BlockSapling.patch
+Patching with BlockSkull.patch
+Patching with BlockSnow.patch
+Patching with BlockSoil.patch
+Patching with BlockStationary.patch
+Patching with BlockStem.patch
+Patching with BlockTrapdoor.patch
+Patching with BlockTripwire.patch
+Patching with BlockTripwireHook.patch
+Patching with BlockVine.patch
+Patching with ChatBaseComponent.patch
+Patching with ChatModifier.patch
+Patching with Chunk.patch
+Patching with ChunkProviderServer.patch
+Patching with ChunkRegionLoader.patch
+Patching with ChunkSection.patch
+Patching with CommandBlockListenerAbstract.patch
+Patching with CommandExecute.patch
+Patching with CommandGamemode.patch
+Patching with CommandGamerule.patch
+Patching with CommandTp.patch
+Patching with Container.patch
+Patching with ContainerAnvil.patch
+Patching with ContainerAnvilInventory.patch
+Patching with ContainerBeacon.patch
+Patching with ContainerBrewingStand.patch
+Patching with ContainerChest.patch
+Patching with ContainerDispenser.patch
+Patching with ContainerEnchantTable.patch
+Patching with ContainerEnchantTableInventory.patch
+Patching with ContainerFurnace.patch
+Patching with ContainerHopper.patch
+Patching with ContainerHorse.patch
+Patching with ContainerMerchant.patch
+Patching with ContainerPlayer.patch
+Patching with ContainerWorkbench.patch
+Patching with ControllerLook.patch
+Patching with ControllerMove.patch
+Patching with CraftingManager.patch
+Patching with CrashReport.patch
+Patching with DedicatedServer.patch
+Patching with DispenseBehaviorArmor.patch
+Patching with DispenseBehaviorBoat.patch
+Patching with DispenseBehaviorBonemeal.patch
+Patching with DispenseBehaviorCommandBlock.patch
+Patching with DispenseBehaviorEmptyBucket.patch
+Patching with DispenseBehaviorFilledBucket.patch
+Patching with DispenseBehaviorFireball.patch
+Patching with DispenseBehaviorFireworks.patch
+Patching with DispenseBehaviorFlintAndSteel.patch
+Patching with DispenseBehaviorItem.patch
+Patching with DispenseBehaviorMinecart.patch
+Patching with DispenseBehaviorMonsterEgg.patch
+Patching with DispenseBehaviorProjectile.patch
+Patching with DispenseBehaviorTNT.patch
+Patching with Enchantment.patch
+Patching with EnchantmentThorns.patch
+Patching with Entity.patch
+Patching with EntityAgeable.patch
+Patching with EntityAnimal.patch
+Patching with EntityArmorStand.patch
+Patching with EntityArrow.patch
+Patching with EntityBoat.patch
+Patching with EntityChicken.patch
+Patching with EntityCow.patch
+Patching with EntityCreature.patch
+Patching with EntityCreeper.patch
+Patching with EntityDamageSourceIndirect.patch
+Patching with EntityEgg.patch
+Patching with EntityEnderCrystal.patch
+Patching with EntityEnderDragon.patch
+Patching with EntityEnderman.patch
+Patching with EntityEnderPearl.patch
+Patching with EntityExperienceOrb.patch
+Patching with EntityFallingBlock.patch
+Patching with EntityFireball.patch
+Patching with EntityFishingHook.patch
+Patching with EntityGuardian.patch
+Patching with EntityHanging.patch
+Patching with EntityHorse.patch
+Patching with EntityHuman.patch
+Patching with EntityInsentient.patch
+Patching with EntityIronGolem.patch
+Patching with EntityItem.patch
+Patching with EntityItemFrame.patch
+Patching with EntityLargeFireball.patch
+Patching with EntityLeash.patch
+Patching with EntityLightning.patch
+Patching with EntityLiving.patch
+Patching with EntityMinecartAbstract.patch
+Patching with EntityMinecartCommandBlockListener.patch
+Patching with EntityMinecartContainer.patch
+Patching with EntityMonster.patch
+Patching with EntityMushroomCow.patch
+Patching with EntityOcelot.patch
+Patching with EntityPainting.patch
+Patching with EntityPig.patch
+Patching with EntityPlayer.patch
+Patching with EntityPotion.patch
+Patching with EntityProjectile.patch
+Patching with EntityRabbit.patch
+Patching with EntitySheep.patch
+Patching with EntitySkeleton.patch
+Patching with EntitySlime.patch
+Patching with EntitySmallFireball.patch
+Patching with EntitySnowman.patch
+Patching with EntitySpider.patch
+Patching with EntitySquid.patch
+Patching with EntityThrownExpBottle.patch
+Patching with EntityTNTPrimed.patch
+Patching with EntityTrackerEntry.patch
+Patching with EntityVillager.patch
+Patching with EntityWither.patch
+Patching with EntityWitherSkull.patch
+Patching with EntityWolf.patch
+Patching with EntityZombie.patch
+Patching with ExpirableListEntry.patch
+Patching with Explosion.patch
+Patching with FoodMetaData.patch
+Patching with HandshakeListener.patch
+Patching with ICommand.patch
+Patching with IDataManager.patch
+Patching with IInventory.patch
+Patching with InventoryCrafting.patch
+Patching with InventoryCraftResult.patch
+Patching with InventoryEnderChest.patch
+Patching with InventoryHorseChest.patch
+Patching with InventoryLargeChest.patch
+Patching with InventoryMerchant.patch
+Patching with InventorySubcontainer.patch
+Patching with IRecipe.patch
+Patching with ItemBed.patch
+Patching with ItemBoat.patch
+Patching with ItemBow.patch
+Patching with ItemBucket.patch
+Patching with ItemDye.patch
+Patching with ItemFireball.patch
+Patching with ItemFishingRod.patch
+Patching with ItemFlintAndSteel.patch
+Patching with ItemHanging.patch
+Patching with ItemLeash.patch
+Patching with ItemMapEmpty.patch
+Patching with ItemMinecart.patch
+Patching with ItemMonsterEgg.patch
+Patching with ItemStack.patch
+Patching with ItemWaterLily.patch
+Patching with ItemWorldMap.patch
+Patching with JsonList.patch
+Patching with Location2D.patch
+Patching with LoginListener.patch
+Patching with MethodProfiler.patch
+Patching with MinecraftServer.patch
+Patching with MobEffectList.patch
+Patching with MobSpawnerAbstract.patch
+Patching with NameReferencingFileConverter.patch
+Patching with NetworkManager.patch
+Patching with Packet.patch
+Patching with PacketDataSerializer.patch
+Patching with PacketPlayInBlockPlace.patch
+Patching with PacketPlayInCloseWindow.patch
+Patching with PacketStatusListener.patch
+Patching with Path.patch
+Patching with PathfinderGoalBreakDoor.patch
+Patching with PathfinderGoalBreed.patch
+Patching with PathfinderGoalDefendVillage.patch
+Patching with PathfinderGoalEatTile.patch
+Patching with PathfinderGoalEndermanPickupBlock.patch
+Patching with PathfinderGoalEndermanPlaceBlock.patch
+Patching with PathfinderGoalGhastAttackTarget.patch
+Patching with PathfinderGoalHurtByTarget.patch
+Patching with PathfinderGoalMakeLove.patch
+Patching with PathfinderGoalNearestAttackableTarget.patch
+Patching with PathfinderGoalNearestAttackableTargetInsentient.patch
+Patching with PathfinderGoalOwnerHurtByTarget.patch
+Patching with PathfinderGoalOwnerHurtTarget.patch
+Patching with PathfinderGoalPanic.patch
+Patching with PathfinderGoalSelector.patch
+Patching with PathfinderGoalSilverfishHideInBlock.patch
+Patching with PathfinderGoalSilverfishWakeOthers.patch
+Patching with PathfinderGoalSit.patch
+Patching with PathfinderGoalTame.patch
+Patching with PathfinderGoalTargetNearestPlayer.patch
+Patching with PlayerChunk.patch
+Patching with PlayerChunkMap.patch
+Patching with PlayerConnection.patch
+Patching with PlayerDatFileConverter.patch
+Patching with PlayerInteractManager.patch
+Patching with PlayerInventory.patch
+Patching with PlayerList.patch
+Patching with PlayerSelector.patch
+Patching with PortalCreator.patch
+Patching with PortalTravelAgent.patch
+Patching with PropertyManager.patch
+Patching with RecipeArmorDye.patch
+Patching with RecipeBookClone.patch
+Patching with RecipeFireworks.patch
+Patching with RecipeMapClone.patch
+Patching with RecipeRepair.patch
+Patching with RecipesBannerInnerClass1.patch
+Patching with RecipesBannerInnerClass2.patch
+Patching with RecipesFurnace.patch
+Patching with RegionFile.patch
+Patching with RemoteControlCommandListener.patch
+Patching with ScoreboardServer.patch
+Patching with SecondaryWorldServer.patch
+Patching with ShapedRecipes.patch
+Patching with ShapelessRecipes.patch
+Patching with Slot.patch
+Patching with SlotFurnaceResult.patch
+Patching with SpawnerCreature.patch
+Patching with StatisticManager.patch
+Patching with SwitchHelperLogVariant.patch
+Patching with ThreadCommandReader.patch
+Patching with ThreadPlayerLookupUUID.patch
+Patching with TileEntity.patch
+Patching with TileEntityBeacon.patch
+Patching with TileEntityBrewingStand.patch
+Patching with TileEntityChest.patch
+Patching with TileEntityCommandListener.patch
+Patching with TileEntityDispenser.patch
+Patching with TileEntityFurnace.patch
+Patching with TileEntityHopper.patch
+Patching with TileEntityNote.patch
+Patching with TileEntityPiston.patch
+Patching with TileEntityRecordPlayer.patch
+Patching with TileEntitySign.patch
+Patching with TileEntitySkull.patch
+Patching with Village.patch
+Patching with VillageSiege.patch
+Patching with World.patch
+Patching with WorldBorder.patch
+Patching with WorldBorderListener.patch
+Patching with WorldData.patch
+Patching with WorldGenGroundBush.patch
+Patching with WorldGenMegaTreeAbstract.patch
+Patching with WorldGenVillagePiece.patch
+Patching with WorldGenVillagePieces.patch
+Patching with WorldGenWitchHut.patch
+Patching with WorldManager.patch
+Patching with WorldMap.patch
+Patching with WorldMapHumanTracker.patch
+Patching with WorldNBTStorage.patch
+Patching with WorldServer.patch
+Compiling Bukkit
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Bukkit 1.8-R0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/codehaus/mojo/animal-sniffer-maven-plugin/1.13/animal-sniffer-maven-plugin-1.13.pom
+
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/mojo/animal-sniffer-maven-plugin/1.13/animal-sniffer-maven-plugin-1.13.pom
+786 B   
+2 KB    
+5 KB   
+5 KB   
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/mojo/animal-sniffer-maven-plugin/1.13/animal-sniffer-maven-plugin-1.13.pom (5 KB at 4.1 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/codehaus/mojo/animal-sniffer-parent/1.13/animal-sniffer-parent-1.13.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/mojo/animal-sniffer-parent/1.13/animal-sniffer-parent-1.13.pom
+786 B   
+2 KB    
+4 KB   
+5 KB   
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/mojo/animal-sniffer-parent/1.13/animal-sniffer-parent-1.13.pom (5 KB at 14.1 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/codehaus/mojo/mojo-parent/34/mojo-parent-34.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/mojo/mojo-parent/34/mojo-parent-34.pom
+771 B   
+3 KB    
+5 KB   
+9 KB   
+13 KB   
+15 KB   
+15 KB   
+19 KB   
+23 KB   
+23 KB   
+24 KB   
+        
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/mojo/mojo-parent/34/mojo-parent-34.pom (24 KB at 66.4 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom
+        
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom
+843 B   
+3 KB    
+5 KB   
+5 KB   
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom (5 KB at 18.6 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/codehaus/mojo/animal-sniffer-maven-plugin/1.13/animal-sniffer-maven-plugin-1.13.jar
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/mojo/animal-sniffer-maven-plugin/1.13/animal-sniffer-maven-plugin-1.13.jar
+2/31 KB   
+6/31 KB   
+10/31 KB   
+14/31 KB   
+18/31 KB   
+22/31 KB   
+26/31 KB   
+30/31 KB   
+31/31 KB   
+           
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/mojo/animal-sniffer-maven-plugin/1.13/animal-sniffer-maven-plugin-1.13.jar (31 KB at 40.7 KB/sec)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ bukkit ---
+[INFO] Deleting /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/Bukkit/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ bukkit ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ bukkit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/Bukkit/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ bukkit ---
+[INFO] Changes detected - recompiling the module!
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.13:check (default) @ bukkit ---
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/codehaus/mojo/animal-sniffer/1.13/animal-sniffer-1.13.pom
+           
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/mojo/animal-sniffer/1.13/animal-sniffer-1.13.pom
+802 B      
+2 KB    
+3 KB   
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/mojo/animal-sniffer/1.13/animal-sniffer-1.13.pom (3 KB at 9.2 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/ow2/asm/asm-all/4.0/asm-all-4.0.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/ow2/asm/asm-all/4.0/asm-all-4.0.pom
+937 B   
+2 KB    
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/ow2/asm/asm-all/4.0/asm-all-4.0.pom (2 KB at 6.8 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/ow2/asm/asm-parent/4.0/asm-parent-4.0.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/ow2/asm/asm-parent/4.0/asm-parent-4.0.pom
+919 B   
+2 KB    
+4 KB   
+6 KB   
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/ow2/asm/asm-parent/4.0/asm-parent-4.0.pom (6 KB at 9.5 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/codehaus/mojo/java-boot-classpath-detector/1.13/java-boot-classpath-detector-1.13.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/mojo/java-boot-classpath-detector/1.13/java-boot-classpath-detector-1.13.pom
+817 B   
+2 KB    
+3 KB   
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/mojo/java-boot-classpath-detector/1.13/java-boot-classpath-detector-1.13.pom (3 KB at 8.1 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/maven-plugin-api/2.0.1/maven-plugin-api-2.0.1.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-plugin-api/2.0.1/maven-plugin-api-2.0.1.pom
+643 B   
+        
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-plugin-api/2.0.1/maven-plugin-api-2.0.1.pom (643 B at 2.5 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/maven/2.0.1/maven-2.0.1.pom
+        
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven/2.0.1/maven-2.0.1.pom
+954 B   
+5 KB    
+8 KB   
+11 KB   
+12 KB   
+        
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven/2.0.1/maven-2.0.1.pom (12 KB at 45.5 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/maven-core/2.0.1/maven-core-2.0.1.pom
+        
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-core/2.0.1/maven-core-2.0.1.pom
+3 KB    
+6 KB   
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-core/2.0.1/maven-core-2.0.1.pom (6 KB at 9.0 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/maven-settings/2.0.1/maven-settings-2.0.1.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-settings/2.0.1/maven-settings-2.0.1.pom
+2 KB   
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-settings/2.0.1/maven-settings-2.0.1.pom (2 KB at 5.7 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/maven-model/2.0.1/maven-model-2.0.1.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-model/2.0.1/maven-model-2.0.1.pom
+2 KB   
+3 KB   
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-model/2.0.1/maven-model-2.0.1.pom (3 KB at 10.1 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/codehaus/plexus/plexus-utils/1.0.5/plexus-utils-1.0.5.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/plexus/plexus-utils/1.0.5/plexus-utils-1.0.5.pom
+918 B   
+        
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/plexus/plexus-utils/1.0.5/plexus-utils-1.0.5.pom (918 B at 3.7 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/maven-plugin-parameter-documenter/2.0.1/maven-plugin-parameter-documenter-2.0.1.pom
+        
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-plugin-parameter-documenter/2.0.1/maven-plugin-parameter-documenter-2.0.1.pom
+2 KB    
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-plugin-parameter-documenter/2.0.1/maven-plugin-parameter-documenter-2.0.1.pom (2 KB at 6.3 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/reporting/maven-reporting-api/2.0.1/maven-reporting-api-2.0.1.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/reporting/maven-reporting-api/2.0.1/maven-reporting-api-2.0.1.pom
+902 B   
+        
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/reporting/maven-reporting-api/2.0.1/maven-reporting-api-2.0.1.pom (902 B at 3.3 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/reporting/maven-reporting/2.0.1/maven-reporting-2.0.1.pom
+        
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/reporting/maven-reporting/2.0.1/maven-reporting-2.0.1.pom
+546 B   
+        
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/reporting/maven-reporting/2.0.1/maven-reporting-2.0.1.pom (546 B at 1.9 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-6/doxia-sink-api-1.0-alpha-6.pom
+        
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-6/doxia-sink-api-1.0-alpha-6.pom
+386 B   
+        
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-6/doxia-sink-api-1.0-alpha-6.pom (386 B at 1.4 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/doxia/doxia/1.0-alpha-6/doxia-1.0-alpha-6.pom
+        
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/doxia/doxia/1.0-alpha-6/doxia-1.0-alpha-6.pom
+2 KB    
+4 KB   
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/doxia/doxia/1.0-alpha-6/doxia-1.0-alpha-6.pom (4 KB at 15.0 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/maven-profile/2.0.1/maven-profile-2.0.1.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-profile/2.0.1/maven-profile-2.0.1.pom
+2 KB   
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-profile/2.0.1/maven-profile-2.0.1.pom (2 KB at 5.4 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/maven-artifact/2.0.1/maven-artifact-2.0.1.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-artifact/2.0.1/maven-artifact-2.0.1.pom
+765 B   
+        
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-artifact/2.0.1/maven-artifact-2.0.1.pom (765 B at 2.9 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/maven-repository-metadata/2.0.1/maven-repository-metadata-2.0.1.pom
+        
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-repository-metadata/2.0.1/maven-repository-metadata-2.0.1.pom
+300 B   
+2 KB    
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-repository-metadata/2.0.1/maven-repository-metadata-2.0.1.pom (2 KB at 0.9 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/maven-error-diagnostics/2.0.1/maven-error-diagnostics-2.0.1.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-error-diagnostics/2.0.1/maven-error-diagnostics-2.0.1.pom
+854 B   
+        
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-error-diagnostics/2.0.1/maven-error-diagnostics-2.0.1.pom (854 B at 2.5 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/maven-project/2.0.1/maven-project-2.0.1.pom
+        
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-project/2.0.1/maven-project-2.0.1.pom
+2 KB    
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-project/2.0.1/maven-project-2.0.1.pom (2 KB at 5.0 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/maven-artifact-manager/2.0.1/maven-artifact-manager-2.0.1.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-artifact-manager/2.0.1/maven-artifact-manager-2.0.1.pom
+2 KB   
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-artifact-manager/2.0.1/maven-artifact-manager-2.0.1.pom (2 KB at 4.2 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/maven-plugin-registry/2.0.1/maven-plugin-registry-2.0.1.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-plugin-registry/2.0.1/maven-plugin-registry-2.0.1.pom
+2 KB   
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-plugin-registry/2.0.1/maven-plugin-registry-2.0.1.pom (2 KB at 4.4 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/maven-plugin-descriptor/2.0.1/maven-plugin-descriptor-2.0.1.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-plugin-descriptor/2.0.1/maven-plugin-descriptor-2.0.1.pom
+306 B   
+2 KB    
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-plugin-descriptor/2.0.1/maven-plugin-descriptor-2.0.1.pom (2 KB at 5.5 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/maven-monitor/2.0.1/maven-monitor-2.0.1.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-monitor/2.0.1/maven-monitor-2.0.1.pom
+442 B   
+        
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-monitor/2.0.1/maven-monitor-2.0.1.pom (442 B at 1.7 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/shared/maven-common-artifact-filters/1.4/maven-common-artifact-filters-1.4.pom
+        
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/shared/maven-common-artifact-filters/1.4/maven-common-artifact-filters-1.4.pom
+822 B   
+3 KB    
+4 KB   
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/shared/maven-common-artifact-filters/1.4/maven-common-artifact-filters-1.4.pom (4 KB at 14.9 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/codehaus/plexus/plexus-utils/1.4.6/plexus-utils-1.4.6.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/plexus/plexus-utils/1.4.6/plexus-utils-1.4.6.pom
+2 KB   
+3 KB   
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/plexus/plexus-utils/1.4.6/plexus-utils-1.4.6.pom (3 KB at 8.9 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/codehaus/plexus/plexus-utils/2.1/plexus-utils-2.1.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/plexus/plexus-utils/2.1/plexus-utils-2.1.pom
+835 B   
+2 KB    
+4 KB   
+4 KB   
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/plexus/plexus-utils/2.1/plexus-utils-2.1.pom (4 KB at 15.8 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/codehaus/mojo/animal-sniffer/1.13/animal-sniffer-1.13.jar
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/ow2/asm/asm-all/4.0/asm-all-4.0.jar
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/codehaus/mojo/java-boot-classpath-detector/1.13/java-boot-classpath-detector-1.13.jar
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/reporting/maven-reporting-api/2.0.1/maven-reporting-api-2.0.1.jar
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-6/doxia-sink-api-1.0-alpha-6.jar
+       
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/apache/maven/shared/maven-common-artifact-filters/1.4/maven-common-artifact-filters-1.4.jar
+       
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar
+       
+       
+       
+       
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/mojo/animal-sniffer/1.13/animal-sniffer-1.13.jar
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/ow2/asm/asm-all/4.0/asm-all-4.0.jar
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/mojo/java-boot-classpath-detector/1.13/java-boot-classpath-detector-1.13.jar
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/reporting/maven-reporting-api/2.0.1/maven-reporting-api-2.0.1.jar
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-6/doxia-sink-api-1.0-alpha-6.jar
+4/5 KB   
+5/5 KB   
+5/5 KB   4/6 KB   
+5/5 KB   6/6 KB   
+5/5 KB   1/4 KB   6/6 KB   
+5/5 KB   4/4 KB   6/6 KB   
+5/5 KB   4/4 KB   6/6 KB   4/32 KB   
+5/5 KB   4/4 KB   6/6 KB   8/32 KB   
+5/5 KB   4/4 KB   6/6 KB   12/32 KB   
+5/5 KB   4/4 KB   6/6 KB   16/32 KB   
+5/5 KB   4/4 KB   6/6 KB   20/32 KB   
+5/5 KB   4/4 KB   6/6 KB   24/32 KB   
+5/5 KB   4/4 KB   6/6 KB   2/208 KB   24/32 KB   
+5/5 KB   4/4 KB   6/6 KB   6/208 KB   24/32 KB   
+5/5 KB   4/4 KB   6/6 KB   10/208 KB   24/32 KB   
+5/5 KB   4/4 KB   6/6 KB   10/208 KB   28/32 KB   
+                                                  
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/mojo/java-boot-classpath-detector/1.13/java-boot-classpath-detector-1.13.jar (5 KB at 7.1 KB/sec)
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/shared/maven-common-artifact-filters/1.4/maven-common-artifact-filters-1.4.jar
+4/4 KB   6/6 KB   14/208 KB   28/32 KB            
+4/4 KB   6/6 KB   18/208 KB   28/32 KB   
+4/4 KB   6/6 KB   22/208 KB   28/32 KB   
+4/4 KB   6/6 KB   26/208 KB   28/32 KB   
+4/4 KB   6/6 KB   26/208 KB   32/32 KB   
+4/4 KB   6/6 KB   26/208 KB   32/32 KB   
+4/4 KB   6/6 KB   30/208 KB   32/32 KB   
+4/4 KB   6/6 KB   32/208 KB   32/32 KB   
+                                         
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-6/doxia-sink-api-1.0-alpha-6.jar (4 KB at 5.7 KB/sec)
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar
+                                         
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/reporting/maven-reporting-api/2.0.1/maven-reporting-api-2.0.1.jar (6 KB at 7.7 KB/sec)
+36/208 KB   32/32 KB                     
+40/208 KB   32/32 KB   
+44/208 KB   32/32 KB   
+48/208 KB   32/32 KB   
+52/208 KB   32/32 KB   
+56/208 KB   32/32 KB   
+60/208 KB   32/32 KB   
+64/208 KB   32/32 KB   
+                       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/mojo/animal-sniffer/1.13/animal-sniffer-1.13.jar (32 KB at 39.1 KB/sec)
+68/208 KB              
+68/208 KB   
+72/208 KB   
+75/208 KB   
+79/208 KB   
+83/208 KB   
+87/208 KB   
+91/208 KB   
+95/208 KB   
+99/208 KB   
+103/208 KB   
+107/208 KB   
+111/208 KB   
+112/208 KB   
+116/208 KB   
+120/208 KB   
+124/208 KB   
+128/208 KB   
+132/208 KB   
+136/208 KB   
+140/208 KB   
+144/208 KB   
+148/208 KB   
+152/208 KB   
+156/208 KB   
+160/208 KB   
+164/208 KB   
+168/208 KB   
+172/208 KB   
+176/208 KB   
+180/208 KB   
+184/208 KB   
+188/208 KB   
+192/208 KB   
+196/208 KB   
+200/208 KB   
+204/208 KB   
+208/208 KB   
+208/208 KB   
+             
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/ow2/asm/asm-all/4.0/asm-all-4.0.jar (208 KB at 183.6 KB/sec)
+4/31 KB      
+5/31 KB   
+9/31 KB   
+13/31 KB   
+17/31 KB   
+21/31 KB   
+25/31 KB   
+29/31 KB   
+31/31 KB   
+4/245 KB   31/31 KB   
+8/245 KB   31/31 KB   
+12/245 KB   31/31 KB   
+16/245 KB   31/31 KB   
+20/245 KB   31/31 KB   
+24/245 KB   31/31 KB   
+28/245 KB   31/31 KB   
+32/245 KB   31/31 KB   
+32/245 KB   31/31 KB   
+36/245 KB   31/31 KB   
+40/245 KB   31/31 KB   
+44/245 KB   31/31 KB   
+48/245 KB   31/31 KB   
+52/245 KB   31/31 KB   
+56/245 KB   31/31 KB   
+60/245 KB   31/31 KB   
+64/245 KB   31/31 KB   
+                       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/shared/maven-common-artifact-filters/1.4/maven-common-artifact-filters-1.4.jar (31 KB at 43.4 KB/sec)
+68/245 KB              
+72/245 KB   
+76/245 KB   
+80/245 KB   
+84/245 KB   
+88/245 KB   
+92/245 KB   
+96/245 KB   
+100/245 KB   
+104/245 KB   
+108/245 KB   
+112/245 KB   
+116/245 KB   
+120/245 KB   
+124/245 KB   
+128/245 KB   
+131/245 KB   
+135/245 KB   
+139/245 KB   
+143/245 KB   
+147/245 KB   
+151/245 KB   
+155/245 KB   
+159/245 KB   
+163/245 KB   
+167/245 KB   
+171/245 KB   
+175/245 KB   
+179/245 KB   
+183/245 KB   
+187/245 KB   
+191/245 KB   
+195/245 KB   
+199/245 KB   
+203/245 KB   
+207/245 KB   
+211/245 KB   
+215/245 KB   
+219/245 KB   
+223/245 KB   
+224/245 KB   
+228/245 KB   
+232/245 KB   
+236/245 KB   
+240/245 KB   
+244/245 KB   
+245/245 KB   
+             
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar (245 KB at 239.2 KB/sec)
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/codehaus/mojo/signature/java16/1.1/java16-1.1.signature
+             
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/signature/java16/1.1/java16-1.1.signature
+4/584 KB     
+8/584 KB   
+8/584 KB   
+12/584 KB   
+16/584 KB   
+16/584 KB   
+20/584 KB   
+24/584 KB   
+24/584 KB   
+28/584 KB   
+31/584 KB   
+32/584 KB   
+36/584 KB   
+39/584 KB   
+40/584 KB   
+44/584 KB   
+47/584 KB   
+48/584 KB   
+52/584 KB   
+55/584 KB   
+56/584 KB   
+60/584 KB   
+63/584 KB   
+64/584 KB   
+68/584 KB   
+70/584 KB   
+72/584 KB   
+76/584 KB   
+78/584 KB   
+80/584 KB   
+84/584 KB   
+86/584 KB   
+88/584 KB   
+92/584 KB   
+94/584 KB   
+96/584 KB   
+100/584 KB   
+102/584 KB   
+104/584 KB   
+108/584 KB   
+110/584 KB   
+112/584 KB   
+116/584 KB   
+117/584 KB   
+120/584 KB   
+124/584 KB   
+125/584 KB   
+128/584 KB   
+132/584 KB   
+133/584 KB   
+136/584 KB   
+140/584 KB   
+141/584 KB   
+144/584 KB   
+148/584 KB   
+149/584 KB   
+152/584 KB   
+156/584 KB   
+160/584 KB   
+160/584 KB   
+164/584 KB   
+168/584 KB   
+168/584 KB   
+172/584 KB   
+176/584 KB   
+176/584 KB   
+180/584 KB   
+184/584 KB   
+184/584 KB   
+188/584 KB   
+192/584 KB   
+192/584 KB   
+195/584 KB   
+199/584 KB   
+200/584 KB   
+203/584 KB   
+207/584 KB   
+208/584 KB   
+211/584 KB   
+215/584 KB   
+216/584 KB   
+219/584 KB   
+223/584 KB   
+224/584 KB   
+227/584 KB   
+231/584 KB   
+232/584 KB   
+235/584 KB   
+239/584 KB   
+240/584 KB   
+242/584 KB   
+246/584 KB   
+248/584 KB   
+250/584 KB   
+254/584 KB   
+256/584 KB   
+258/584 KB   
+262/584 KB   
+264/584 KB   
+266/584 KB   
+270/584 KB   
+272/584 KB   
+274/584 KB   
+278/584 KB   
+280/584 KB   
+281/584 KB   
+285/584 KB   
+288/584 KB   
+289/584 KB   
+293/584 KB   
+296/584 KB   
+297/584 KB   
+301/584 KB   
+304/584 KB   
+305/584 KB   
+309/584 KB   
+312/584 KB   
+313/584 KB   
+317/584 KB   
+320/584 KB   
+320/584 KB   
+324/584 KB   
+328/584 KB   
+328/584 KB   
+332/584 KB   
+336/584 KB   
+336/584 KB   
+340/584 KB   
+344/584 KB   
+344/584 KB   
+348/584 KB   
+352/584 KB   
+352/584 KB   
+356/584 KB   
+360/584 KB   
+360/584 KB   
+364/584 KB   
+367/584 KB   
+368/584 KB   
+372/584 KB   
+375/584 KB   
+376/584 KB   
+380/584 KB   
+383/584 KB   
+384/584 KB   
+388/584 KB   
+391/584 KB   
+392/584 KB   
+396/584 KB   
+399/584 KB   
+400/584 KB   
+404/584 KB   
+406/584 KB   
+408/584 KB   
+412/584 KB   
+414/584 KB   
+416/584 KB   
+420/584 KB   
+422/584 KB   
+424/584 KB   
+428/584 KB   
+430/584 KB   
+432/584 KB   
+436/584 KB   
+438/584 KB   
+440/584 KB   
+444/584 KB   
+445/584 KB   
+448/584 KB   
+452/584 KB   
+453/584 KB   
+456/584 KB   
+460/584 KB   
+461/584 KB   
+464/584 KB   
+468/584 KB   
+469/584 KB   
+472/584 KB   
+476/584 KB   
+477/584 KB   
+480/584 KB   
+484/584 KB   
+485/584 KB   
+488/584 KB   
+492/584 KB   
+496/584 KB   
+496/584 KB   
+500/584 KB   
+504/584 KB   
+504/584 KB   
+508/584 KB   
+512/584 KB   
+512/584 KB   
+516/584 KB   
+520/584 KB   
+520/584 KB   
+524/584 KB   
+528/584 KB   
+528/584 KB   
+531/584 KB   
+535/584 KB   
+536/584 KB   
+539/584 KB   
+543/584 KB   
+544/584 KB   
+547/584 KB   
+551/584 KB   
+552/584 KB   
+555/584 KB   
+559/584 KB   
+560/584 KB   
+563/584 KB   
+567/584 KB   
+568/584 KB   
+570/584 KB   
+574/584 KB   
+576/584 KB   
+578/584 KB   
+582/584 KB   
+584/584 KB   
+             
+Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/signature/java16/1.1/java16-1.1.signature (584 KB at 635.1 KB/sec)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ bukkit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/Bukkit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ bukkit ---
+[INFO] Changes detected - recompiling the module!
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ bukkit ---
+[INFO] Surefire report directory: /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/Bukkit/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.bukkit.ArtTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec
+Running org.bukkit.BukkitMirrorTest
+Tests run: 475, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.307 sec
+Running org.bukkit.ChatColorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.bukkit.ChatPaginatorTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.bukkit.CoalTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.ColorTest
+Tests run: 52, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec
+Running org.bukkit.configuration.file.YamlConfigurationTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec
+Running org.bukkit.configuration.MemoryConfigurationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.bukkit.configuration.MemorySectionTest
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec
+Running org.bukkit.conversations.ConversationContextTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.conversations.ConversationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.bukkit.conversations.ValidatingPromptTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running org.bukkit.CropStateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.DifficultyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.DyeColorTest
+Tests run: 80, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+Running org.bukkit.EffectTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.EntityEffectTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.event.PlayerChatTabCompleteEventTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec
+Running org.bukkit.GameModeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.GrassSpeciesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.InstrumentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.LocationTest
+Tests run: 60, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+Running org.bukkit.MaterialTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec
+Running org.bukkit.metadata.FixedMetadataValueTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.bukkit.metadata.LazyMetadataValueTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.bukkit.metadata.MetadataConversionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.bukkit.metadata.MetadataStoreTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.bukkit.metadata.MetadataValueAdapterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.bukkit.NoteTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running org.bukkit.plugin.messaging.StandardMessengerTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running org.bukkit.plugin.PluginManagerTest
+Jan 19, 2015 3:41:18 PM org.bukkit.Bukkit setServer
+INFO: This server is running TestServer version Version_null (Implementing API version BukkitVersion_null)
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.298 sec
+Running org.bukkit.plugin.TimedRegisteredListenerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.potion.PotionTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.bukkit.TreeSpeciesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.util.io.BukkitObjectStreamTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.034 sec
+Running org.bukkit.util.StringUtilStartsWithTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.bukkit.util.StringUtilTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.bukkit.WorldTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+
+Results :
+
+Tests run: 906, Failures: 0, Errors: 0, Skipped: 3
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ bukkit ---
+[INFO] Building jar: /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/Bukkit/target/bukkit-1.8-R0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:2.3:shade (default) @ bukkit ---
+[INFO] Including commons-lang:commons-lang:jar:2.6 in the shaded jar.
+[INFO] Including com.googlecode.json-simple:json-simple:jar:1.1.1 in the shaded jar.
+[INFO] Including com.google.guava:guava:jar:17.0 in the shaded jar.
+[INFO] Including org.avaje:ebean:jar:2.8.1 in the shaded jar.
+[INFO] Including javax.persistence:persistence-api:jar:1.0 in the shaded jar.
+[INFO] Including org.yaml:snakeyaml:jar:1.14 in the shaded jar.
+[INFO] Attaching shaded artifact.
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ bukkit ---
+[INFO] Installing /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/Bukkit/target/bukkit-1.8-R0.1-SNAPSHOT.jar to /Users/rzingle/.m2/repository/org/bukkit/bukkit/1.8-R0.1-SNAPSHOT/bukkit-1.8-R0.1-SNAPSHOT.jar
+[INFO] Installing /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/Bukkit/pom.xml to /Users/rzingle/.m2/repository/org/bukkit/bukkit/1.8-R0.1-SNAPSHOT/bukkit-1.8-R0.1-SNAPSHOT.pom
+[INFO] Installing /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/Bukkit/target/bukkit-1.8-R0.1-SNAPSHOT-shaded.jar to /Users/rzingle/.m2/repository/org/bukkit/bukkit/1.8-R0.1-SNAPSHOT/bukkit-1.8-R0.1-SNAPSHOT-shaded.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 34.048 s
+[INFO] Finished at: 2015-01-19T15:41:20-05:00
+[INFO] Final Memory: 33M/256M
+[INFO] ------------------------------------------------------------------------
+Compiling CraftBukkit
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building CraftBukkit 1.8-R0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: http://maven.repository.redhat.com/techpreview/all/net/md-5/specialsource-maven-plugin/1.2.1/specialsource-maven-plugin-1.2.1.pom
+
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/specialsource-maven-plugin/1.2.1/specialsource-maven-plugin-1.2.1.pom
+2 KB   
+4 KB   
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/specialsource-maven-plugin/1.2.1/specialsource-maven-plugin-1.2.1.pom (4 KB at 4.2 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/net/md-5/specialsource-maven-plugin/1.2.1/specialsource-maven-plugin-1.2.1.jar
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/specialsource-maven-plugin/1.2.1/specialsource-maven-plugin-1.2.1.jar
+1/19 KB   
+5/19 KB   
+9/19 KB   
+13/19 KB   
+17/19 KB   
+19/19 KB   
+           
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/specialsource-maven-plugin/1.2.1/specialsource-maven-plugin-1.2.1.jar (19 KB at 26.6 KB/sec)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ craftbukkit ---
+[INFO] Deleting /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/CraftBukkit/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ craftbukkit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ craftbukkit ---
+[INFO] Changes detected - recompiling the module!
+[INFO] 
+[INFO] --- gitdescribe-maven-plugin:2.0:gitdescribe (default) @ craftbukkit ---
+[INFO] [git, describe, --always]
+[INFO] Setting Git Describe: git-Bukkit-17962f6
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.13:check (default) @ craftbukkit ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ craftbukkit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/CraftBukkit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ craftbukkit ---
+[INFO] Changes detected - recompiling the module!
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ craftbukkit ---
+[INFO] Surefire report directory: /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/CraftBukkit/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.bukkit.ArtTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.bukkit.ArtTest
+Running org.bukkit.craftbukkit.inventory.FactoryItemMaterialTest
+Jan 19, 2015 3:41:42 PM org.bukkit.Bukkit setServer
+INFO: This server is running org.bukkit.support.DummyServer version null (Implementing API version 1.8-R0.1-SNAPSHOT)
+Tests run: 1352, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.088 sec - in org.bukkit.craftbukkit.inventory.FactoryItemMaterialTest
+Running org.bukkit.craftbukkit.inventory.ItemFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.551 sec - in org.bukkit.craftbukkit.inventory.ItemFactoryTest
+Running org.bukkit.craftbukkit.inventory.ItemMetaImplementationOverrideTest
+Tests run: 99, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.bukkit.craftbukkit.inventory.ItemMetaImplementationOverrideTest
+Running org.bukkit.craftbukkit.inventory.ItemMetaTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.bukkit.craftbukkit.inventory.ItemMetaTest
+Running org.bukkit.craftbukkit.inventory.NMSCraftItemStackTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.bukkit.craftbukkit.inventory.NMSCraftItemStackTest
+Running org.bukkit.DyeColorsTest
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.bukkit.DyeColorsTest
+Running org.bukkit.MaterialTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.bukkit.MaterialTest
+Running org.bukkit.PerMaterialTest
+Tests run: 3380, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.583 sec - in org.bukkit.PerMaterialTest
+Running org.bukkit.potion.PotionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.bukkit.potion.PotionTest
+Running org.bukkit.SoundTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.bukkit.SoundTest
+Running org.bukkit.StatisticsAndAchievementsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.bukkit.StatisticsAndAchievementsTest
+Running org.bukkit.WorldTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.bukkit.WorldTypeTest
+
+Results :
+
+
+
+
+Tests run: 4887, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:jar (default-jar) @ craftbukkit ---
+[INFO] Building jar: /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/CraftBukkit/target/craftbukkit-1.8-R0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:2.3:shade (default) @ craftbukkit ---
+[INFO] Including org.bukkit:bukkit:jar:1.8-R0.1-SNAPSHOT in the shaded jar.
+[INFO] Including commons-lang:commons-lang:jar:2.6 in the shaded jar.
+[INFO] Including com.googlecode.json-simple:json-simple:jar:1.1.1 in the shaded jar.
+[INFO] Including com.google.guava:guava:jar:17.0 in the shaded jar.
+[INFO] Including org.avaje:ebean:jar:2.8.1 in the shaded jar.
+[INFO] Including javax.persistence:persistence-api:jar:1.0 in the shaded jar.
+[INFO] Including org.yaml:snakeyaml:jar:1.14 in the shaded jar.
+[INFO] Including org.spigotmc:minecraft-server:jar:1.8-SNAPSHOT in the shaded jar.
+[INFO] Including net.sf.jopt-simple:jopt-simple:jar:3.2 in the shaded jar.
+[INFO] Including jline:jline:jar:2.12 in the shaded jar.
+[INFO] Including org.xerial:sqlite-jdbc:jar:3.7.2 in the shaded jar.
+[INFO] Including mysql:mysql-connector-java:jar:5.1.14 in the shaded jar.
+[INFO] Including com.google.code.gson:gson:jar:2.2.4 in the shaded jar.
+[WARNING] minecraft-server-1.8-SNAPSHOT.jar, craftbukkit-1.8-R0.1-SNAPSHOT.jar define 291 overlappping classes: 
+[WARNING]   - net.minecraft.server.PathfinderGoalPanic
+[WARNING]   - net.minecraft.server.BlockVine
+[WARNING]   - net.minecraft.server.ControllerLook
+[WARNING]   - net.minecraft.server.ThreadCommandReader
+[WARNING]   - net.minecraft.server.EntityEnderDragon
+[WARNING]   - org.apache.logging.log4j.core.appender.ConsoleAppender$SystemErrStream
+[WARNING]   - net.minecraft.server.PathfinderGoalEndermanPlaceBlock
+[WARNING]   - net.minecraft.server.ItemBoat
+[WARNING]   - net.minecraft.server.DispenseBehaviorTNT
+[WARNING]   - net.minecraft.server.RecipesFurnace
+[WARNING]   - 281 more...
+[WARNING] gson-2.2.4.jar, minecraft-server-1.8-SNAPSHOT.jar define 153 overlappping classes: 
+[WARNING]   - com.google.gson.internal.bind.TypeAdapters$27
+[WARNING]   - com.google.gson.internal.bind.TypeAdapters$10
+[WARNING]   - com.google.gson.TreeTypeAdapter
+[WARNING]   - com.google.gson.internal.bind.TypeAdapters$15
+[WARNING]   - com.google.gson.JsonIOException
+[WARNING]   - com.google.gson.annotations.Until
+[WARNING]   - com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper
+[WARNING]   - com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter
+[WARNING]   - com.google.gson.internal.bind.TypeAdapters$14
+[WARNING]   - com.google.gson.internal.ConstructorConstructor$1
+[WARNING]   - 143 more...
+[WARNING] minecraft-server-1.8-SNAPSHOT.jar, guava-17.0.jar define 1686 overlappping classes: 
+[WARNING]   - com.google.common.collect.DenseImmutableTable$ImmutableArrayMap$1
+[WARNING]   - com.google.common.collect.StandardTable$TableSet
+[WARNING]   - com.google.common.collect.Iterators$12
+[WARNING]   - com.google.common.cache.CacheLoader$1$1
+[WARNING]   - com.google.common.collect.ImmutableMultiset$1
+[WARNING]   - com.google.common.collect.Maps$TransformedEntriesSortedMap
+[WARNING]   - com.google.common.collect.Multimaps$Keys$KeysEntrySet
+[WARNING]   - com.google.common.collect.Maps$BiMapConverter
+[WARNING]   - com.google.common.escape.Platform$1
+[WARNING]   - com.google.common.collect.Sets$DescendingSet
+[WARNING]   - 1676 more...
+[WARNING] maven-shade-plugin has detected that some .class files
+[WARNING] are present in two or more JARs. When this happens, only
+[WARNING] one single version of the class is copied in the uberjar.
+[WARNING] Usually this is not harmful and you can skeep these
+[WARNING] warnings, otherwise try to manually exclude artifacts
+[WARNING] based on mvn dependency:tree -Ddetail=true and the above
+[WARNING] output
+[WARNING] See http://docs.codehaus.org/display/MAVENUSER/Shade+Plugin
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/CraftBukkit/target/craftbukkit-1.8-R0.1-SNAPSHOT.jar with /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/CraftBukkit/target/craftbukkit-1.8-R0.1-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/CraftBukkit/dependency-reduced-pom.xml
+[INFO] Dependency-reduced POM written at: /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/CraftBukkit/dependency-reduced-pom.xml
+[INFO] Dependency-reduced POM written at: /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/CraftBukkit/dependency-reduced-pom.xml
+[INFO] 
+[INFO] --- specialsource-maven-plugin:1.2.1:remap (default) @ craftbukkit ---
+Downloading: http://maven.repository.redhat.com/techpreview/all/net/md-5/SpecialSource/1.7.2/SpecialSource-1.7.2.pom
+           
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/SpecialSource/1.7.2/SpecialSource-1.7.2.pom
+2 KB       
+4 KB   
+5 KB   
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/SpecialSource/1.7.2/SpecialSource-1.7.2.pom (5 KB at 16.4 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/ow2/asm/asm-debug-all/5.0.3/asm-debug-all-5.0.3.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/ow2/asm/asm-debug-all/5.0.3/asm-debug-all-5.0.3.pom
+931 B   
+2 KB    
+2 KB   
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/ow2/asm/asm-debug-all/5.0.3/asm-debug-all-5.0.3.pom (2 KB at 7.4 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/ow2/asm/asm-parent/5.0.3/asm-parent-5.0.3.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/ow2/asm/asm-parent/5.0.3/asm-parent-5.0.3.pom
+925 B   
+2 KB    
+4 KB   
+6 KB   
+       
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/ow2/asm/asm-parent/5.0.3/asm-parent-5.0.3.pom (6 KB at 21.8 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/net/sf/jopt-simple/jopt-simple/4.7/jopt-simple-4.7.pom
+       
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/net/sf/jopt-simple/jopt-simple/4.7/jopt-simple-4.7.pom
+2 KB   
+4 KB   
+8 KB   
+11 KB   
+14 KB   
+        
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/net/sf/jopt-simple/jopt-simple/4.7/jopt-simple-4.7.pom (14 KB at 45.0 KB/sec)
+Downloading: http://maven.repository.redhat.com/techpreview/all/net/md-5/SpecialSource/1.7.2/SpecialSource-1.7.2.jar
+Downloading: http://maven.repository.redhat.com/techpreview/all/org/ow2/asm/asm-debug-all/5.0.3/asm-debug-all-5.0.3.jar
+Downloading: http://maven.repository.redhat.com/techpreview/all/net/sf/jopt-simple/jopt-simple/4.7/jopt-simple-4.7.jar
+Downloading: http://maven.repository.redhat.com/techpreview/all/com/google/guava/guava/18.0/guava-18.0.jar
+        
+        
+        
+        
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/SpecialSource/1.7.2/SpecialSource-1.7.2.jar
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/org/ow2/asm/asm-debug-all/5.0.3/asm-debug-all-5.0.3.jar
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/net/sf/jopt-simple/jopt-simple/4.7/jopt-simple-4.7.jar
+Downloading: https://hub.spigotmc.org/nexus/content/groups/public/com/google/guava/guava/18.0/guava-18.0.jar
+2/370 KB   
+6/370 KB   
+10/370 KB   
+14/370 KB   
+16/370 KB   
+20/370 KB   
+24/370 KB   
+28/370 KB   
+32/370 KB   
+36/370 KB   
+40/370 KB   
+44/370 KB   
+48/370 KB   
+52/370 KB   
+56/370 KB   
+60/370 KB   
+62/370 KB   
+64/370 KB   
+4/61 KB   64/370 KB   
+4/61 KB   64/370 KB   1/2204 KB   
+4/61 KB   64/370 KB   5/2204 KB   
+4/61 KB   64/370 KB   9/2204 KB   
+4/61 KB   64/370 KB   13/2204 KB   
+8/61 KB   64/370 KB   13/2204 KB   
+12/61 KB   64/370 KB   13/2204 KB   
+16/61 KB   64/370 KB   13/2204 KB   
+16/61 KB   2/73 KB   64/370 KB   13/2204 KB   
+20/61 KB   2/73 KB   64/370 KB   13/2204 KB   
+24/61 KB   2/73 KB   64/370 KB   13/2204 KB   
+24/61 KB   2/73 KB   64/370 KB   17/2204 KB   
+24/61 KB   2/73 KB   64/370 KB   21/2204 KB   
+24/61 KB   2/73 KB   64/370 KB   25/2204 KB   
+24/61 KB   6/73 KB   64/370 KB   25/2204 KB   
+28/61 KB   6/73 KB   64/370 KB   25/2204 KB   
+28/61 KB   6/73 KB   64/370 KB   29/2204 KB   
+32/61 KB   6/73 KB   64/370 KB   29/2204 KB   
+32/61 KB   6/73 KB   64/370 KB   32/2204 KB   
+32/61 KB   6/73 KB   64/370 KB   32/2204 KB   
+32/61 KB   6/73 KB   68/370 KB   32/2204 KB   
+32/61 KB   6/73 KB   72/370 KB   32/2204 KB   
+32/61 KB   6/73 KB   76/370 KB   32/2204 KB   
+32/61 KB   6/73 KB   80/370 KB   32/2204 KB   
+32/61 KB   10/73 KB   80/370 KB   32/2204 KB   
+36/61 KB   10/73 KB   80/370 KB   32/2204 KB   
+40/61 KB   10/73 KB   80/370 KB   32/2204 KB   
+40/61 KB   10/73 KB   84/370 KB   32/2204 KB   
+40/61 KB   10/73 KB   88/370 KB   32/2204 KB   
+40/61 KB   10/73 KB   92/370 KB   32/2204 KB   
+40/61 KB   10/73 KB   96/370 KB   32/2204 KB   
+40/61 KB   10/73 KB   96/370 KB   36/2204 KB   
+40/61 KB   10/73 KB   96/370 KB   40/2204 KB   
+40/61 KB   10/73 KB   96/370 KB   44/2204 KB   
+40/61 KB   14/73 KB   96/370 KB   44/2204 KB   
+44/61 KB   14/73 KB   96/370 KB   44/2204 KB   
+48/61 KB   14/73 KB   96/370 KB   44/2204 KB   
+52/61 KB   14/73 KB   96/370 KB   44/2204 KB   
+52/61 KB   14/73 KB   96/370 KB   48/2204 KB   
+52/61 KB   18/73 KB   96/370 KB   48/2204 KB   
+52/61 KB   18/73 KB   96/370 KB   52/2204 KB   
+52/61 KB   18/73 KB   96/370 KB   56/2204 KB   
+52/61 KB   18/73 KB   96/370 KB   60/2204 KB   
+56/61 KB   18/73 KB   96/370 KB   60/2204 KB   
+60/61 KB   18/73 KB   96/370 KB   60/2204 KB   
+61/61 KB   18/73 KB   96/370 KB   60/2204 KB   
+61/61 KB   18/73 KB   100/370 KB   60/2204 KB   
+61/61 KB   18/73 KB   104/370 KB   60/2204 KB   
+61/61 KB   18/73 KB   108/370 KB   60/2204 KB   
+61/61 KB   18/73 KB   112/370 KB   60/2204 KB   
+61/61 KB   22/73 KB   112/370 KB   60/2204 KB   
+61/61 KB   22/73 KB   112/370 KB   64/2204 KB   
+61/61 KB   26/73 KB   112/370 KB   64/2204 KB   
+61/61 KB   26/73 KB   116/370 KB   64/2204 KB   
+61/61 KB   26/73 KB   120/370 KB   64/2204 KB   
+61/61 KB   26/73 KB   124/370 KB   64/2204 KB   
+61/61 KB   26/73 KB   128/370 KB   64/2204 KB   
+61/61 KB   30/73 KB   128/370 KB   64/2204 KB   
+61/61 KB   30/73 KB   128/370 KB   68/2204 KB   
+61/61 KB   30/73 KB   128/370 KB   72/2204 KB   
+61/61 KB   30/73 KB   128/370 KB   76/2204 KB   
+61/61 KB   32/73 KB   128/370 KB   76/2204 KB   
+61/61 KB   36/73 KB   128/370 KB   76/2204 KB   
+61/61 KB   36/73 KB   128/370 KB   80/2204 KB   
+61/61 KB   36/73 KB   128/370 KB   84/2204 KB   
+61/61 KB   36/73 KB   128/370 KB   88/2204 KB   
+61/61 KB   36/73 KB   128/370 KB   92/2204 KB   
+61/61 KB   36/73 KB   132/370 KB   92/2204 KB   
+61/61 KB   36/73 KB   136/370 KB   92/2204 KB   
+61/61 KB   36/73 KB   140/370 KB   92/2204 KB   
+61/61 KB   36/73 KB   144/370 KB   92/2204 KB   
+61/61 KB   36/73 KB   148/370 KB   92/2204 KB   
+61/61 KB   40/73 KB   148/370 KB   92/2204 KB   
+61/61 KB   40/73 KB   148/370 KB   96/2204 KB   
+61/61 KB   40/73 KB   148/370 KB   100/2204 KB   
+61/61 KB   40/73 KB   148/370 KB   104/2204 KB   
+61/61 KB   40/73 KB   148/370 KB   108/2204 KB   
+61/61 KB   40/73 KB   148/370 KB   112/2204 KB   
+61/61 KB   40/73 KB   152/370 KB   112/2204 KB   
+61/61 KB   40/73 KB   156/370 KB   112/2204 KB   
+61/61 KB   40/73 KB   160/370 KB   112/2204 KB   
+                                                 
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/net/sf/jopt-simple/jopt-simple/4.7/jopt-simple-4.7.jar (61 KB at 61.1 KB/sec)
+44/73 KB   160/370 KB   112/2204 KB              
+44/73 KB   160/370 KB   115/2204 KB   
+48/73 KB   160/370 KB   115/2204 KB   
+48/73 KB   160/370 KB   119/2204 KB   
+48/73 KB   160/370 KB   123/2204 KB   
+48/73 KB   160/370 KB   127/2204 KB   
+48/73 KB   160/370 KB   128/2204 KB   
+48/73 KB   160/370 KB   131/2204 KB   
+48/73 KB   160/370 KB   135/2204 KB   
+48/73 KB   160/370 KB   139/2204 KB   
+48/73 KB   160/370 KB   143/2204 KB   
+48/73 KB   160/370 KB   144/2204 KB   
+52/73 KB   160/370 KB   144/2204 KB   
+52/73 KB   164/370 KB   144/2204 KB   
+52/73 KB   166/370 KB   144/2204 KB   
+52/73 KB   170/370 KB   144/2204 KB   
+52/73 KB   174/370 KB   144/2204 KB   
+52/73 KB   176/370 KB   144/2204 KB   
+52/73 KB   176/370 KB   148/2204 KB   
+52/73 KB   176/370 KB   152/2204 KB   
+52/73 KB   176/370 KB   156/2204 KB   
+52/73 KB   176/370 KB   160/2204 KB   
+56/73 KB   176/370 KB   160/2204 KB   
+60/73 KB   176/370 KB   160/2204 KB   
+60/73 KB   180/370 KB   160/2204 KB   
+60/73 KB   180/370 KB   160/2204 KB   
+60/73 KB   184/370 KB   160/2204 KB   
+60/73 KB   188/370 KB   160/2204 KB   
+60/73 KB   192/370 KB   160/2204 KB   
+60/73 KB   196/370 KB   160/2204 KB   
+60/73 KB   196/370 KB   164/2204 KB   
+60/73 KB   196/370 KB   168/2204 KB   
+60/73 KB   196/370 KB   172/2204 KB   
+60/73 KB   196/370 KB   176/2204 KB   
+60/73 KB   196/370 KB   180/2204 KB   
+64/73 KB   196/370 KB   180/2204 KB   
+67/73 KB   196/370 KB   180/2204 KB   
+70/73 KB   196/370 KB   180/2204 KB   
+70/73 KB   200/370 KB   180/2204 KB   
+70/73 KB   204/370 KB   180/2204 KB   
+70/73 KB   208/370 KB   180/2204 KB   
+70/73 KB   208/370 KB   184/2204 KB   
+70/73 KB   208/370 KB   188/2204 KB   
+70/73 KB   208/370 KB   192/2204 KB   
+70/73 KB   208/370 KB   196/2204 KB   
+73/73 KB   208/370 KB   196/2204 KB   
+73/73 KB   212/370 KB   196/2204 KB   
+73/73 KB   212/370 KB   196/2204 KB   
+73/73 KB   215/370 KB   196/2204 KB   
+73/73 KB   217/370 KB   196/2204 KB   
+73/73 KB   219/370 KB   196/2204 KB   
+73/73 KB   220/370 KB   196/2204 KB   
+73/73 KB   222/370 KB   196/2204 KB   
+73/73 KB   222/370 KB   200/2204 KB   
+73/73 KB   222/370 KB   204/2204 KB   
+73/73 KB   222/370 KB   208/2204 KB   
+73/73 KB   222/370 KB   212/2204 KB   
+73/73 KB   222/370 KB   216/2204 KB   
+73/73 KB   223/370 KB   216/2204 KB   
+73/73 KB   224/370 KB   216/2204 KB   
+73/73 KB   225/370 KB   216/2204 KB   
+73/73 KB   227/370 KB   216/2204 KB   
+73/73 KB   228/370 KB   216/2204 KB   
+73/73 KB   230/370 KB   216/2204 KB   
+73/73 KB   231/370 KB   216/2204 KB   
+73/73 KB   235/370 KB   216/2204 KB   
+73/73 KB   239/370 KB   216/2204 KB   
+73/73 KB   240/370 KB   216/2204 KB   
+73/73 KB   240/370 KB   220/2204 KB   
+73/73 KB   240/370 KB   224/2204 KB   
+73/73 KB   240/370 KB   228/2204 KB   
+73/73 KB   240/370 KB   232/2204 KB   
+73/73 KB   240/370 KB   236/2204 KB   
+73/73 KB   240/370 KB   240/2204 KB   
+73/73 KB   240/370 KB   244/2204 KB   
+73/73 KB   240/370 KB   248/2204 KB   
+73/73 KB   240/370 KB   252/2204 KB   
+73/73 KB   240/370 KB   256/2204 KB   
+73/73 KB   240/370 KB   259/2204 KB   
+73/73 KB   240/370 KB   263/2204 KB   
+73/73 KB   244/370 KB   263/2204 KB   
+73/73 KB   248/370 KB   263/2204 KB   
+73/73 KB   252/370 KB   263/2204 KB   
+73/73 KB   256/370 KB   263/2204 KB   
+73/73 KB   260/370 KB   263/2204 KB   
+73/73 KB   260/370 KB   267/2204 KB   
+73/73 KB   260/370 KB   271/2204 KB   
+73/73 KB   260/370 KB   275/2204 KB   
+73/73 KB   260/370 KB   279/2204 KB   
+73/73 KB   260/370 KB   283/2204 KB   
+73/73 KB   260/370 KB   287/2204 KB   
+73/73 KB   260/370 KB   291/2204 KB   
+73/73 KB   264/370 KB   291/2204 KB   
+73/73 KB   268/370 KB   291/2204 KB   
+73/73 KB   272/370 KB   295/2204 KB   
+73/73 KB   272/370 KB   295/2204 KB   
+73/73 KB   272/370 KB   299/2204 KB   
+73/73 KB   272/370 KB   303/2204 KB   
+73/73 KB   272/370 KB   307/2204 KB   
+73/73 KB   272/370 KB   311/2204 KB   
+73/73 KB   272/370 KB   315/2204 KB   
+73/73 KB   272/370 KB   319/2204 KB   
+73/73 KB   272/370 KB   323/2204 KB   
+73/73 KB   272/370 KB   327/2204 KB   
+73/73 KB   272/370 KB   331/2204 KB   
+73/73 KB   272/370 KB   335/2204 KB   
+73/73 KB   272/370 KB   339/2204 KB   
+73/73 KB   272/370 KB   343/2204 KB   
+73/73 KB   272/370 KB   347/2204 KB   
+73/73 KB   272/370 KB   351/2204 KB   
+73/73 KB   272/370 KB   355/2204 KB   
+73/73 KB   276/370 KB   355/2204 KB   
+73/73 KB   280/370 KB   355/2204 KB   
+73/73 KB   284/370 KB   355/2204 KB   
+73/73 KB   288/370 KB   355/2204 KB   
+73/73 KB   292/370 KB   355/2204 KB   
+73/73 KB   292/370 KB   359/2204 KB   
+73/73 KB   292/370 KB   363/2204 KB   
+73/73 KB   292/370 KB   367/2204 KB   
+73/73 KB   292/370 KB   371/2204 KB   
+73/73 KB   292/370 KB   375/2204 KB   
+73/73 KB   292/370 KB   379/2204 KB   
+73/73 KB   292/370 KB   383/2204 KB   
+73/73 KB   292/370 KB   387/2204 KB   
+73/73 KB   292/370 KB   391/2204 KB   
+73/73 KB   296/370 KB   391/2204 KB   
+73/73 KB   296/370 KB   395/2204 KB   
+73/73 KB   300/370 KB   395/2204 KB   
+73/73 KB   300/370 KB   399/2204 KB   
+73/73 KB   304/370 KB   399/2204 KB   
+73/73 KB   308/370 KB   399/2204 KB   
+73/73 KB   312/370 KB   399/2204 KB   
+73/73 KB   316/370 KB   399/2204 KB   
+73/73 KB   316/370 KB   403/2204 KB   
+73/73 KB   316/370 KB   407/2204 KB   
+73/73 KB   316/370 KB   411/2204 KB   
+73/73 KB   316/370 KB   415/2204 KB   
+73/73 KB   316/370 KB   419/2204 KB   
+73/73 KB   316/370 KB   423/2204 KB   
+73/73 KB   316/370 KB   427/2204 KB   
+73/73 KB   316/370 KB   431/2204 KB   
+73/73 KB   316/370 KB   432/2204 KB   
+73/73 KB   316/370 KB   436/2204 KB   
+73/73 KB   320/370 KB   436/2204 KB   
+73/73 KB   323/370 KB   436/2204 KB   
+73/73 KB   327/370 KB   436/2204 KB   
+73/73 KB   328/370 KB   436/2204 KB   
+73/73 KB   331/370 KB   436/2204 KB   
+73/73 KB   334/370 KB   436/2204 KB   
+73/73 KB   336/370 KB   436/2204 KB   
+73/73 KB   336/370 KB   440/2204 KB   
+                                      
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/net/md-5/SpecialSource/1.7.2/SpecialSource-1.7.2.jar (73 KB at 53.1 KB/sec)
+336/370 KB   444/2204 KB              
+336/370 KB   448/2204 KB   
+336/370 KB   452/2204 KB   
+336/370 KB   456/2204 KB   
+336/370 KB   460/2204 KB   
+336/370 KB   464/2204 KB   
+336/370 KB   468/2204 KB   
+340/370 KB   468/2204 KB   
+344/370 KB   468/2204 KB   
+348/370 KB   468/2204 KB   
+352/370 KB   468/2204 KB   
+356/370 KB   468/2204 KB   
+360/370 KB   468/2204 KB   
+360/370 KB   472/2204 KB   
+360/370 KB   476/2204 KB   
+360/370 KB   480/2204 KB   
+360/370 KB   484/2204 KB   
+360/370 KB   488/2204 KB   
+360/370 KB   492/2204 KB   
+360/370 KB   496/2204 KB   
+360/370 KB   500/2204 KB   
+364/370 KB   500/2204 KB   
+364/370 KB   504/2204 KB   
+368/370 KB   504/2204 KB   
+370/370 KB   504/2204 KB   
+370/370 KB   508/2204 KB   
+370/370 KB   512/2204 KB   
+370/370 KB   516/2204 KB   
+370/370 KB   520/2204 KB   
+370/370 KB   524/2204 KB   
+370/370 KB   528/2204 KB   
+370/370 KB   532/2204 KB   
+370/370 KB   536/2204 KB   
+370/370 KB   540/2204 KB   
+370/370 KB   544/2204 KB   
+370/370 KB   548/2204 KB   
+370/370 KB   552/2204 KB   
+370/370 KB   556/2204 KB   
+370/370 KB   560/2204 KB   
+370/370 KB   564/2204 KB   
+370/370 KB   568/2204 KB   
+370/370 KB   572/2204 KB   
+370/370 KB   576/2204 KB   
+370/370 KB   580/2204 KB   
+370/370 KB   584/2204 KB   
+370/370 KB   588/2204 KB   
+370/370 KB   592/2204 KB   
+370/370 KB   596/2204 KB   
+370/370 KB   600/2204 KB   
+370/370 KB   604/2204 KB   
+370/370 KB   608/2204 KB   
+370/370 KB   612/2204 KB   
+370/370 KB   616/2204 KB   
+370/370 KB   620/2204 KB   
+370/370 KB   624/2204 KB   
+370/370 KB   628/2204 KB   
+370/370 KB   632/2204 KB   
+370/370 KB   636/2204 KB   
+370/370 KB   640/2204 KB   
+370/370 KB   644/2204 KB   
+370/370 KB   648/2204 KB   
+370/370 KB   652/2204 KB   
+370/370 KB   656/2204 KB   
+370/370 KB   660/2204 KB   
+370/370 KB   664/2204 KB   
+370/370 KB   668/2204 KB   
+370/370 KB   672/2204 KB   
+370/370 KB   676/2204 KB   
+370/370 KB   680/2204 KB   
+370/370 KB   684/2204 KB   
+370/370 KB   688/2204 KB   
+370/370 KB   692/2204 KB   
+370/370 KB   696/2204 KB   
+370/370 KB   700/2204 KB   
+370/370 KB   704/2204 KB   
+370/370 KB   708/2204 KB   
+370/370 KB   712/2204 KB   
+370/370 KB   716/2204 KB   
+370/370 KB   720/2204 KB   
+370/370 KB   724/2204 KB   
+370/370 KB   728/2204 KB   
+370/370 KB   732/2204 KB   
+370/370 KB   736/2204 KB   
+370/370 KB   740/2204 KB   
+370/370 KB   744/2204 KB   
+370/370 KB   748/2204 KB   
+370/370 KB   752/2204 KB   
+370/370 KB   756/2204 KB   
+370/370 KB   760/2204 KB   
+370/370 KB   764/2204 KB   
+370/370 KB   768/2204 KB   
+370/370 KB   772/2204 KB   
+370/370 KB   776/2204 KB   
+370/370 KB   780/2204 KB   
+370/370 KB   784/2204 KB   
+370/370 KB   788/2204 KB   
+370/370 KB   792/2204 KB   
+370/370 KB   796/2204 KB   
+370/370 KB   800/2204 KB   
+370/370 KB   804/2204 KB   
+370/370 KB   808/2204 KB   
+370/370 KB   812/2204 KB   
+370/370 KB   816/2204 KB   
+370/370 KB   820/2204 KB   
+370/370 KB   824/2204 KB   
+370/370 KB   828/2204 KB   
+370/370 KB   832/2204 KB   
+370/370 KB   836/2204 KB   
+370/370 KB   840/2204 KB   
+370/370 KB   844/2204 KB   
+370/370 KB   848/2204 KB   
+370/370 KB   852/2204 KB   
+370/370 KB   856/2204 KB   
+370/370 KB   860/2204 KB   
+370/370 KB   864/2204 KB   
+370/370 KB   868/2204 KB   
+370/370 KB   872/2204 KB   
+370/370 KB   876/2204 KB   
+370/370 KB   880/2204 KB   
+370/370 KB   884/2204 KB   
+370/370 KB   888/2204 KB   
+370/370 KB   892/2204 KB   
+370/370 KB   896/2204 KB   
+370/370 KB   900/2204 KB   
+370/370 KB   904/2204 KB   
+370/370 KB   908/2204 KB   
+370/370 KB   912/2204 KB   
+370/370 KB   916/2204 KB   
+370/370 KB   920/2204 KB   
+370/370 KB   924/2204 KB   
+370/370 KB   928/2204 KB   
+370/370 KB   932/2204 KB   
+370/370 KB   936/2204 KB   
+                           
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/org/ow2/asm/asm-debug-all/5.0.3/asm-debug-all-5.0.3.jar (370 KB at 224.2 KB/sec)
+940/2204 KB                
+944/2204 KB   
+948/2204 KB   
+952/2204 KB   
+956/2204 KB   
+960/2204 KB   
+964/2204 KB   
+968/2204 KB   
+972/2204 KB   
+976/2204 KB   
+980/2204 KB   
+984/2204 KB   
+988/2204 KB   
+992/2204 KB   
+996/2204 KB   
+1000/2204 KB   
+1004/2204 KB   
+1008/2204 KB   
+1012/2204 KB   
+1016/2204 KB   
+1020/2204 KB   
+1024/2204 KB   
+1028/2204 KB   
+1032/2204 KB   
+1036/2204 KB   
+1040/2204 KB   
+1044/2204 KB   
+1048/2204 KB   
+1052/2204 KB   
+1056/2204 KB   
+1060/2204 KB   
+1064/2204 KB   
+1068/2204 KB   
+1072/2204 KB   
+1076/2204 KB   
+1080/2204 KB   
+1084/2204 KB   
+1088/2204 KB   
+1092/2204 KB   
+1096/2204 KB   
+1100/2204 KB   
+1104/2204 KB   
+1108/2204 KB   
+1112/2204 KB   
+1116/2204 KB   
+1120/2204 KB   
+1124/2204 KB   
+1128/2204 KB   
+1132/2204 KB   
+1136/2204 KB   
+1140/2204 KB   
+1144/2204 KB   
+1148/2204 KB   
+1152/2204 KB   
+1156/2204 KB   
+1160/2204 KB   
+1164/2204 KB   
+1168/2204 KB   
+1172/2204 KB   
+1176/2204 KB   
+1180/2204 KB   
+1184/2204 KB   
+1188/2204 KB   
+1192/2204 KB   
+1196/2204 KB   
+1200/2204 KB   
+1204/2204 KB   
+1208/2204 KB   
+1212/2204 KB   
+1216/2204 KB   
+1220/2204 KB   
+1224/2204 KB   
+1228/2204 KB   
+1232/2204 KB   
+1236/2204 KB   
+1240/2204 KB   
+1244/2204 KB   
+1248/2204 KB   
+1252/2204 KB   
+1256/2204 KB   
+1260/2204 KB   
+1264/2204 KB   
+1268/2204 KB   
+1272/2204 KB   
+1276/2204 KB   
+1280/2204 KB   
+1284/2204 KB   
+1288/2204 KB   
+1292/2204 KB   
+1296/2204 KB   
+1300/2204 KB   
+1304/2204 KB   
+1308/2204 KB   
+1312/2204 KB   
+1316/2204 KB   
+1320/2204 KB   
+1324/2204 KB   
+1328/2204 KB   
+1332/2204 KB   
+1336/2204 KB   
+1340/2204 KB   
+1344/2204 KB   
+1348/2204 KB   
+1352/2204 KB   
+1356/2204 KB   
+1360/2204 KB   
+1364/2204 KB   
+1368/2204 KB   
+1372/2204 KB   
+1376/2204 KB   
+1380/2204 KB   
+1384/2204 KB   
+1388/2204 KB   
+1392/2204 KB   
+1396/2204 KB   
+1400/2204 KB   
+1404/2204 KB   
+1408/2204 KB   
+1412/2204 KB   
+1416/2204 KB   
+1420/2204 KB   
+1424/2204 KB   
+1428/2204 KB   
+1432/2204 KB   
+1436/2204 KB   
+1440/2204 KB   
+1444/2204 KB   
+1448/2204 KB   
+1452/2204 KB   
+1456/2204 KB   
+1460/2204 KB   
+1464/2204 KB   
+1468/2204 KB   
+1472/2204 KB   
+1476/2204 KB   
+1480/2204 KB   
+1484/2204 KB   
+1488/2204 KB   
+1492/2204 KB   
+1496/2204 KB   
+1500/2204 KB   
+1504/2204 KB   
+1508/2204 KB   
+1512/2204 KB   
+1516/2204 KB   
+1520/2204 KB   
+1524/2204 KB   
+1528/2204 KB   
+1532/2204 KB   
+1536/2204 KB   
+1540/2204 KB   
+1544/2204 KB   
+1548/2204 KB   
+1552/2204 KB   
+1556/2204 KB   
+1560/2204 KB   
+1564/2204 KB   
+1568/2204 KB   
+1572/2204 KB   
+1576/2204 KB   
+1580/2204 KB   
+1584/2204 KB   
+1588/2204 KB   
+1592/2204 KB   
+1596/2204 KB   
+1600/2204 KB   
+1604/2204 KB   
+1608/2204 KB   
+1612/2204 KB   
+1616/2204 KB   
+1620/2204 KB   
+1624/2204 KB   
+1628/2204 KB   
+1632/2204 KB   
+1636/2204 KB   
+1640/2204 KB   
+1644/2204 KB   
+1648/2204 KB   
+1652/2204 KB   
+1656/2204 KB   
+1660/2204 KB   
+1664/2204 KB   
+1668/2204 KB   
+1672/2204 KB   
+1676/2204 KB   
+1680/2204 KB   
+1684/2204 KB   
+1688/2204 KB   
+1692/2204 KB   
+1696/2204 KB   
+1700/2204 KB   
+1704/2204 KB   
+1708/2204 KB   
+1712/2204 KB   
+1716/2204 KB   
+1720/2204 KB   
+1724/2204 KB   
+1728/2204 KB   
+1732/2204 KB   
+1736/2204 KB   
+1740/2204 KB   
+1744/2204 KB   
+1748/2204 KB   
+1752/2204 KB   
+1756/2204 KB   
+1760/2204 KB   
+1764/2204 KB   
+1768/2204 KB   
+1772/2204 KB   
+1776/2204 KB   
+1780/2204 KB   
+1784/2204 KB   
+1788/2204 KB   
+1792/2204 KB   
+1796/2204 KB   
+1800/2204 KB   
+1804/2204 KB   
+1808/2204 KB   
+1812/2204 KB   
+1816/2204 KB   
+1820/2204 KB   
+1824/2204 KB   
+1828/2204 KB   
+1832/2204 KB   
+1836/2204 KB   
+1840/2204 KB   
+1844/2204 KB   
+1848/2204 KB   
+1852/2204 KB   
+1856/2204 KB   
+1860/2204 KB   
+1864/2204 KB   
+1868/2204 KB   
+1872/2204 KB   
+1876/2204 KB   
+1880/2204 KB   
+1884/2204 KB   
+1888/2204 KB   
+1892/2204 KB   
+1896/2204 KB   
+1900/2204 KB   
+1904/2204 KB   
+1908/2204 KB   
+1912/2204 KB   
+1916/2204 KB   
+1920/2204 KB   
+1924/2204 KB   
+1928/2204 KB   
+1932/2204 KB   
+1936/2204 KB   
+1940/2204 KB   
+1944/2204 KB   
+1948/2204 KB   
+1952/2204 KB   
+1956/2204 KB   
+1960/2204 KB   
+1964/2204 KB   
+1968/2204 KB   
+1972/2204 KB   
+1976/2204 KB   
+1980/2204 KB   
+1984/2204 KB   
+1988/2204 KB   
+1992/2204 KB   
+1996/2204 KB   
+2000/2204 KB   
+2004/2204 KB   
+2004/2204 KB   
+2008/2204 KB   
+2012/2204 KB   
+2016/2204 KB   
+2020/2204 KB   
+2024/2204 KB   
+2028/2204 KB   
+2032/2204 KB   
+2036/2204 KB   
+2040/2204 KB   
+2044/2204 KB   
+2048/2204 KB   
+2052/2204 KB   
+2056/2204 KB   
+2060/2204 KB   
+2064/2204 KB   
+2068/2204 KB   
+2072/2204 KB   
+2076/2204 KB   
+2080/2204 KB   
+2084/2204 KB   
+2088/2204 KB   
+2092/2204 KB   
+2096/2204 KB   
+2100/2204 KB   
+2104/2204 KB   
+2105/2204 KB   
+2107/2204 KB   
+2111/2204 KB   
+2115/2204 KB   
+2119/2204 KB   
+2123/2204 KB   
+2127/2204 KB   
+2131/2204 KB   
+2135/2204 KB   
+2139/2204 KB   
+2143/2204 KB   
+2147/2204 KB   
+2151/2204 KB   
+2155/2204 KB   
+2159/2204 KB   
+2163/2204 KB   
+2167/2204 KB   
+2171/2204 KB   
+2175/2204 KB   
+2179/2204 KB   
+2183/2204 KB   
+2187/2204 KB   
+2191/2204 KB   
+2195/2204 KB   
+2199/2204 KB   
+2203/2204 KB   
+2204/2204 KB   
+               
+Downloaded: https://hub.spigotmc.org/nexus/content/groups/public/com/google/guava/guava/18.0/guava-18.0.jar (2204 KB at 897.5 KB/sec)
+[INFO] Replacing original artifact with remapped artifact.
+[INFO] Replacing /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/CraftBukkit/target/craftbukkit-1.8-R0.1-SNAPSHOT.jar with /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/CraftBukkit/target/craftbukkit-1.8-R0.1-SNAPSHOT-remapped.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ craftbukkit ---
+[INFO] Installing /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/CraftBukkit/target/craftbukkit-1.8-R0.1-SNAPSHOT.jar to /Users/rzingle/.m2/repository/org/bukkit/craftbukkit/1.8-R0.1-SNAPSHOT/craftbukkit-1.8-R0.1-SNAPSHOT.jar
+[INFO] Installing /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/CraftBukkit/dependency-reduced-pom.xml to /Users/rzingle/.m2/repository/org/bukkit/craftbukkit/1.8-R0.1-SNAPSHOT/craftbukkit-1.8-R0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 52.790 s
+[INFO] Finished at: 2015-01-19T15:42:14-05:00
+[INFO] Final Memory: 63M/1404M
+[INFO] ------------------------------------------------------------------------
+Rebuilding Forked projects.... 
+fatal: '/Users/rzingle/work/bms/javaalg/games/mindcraft/buckkit/Bukkit' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+HEAD is now at b4e9811 Make Location ConfigurationSerializable.
+Resetting Spigot-API to Bukkit...
+HEAD is now at b4e9811 Make Location ConfigurationSerializable.
+  Applying patches to Spigot-API...
+Resolve operation not in progress, we are not resuming.
+Applying: POM Changes
+Applying: Spigot Timings
+Applying: Add PlayerItemDamageEvent
+Applying: BungeeCord Support
+Applying: Add Arrow API
+Applying: Add Particle API
+Applying: Define EntitySpawnEvent and SpawnerSpawnEvent
+Applying: Entity Mount and Dismount Events
+Applying: InventoryClickEvent getClickedInventory
+Applying: Added getAllSessionData() to the Conversation API.
+Applying: Catch Conversation API Errors
+Applying: Player Collision API
+Applying: Expand Boolean Prompt Values
+Applying: Add Getter for Entity Invulnerability
+Applying: Add respawn API.
+Applying: Fix Plugin Message API Disconnects
+Applying: Fix Tab Completion for Some Commands
+Applying: Implement Locale Getter for Players
+Applying: Add support for fetching hidden players
+Applying: Silenceable Lightning API
+Applying: Remove deprecation on some player lookup methods
+Applying: Expand team API to allow arbitrary strings.
+Applying: Add Score.isScoreSet()Z API.
+Applying: Add PlayerSpawnLocationEvent.
+Applying: Ease ClassLoader Deadlocks Where Possible
+Applying: Fix slow tab complete for some commands.
+Applying: Undeprecate Player#updateInventory()V
+Applying: Added isUnbreakable and setUnbreakable to ItemMeta
+Applying: BungeeCord Chat API
+  Patches applied cleanly to Spigot-API
+fatal: '/Users/rzingle/work/bms/javaalg/games/mindcraft/buckkit/CraftBukkit' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+HEAD is now at e1acceb CraftBukkit $ Thu Jan 08 07:46:07 EST 2015
+Resetting Spigot-Server to CraftBukkit...
+HEAD is now at e1acceb CraftBukkit $ Thu Jan 08 07:46:07 EST 2015
+  Applying patches to Spigot-Server...
+Resolve operation not in progress, we are not resuming.
+Applying: POM Changes
+fatal: sha1 information is lacking or useless (pom.xml).
+Repository lacks necessary blobs to fall back on 3-way merge.
+Cannot fall back to three-way merge.
+Patch failed at 0001 POM Changes
+The copy of the patch that failed is found in:
+   /Users/rzingle/work/bms/javaalg/games/minecraft/buckkit/Spigot/Spigot-Server/.git/rebase-apply/patch
+When you have resolved this problem, run "git am --resolved".
+If you prefer to skip this patch, run "git am --skip" instead.
+To restore the original branch and stop patching, run "git am --abort".
+  Something did not apply cleanly to Spigot-Server.
+  Please review above details and finish the apply then
+  save the changes with rebuildPatches.sh
+Error compiling Spigot, are you running this jar via msysgit?
+java.lang.RuntimeException: Error running command, return status !=0: [bash, applyPatches.sh]
+	at org.spigotmc.builder.Builder.runProcess(Builder.java:386)
+	at org.spigotmc.builder.Builder.main(Builder.java:310)

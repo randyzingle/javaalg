@@ -6,28 +6,34 @@
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="lib/bootstrap.css"/>
     <script type="text/javascript" src="lib/require.js"></script>
-    <script type="text/javascript">
-    	require(["lib/jquery.min", "lib/angular.min","js/b1.js"], function(jquery, angular, b1) {
-    		console.log(jquery, angular, b1);
-    	});
-    </script>
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="lib/d3.min.js"></script>
+    <script type="text/javascript" src="js/b1.js"></script>
 
 </head>
 <body ng-app='baldur'>
 	<div class='container' ng-controller='BodyCtrl'>
 		<div class='row'>
-			<h3>Enter Your Message</h3>
+			<h3>Enter Your Message - No Require</h3>
 		</div>
 		<div class='row'>
 			<span>Characters Remaining: {{remaining()}}<span>
 		</div>
 		<div class='row'>
-			<textarea ng-model='message.body' style='width: 40%;'>{{message.body}}</textarea>
+			<textarea ng-model='message.body' style='width: 40%;'></textarea>
 		</div>
 		<div class='row'>
 			<button class='btn btn-primary' ng-click='send()'>Send</button>
 			<button class='btn btn-default' ng-click='clear()'>Clear</button>
 		</div>
+		<div>
+			<svg width="720" height="120">
+  <circle cx="40" cy="60" r="10"></circle>
+  <circle cx="80" cy="60" r="10"></circle>
+  <circle cx="120" cy="60" r="10"></circle>
+</svg>
+</div>
 	</div>
 </body>
 </html>

@@ -1,0 +1,23 @@
+horse % Is it bigger than you?
+bunny % Is it furry?
+mouse % Does it eat cheese?
+kangaroo % Does it have a pouch?
+dog % Does it have sharp teeth?
+null
+null
+null
+null
+cat % Does is say miao?
+null
+null
+moose % Does it have antlers?
+elephant % Does it have tusks?
+giraffe % Does it have a long neck?
+null
+null
+warthog % Does it have warts?
+null
+null
+deer % Are its babies called fawns?
+null
+null

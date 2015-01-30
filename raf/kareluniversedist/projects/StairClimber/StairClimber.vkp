@@ -1,0 +1,4 @@
+#Karel Project File
+#Mon Jan 26 13:12:03 EST 2015
+task=task.r
+classes=StairClimber.r

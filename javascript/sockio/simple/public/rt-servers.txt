@@ -10,7 +10,7 @@ VPC ID vpc-3e980e56
 Subnet ID subnet-ec861084
 
 config box:
-$ ssh -i math-tools.pem ubuntu@54.165.102.92
+$ ssh -i ~/work/keys/math-tools.pem ubuntu@54.165.102.92
 $ sudo apt-get update
 $ apt-cache search redis
 $ apt-cache show redis-server (version 2.2.12)
@@ -46,7 +46,10 @@ rzingle-mac:simple rzingle$ redis-cli -h 54.165.102.92 -p 8080
 
 math.rt.nsa
 -----------
-$ ssh -i math-tools.pem ubuntu@54.174.182.153
+Availability zone us-east-1d
+VPC ID vpc-3e980e56
+Subnet ID subnet-ec861084
+$ ssh -i ~/work/keys/math-tools.pem ubuntu@54.174.182.153
 $ sudo apt-get update
 $ apt-cache search nodejs
 $ sudo add-apt-repository ppa:chris-lea/node.js
@@ -64,9 +67,32 @@ $ service --status-all
 $ sudo mkdir /var/webapp
 $ sudo chown ubuntu /var/webapp
 
+from my box:
+rzingle-mac:server rzingle$ pwd
+/Users/rzingle/work/math/math-core/realtime/mean
+rzingle-mac:mean rzingle$ tar cvf server.tar server
+$ scp -i ~/work/keys/math-tools.pem server.tar ubuntu@54.174.182.153:/var/webapp
+
+on linux box:
+ubuntu@ip-10-162-10-67:~$ cd /var/webapp
+ubuntu@ip-10-162-10-67:/var/webapp$ tar xvf server.tar
+ubuntu@ip-10-162-10-67:/var/webapp$ cd server
+ubuntu@ip-10-162-10-67:/var/webapp/server$ sudo vi config.js  // edit to pt at AWS redis and set hostname
+
+# setup the node server as an upstart service - copy node-upstart.conf to /etc/init/
+
+# run node in test mode
+ubuntu@ip-10-162-10-67:/var/webapp/server$ node app.js
+
+# run node as a service (will run automatically on boot/reboot)
+ubuntu@ip-10-162-10-67:/var/webapp/server$ sudo service node-upstart start
+
 math.rt.nsb
 -----------
-$ ssh -i math-tools.pem ubuntu@54.172.56.100
+Availability zone us-east-1d
+VPC ID vpc-3e980e56
+Subnet ID subnet-ec861084
+$ ssh -i ~/work/keys/math-tools.pem ubuntu@54.172.56.100
 $ sudo apt-get update
 $ sudo add-apt-repository ppa:chris-lea/node.js
 $ sudo apt-get update
@@ -81,10 +107,33 @@ v0.10.33
 $ sudo mkdir /var/webapp
 $ sudo chown ubuntu /var/webapp
 
+from my box:
+rzingle-mac:server rzingle$ pwd
+/Users/rzingle/work/math/math-core/realtime/mean
+rzingle-mac:mean rzingle$ tar cvf server.tar server
+$ scp -i ~/work/keys/math-tools.pem server.tar ubuntu@54.172.56.100:/var/webapp
+
+on linux box:
+ubuntu@ip-10-162-9-129:~$ cd /var/webapp/
+ubuntu@ip-10-162-9-129:/var/webapp$ tar xvf server.tar
+ubuntu@ip-10-162-9-129:/var/webapp$ cd server
+ubuntu@ip-10-162-9-129:/var/webapp/server$ sudo vi config.js  // edit to pt at AWS redis
+
+# setup the node server as an upstart service - copy node-upstart.conf to /etc/init/
+
+# run node in test mode
+ubuntu@ip-10-162-9-129:/var/webapp/server$ node app.js
+
+# run node as a service (will run automatically on boot/reboot)
+ubuntu@ip-10-162-9-129:/var/webapp/server$ sudo service node-upstart start
+
 math.rt.ws
 -----------
+Availability zone us-east-1d
+VPC ID vpc-3e980e56
+Subnet ID subnet-ec861084
 Public IP 54.173.75.131
-$ ssh -i math-tools.pem ubuntu@54.173.75.131
+$ ssh -i ~/work/keys/math-tools.pem ubuntu@54.173.75.131
 $ sudo apt-get update
 $ apt-cache search nodejs
 $ sudo add-apt-repository ppa:chris-lea/node.js
@@ -103,17 +152,89 @@ $ sudo mkdir /var/webapp
 $ sudo chown ubuntu /var/webapp
 
 from my box:
-$ scp -i ~/work/keys/math-tools.pem web.tar ubuntu@54.173.75.131:/var/webapp
+rzingle-mac:server rzingle$ pwd
+/Users/rzingle/work/math/math-core/realtime/mean
+rzingle-mac:mean rzingle$ tar cvf testclient.tar testclient
+$ scp -i ~/work/keys/math-tools.pem testclient.tar ubuntu@54.173.75.131:/var/webapp
 
 on linux box:
-ubuntu@ip-10-162-11-128:~$ cd /var/webapp
-ubuntu@ip-10-162-11-128:/var/webapp$ tar xvf web.tar
-ubuntu@ip-10-162-11-128:/var/webapp$ cd web
-ubuntu@ip-10-162-11-128:/var/webapp/web$ sudo node app.js &
+ubuntu@ip-10-162-11-128:~$ cd /var/webapp/
+ubuntu@ip-10-162-11-128:/var/webapp$ tar xvf testclient.tar
+ubuntu@ip-10-162-11-128:/var/webapp$ cd testclient
+ubuntu@ip-10-162-11-128:/var/webapp/testclient$ sudo vi config.js  // edit to pt at AWS redis if you didn't before copying
+//start up node in debug mode
+ubuntu@ip-10-162-11-128:/var/webapp/testclient$ sudo node app.js &
+//or start up node in *prod* mode
+rzingle$ ssh -i ~/work/keys/math-tools.pem ubuntu@54.173.75.131 'sudo service node-upstart restart'
 
 from my box:
-$ curl 54.173.75.131/index.html
+$ curl 54.173.75.131:8080
+in browser - http://54.173.75.131:8080
 
+configure ansible
+-----------------
+set up env variable keys for #
+AWS KEYS
+export AWS_ACCESS_KEY_ID=xxxxxxx
+export AWS_SECRET_ACCESS_KEY=xxxxxxx
+rzingle$ pip install boto
 
+elb tcp load balancer
+---------------------
+VPC ID vpc-3e980e56
+math-rt-tcp
+Availability zone us-east-1d
+Subnet ID subnet-ec861084
 
+TCP 80 -> TCP 8000
+SSL 443 -> TCP 8000 (need permission to fetch the cert)
+
+math-rt-tcp-624993045.us-east-1.elb.amazonaws.com 
+
+poc-wildcard-w-chain-2016 (need to add this for ssl termination)
+
+nginx reverse proxy
+-------------------
+Availability zone us-east-1d
+VPC ID vpc-3e980e56
+Subnet ID subnet-ec861084
+$ ssh -i ~/work/keys/math-tools.pem ubuntu@54.175.4.110
+ubuntu@ip-10-162-8-172:~$ sudo apt-get update
+ubuntu@ip-10-162-8-172:~$ sudo add-apt-repository ppa:nginx/stable
+ubuntu@ip-10-162-8-172:~$ sudo apt-get update
+sudo apt-get install nginx
+sudo service nginx start &
+
+// not needed for prod code
+npm install -g wscat
+wscat –connect ws://192.168.100.20:8020 -> test ws connections
+// end not needed
+
+create the math-nginx.conf config file to /etc/nginx/conf.d/
+# from the socket.io docs: http://socket.io/docs/using-multiple-nodes/
+# goes in the folder: /etc/nginx/conf.d/
+
+upstream io_nodes {
+	ip_hash;
+	server 54.174.182.153:8000;
+	server 54.172.56.100:8000;
+}
+
+server {
+	listen 8000;
+	server_name localhost;
+	location / {
+		root /usr/share/nginx/html;
+		index index.html;
+	}
+	location /socket.io {
+		proxy_set_header Upgrade $http_upgrade;
+		proxy_set_header Connection "upgrade";
+		proxy_set_header X-Real-IP $remote_addr;
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		proxy_set_header Host $host;
+		proxy_http_version 1.1;
+		proxy_pass http://io_nodes;
+	}
+}
 

@@ -1,0 +1,4 @@
+#Karel Project File
+#Sat Jun 03 15:28:40 EDT 2006
+task=task.r
+classes=Turner.r
