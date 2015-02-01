@@ -1,10 +1,16 @@
 KarelWorld
-Streets 10
-Avenues 20
+Streets 12
+Avenues 12
 beepers 3 4 1
 beepers 4 2 1
-eastwestwalls 3 2 4
-northsouthwalls 4 2 2
-northsouthwalls 4 3 3
-northsouthwalls 1 5 5
-northsouthwalls 1 4 4
+beepers 4 3 1
+beepers 4 6 1
+beepers 2 2 1
+beepers 1 2 2
+beepers 1 1 1
+beepers 6 6 1
+beepers 5 5 1
+beepers 2 7 3
+beepers 8 8 1
+beepers 6 4 1
+beepers 3 7 1
