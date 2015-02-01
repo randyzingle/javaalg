@@ -5,6 +5,13 @@ import java.awt.Color;
 import kareltherobot.*;
 
 public class RobotMoves1 extends RobotMoves {
+	
+	@Override
+	public void makeWorld() {
+		World.setSize(12, 12);
+		World.readWorld("queens.kwld");
+		World.setVisible(true);	
+	}
 
 	@Override
 	public void moveRobots() {
