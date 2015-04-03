@@ -9,8 +9,29 @@ public class Character {
 	private int wisdom;
 	private int charisma;
 	
+	private String name;
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public Character(){
-		//Default Constructor
+		this("Baldur Dog", 10, 10, 10, 10, 10, 10);
+	}
+	
+	public Character(String name, int strength, int intelligence, int dexterity, 
+			int constitution, int wisdom, int charisma){
+		this.name = name;
+		this.strength = strength;
+		this.intelligence = intelligence;
+		this.dexterity = dexterity;
+		this.constitiution = constitution;
+		this.wisdom = wisdom;
+		this.charisma = charisma;
 	}
 	
 	public int getStrength() {
@@ -48,6 +69,15 @@ public class Character {
 	}
 	public void setCharisma(int charisma) {
 		this.charisma = charisma;
+	}
+	
+	@Override
+	public String toString(){
+		String s = null;
+		s = String.format("%s: Str %d, Int %d, Wis %d, Dex %d, Con %d, Cha %d",
+				this.name, this.strength, this.intelligence, this.wisdom, this.dexterity,
+				this.constitiution, this.charisma);
+		return s;
 	}
 
 }
