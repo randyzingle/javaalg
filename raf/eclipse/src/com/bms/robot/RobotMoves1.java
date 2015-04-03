@@ -9,7 +9,7 @@ public class RobotMoves1 extends RobotMoves {
 	@Override
 	public void makeWorld() {
 		World.setSize(12, 12);
-		World.readWorld("queens.kwld");
+		World.readWorld("world/queens.kwld");
 		World.setVisible(true);	
 	}
 

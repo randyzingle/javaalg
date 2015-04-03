@@ -16,7 +16,7 @@ public class LaunchRobot {
     {
         kareltherobot.World.setSize(8,8);
         kareltherobot.World.setDelay(50);
-        kareltherobot.World.readWorld("world.kwld");
+        kareltherobot.World.readWorld("world/world.kwld");
         kareltherobot.World.showSpeedControl(false);
         builder = new kareltherobot.WorldBuilder(true);
         kareltherobot.World.setVisible(true);
