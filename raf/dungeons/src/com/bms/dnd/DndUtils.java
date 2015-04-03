@@ -7,7 +7,7 @@ public class DndUtils {
 
 		Random r = new Random(); 
 		int sum = 0;
-		for (int i=0; i <= numberOfDice; i++){
+		for (int i=1; i <= numberOfDice; i++){
 			sum = sum + r.nextInt(numberOfSides)+1;
 		}
 		
