@@ -1,0 +1,6 @@
+There are four class that may be chosen.
+Below is a brief description of the classes.
+The Fighter has higher armor and hit points than other classes, although lacks damage relative to other classes.
+The Rogue has high physical damage, although lacks hit points and armor, with the exception of evasive and stealth tactics.
+The Mage casts an assortment of arcane spells. Armor and hit points are low, although protective spells will aid in the Mage's survival. 
+The Cleric is a moderately well armored class with the ability to cast numerous protection and healing spells. Although, the Cleric has low damage relative to other classes.
