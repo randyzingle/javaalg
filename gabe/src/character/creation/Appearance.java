@@ -11,9 +11,5 @@ public class Appearance {
 		String name = input.next();
 		return name;
 	}
-	
-	private String whatsUp() {
-		return "not much";
-	}
 
 }

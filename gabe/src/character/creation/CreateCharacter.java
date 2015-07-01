@@ -6,9 +6,6 @@ import java.io.*;
 
 public class CreateCharacter {
 	
-	// Create our new Character
-	private Character character = new Character();
-	
 	// Set up the character's appearance
 	private Appearance appearance = new Appearance();
 	
@@ -17,27 +14,25 @@ public class CreateCharacter {
 	
 	// Choose class of the character
 	private CharacterClass characterClass = new CharacterClass();
-
-//	public static void main (String[] args) {
-//		CreateCharacter cc = new CreateCharacter();
-//		cc.createAppearance();
-//		cc.attributes();
-//		cc.characterClass();
-//	}
 	
-	public void characterCreation() {
-		CreateCharacter cc = new CreateCharacter();
-		cc.createAppearance();
-		cc.attributes();
-		cc.characterClass();
+	public Character characterCreation() {
+		Character c = new Character();
+		createAppearance(c);
+		attributes(c);
+		characterClass(c);
+		weapon(c);
+		System.out.println("NAME:::: " + c.getName());
+		//System.out.println("Your class is: " + character.getCharacterClass() + ".");
+		return c;
 	}
 
-	private void createAppearance() {
+	private void createAppearance(Character character) {
 		String name = appearance.getName();
 		character.setName(name);	
+		//System.out.println("NAME::: " + character.getName());
 	}
 	
-	public void attributes() {
+	public void attributes(Character character) {
 		int attributePoints = 20;
 		System.out.println("You begin with 20 points to spend on attributes");
 		System.out.println("You start with a base of 10 of each attribute");
@@ -88,11 +83,28 @@ public class CreateCharacter {
 		
 	}
 	
-	public void characterClass() {
+	public void characterClass(Character character) {
 		System.out.println("You can choose 1 of the four classes");
 		characterClass.description();
 		String className = characterClass.chooseClass();
 		character.setCharacterClass(className);
+	}
+	
+	public void weapon(Character character) {
+		int weapon;
+		String charClass = character.getCharacterClass();
+		if (charClass == "Guardian") {
+			weapon = 1;
+		} else if (charClass == "Weaponmaster") {
+			weapon = 2;
+		} else if (charClass == "Cleric") {
+			weapon = 3;
+		} else if (charClass == "Rogue") {
+			weapon = 4;
+		} else if (charClass == "Mage") {
+			weapon = 5;	
+		} 
+		//character.setWeapon(weapon);
 	}
 	
 
