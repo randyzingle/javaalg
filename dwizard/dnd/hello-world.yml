@@ -1,2 +1,25 @@
 template: Hello, %s!
 defaultName: Baldur
+
+server:
+  #type: simple
+  applicationContextPath: /baldursoft
+
+database:
+  # the name of your JDBC driver
+  driverClass: org.postgresql.Driver
+
+  # the username
+  user: pnauser
+
+  # the password
+  password: pnauser123
+
+  # the JDBC URL
+  url: jdbc:postgresql://localhost/math
+  #url: jdbc:postgresql://10.162.19.58:5432/math
+
+  properties:
+      charSet: UTF-8
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+      #hibernate.hbm2ddl.auto: create

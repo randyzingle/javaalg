@@ -27,6 +27,6 @@ public class HorseDAO extends AbstractDAO<Horse> {
     }
 
     public List<Horse> findAll() {
-        return list(namedQuery("Course.findAll"));
+        return list(namedQuery("Horse.findAll"));
     }
 }

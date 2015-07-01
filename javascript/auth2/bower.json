@@ -1,0 +1,7 @@
+{
+  "name": "auth",
+  "version": "0.0.0",
+  "dependencies": {
+    "amp-access": "ssh://git@git.amplify.com/fc/amp-access.git"
+  }
+}

@@ -10,7 +10,7 @@ import javax.ws.rs.core.MediaType;
 
 import java.util.List;
 
-@Path("/course")
+@Path("/horse")
 @Produces(MediaType.APPLICATION_JSON)
 public class HorseResource {
 

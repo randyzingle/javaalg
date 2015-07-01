@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<property name="hibernate.connection.password">pnauser123</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/math</property>
+		<property name="hibernate.connection.username">pnauser</property>
+		<property name="hibernate.default_schema">gabe</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		
+
+		<property name="connection_pool_size">1</property>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="show_sql">true</property>
+
+		<mapping class="com.bms.db.CharacterEntity" />
+	</session-factory>
+</hibernate-configuration>

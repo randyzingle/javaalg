@@ -1,0 +1,64 @@
+#mainContent {
+	background-color: #A2BFCE;
+	border-radius: 4px;
+	padding: 10px;
+	width: 600px;
+	height: 300px;
+	overflow: hidden;
+	color: black;
+	font-size: 2em;
+	/* transitions play when a CSS property value changes, it doesn't matter
+	why the property changed */
+	transition-property: font-size, color;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
+}
+
+#mainContent:hover {
+	color: white;
+	font-size: 3em;
+}
+
+.cloud {
+	position: absolute;
+}
+
+#bigcloud {
+	animation: bobble 4s infinite;
+	/* animation-delay: 2s; */
+	animation-fill-mode: both; /* applly the first keyframe right off and keep the final keyframe */
+	margin-left: 100px;
+	margin-top: 15px;
+}
+
+#smallcloud {
+	animation: bobble 8s infinite;
+	margin-left: 200px;
+	margin-top: 65px;
+}
+
+#hovercloud {
+	transition: transform 4s ease-in;
+	/*transform: translate3d(0,-10px, 0);*/
+}
+#hovercloud:hover {
+	transform: translate3d(0,+200px, 0);
+	cursor: pointer;
+}
+
+@keyframes bobble {
+	0% {
+		transform: translate3d(20px, 0px, 0px);
+		animation-timing-function: ease;
+	}
+
+
+	50% {
+		transform: translate3d(60px, 20px, 200px);
+	}
+
+
+	100% {
+		transform: translate3d(20px, 0px, 0px);
+	}
+}
