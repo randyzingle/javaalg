@@ -1,0 +1,553 @@
+INFO  [2015-08-13 19:22:29,376] org.eclipse.jetty.util.log: Logging initialized @1825ms
+INFO  [2015-08-13 19:22:29,598] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-13 19:22:29,605] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-13 19:22:29,606] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-13 19:22:29,608] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-13 19:22:29,633] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.Pet, com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-13 19:22:30,200] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-13 19:22:30,213] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-13 19:22:30,365] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2015-08-13 19:22:30,370] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2015-08-13 19:22:30,468] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@1ab6718
+INFO  [2015-08-13 19:22:30,856] com.bms.base.BaseApplication: base run completed
+INFO  [2015-08-13 19:22:30,867] io.dropwizard.server.ServerFactory: Starting base
+ (                                                            (                    
+ )\ )                                                  (      )\ )                 
+(()/(     (          (  (     (                        )\ )  (()/(  (   (      (   
+ /(_))   ))\   (     )\))(   ))\  (    (     (     (  (()/(   /(_)) )\  )(    ))\  
+(_))_   /((_)  )\ ) ((_))\  /((_) )\   )\ )  )\    )\  /(_)) (_))_|((_)(()\  /((_) 
+ |   \ (_))(  _(_/(  (()(_)(_))  ((_) _(_/( ((_)  ((_)(_) _| | |_   (_) ((_)(_))   
+ | |) || || || ' \))/ _` | / -_)/ _ \| ' \))(_-< / _ \ |  _| | __|  | || '_|/ -_)  
+ |___/  \_,_||_||_| \__, | \___|\___/|_||_| /__/ \___/ |_|   |_|    |_||_|  \___|  
+                    |___/                                                          
+INFO  [2015-08-13 19:22:30,944] org.eclipse.jetty.setuid.SetUIDListener: Opened application@fcc6023{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:22:30,944] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@67c5ac52{HTTP/1.1}{0.0.0.0:8081}
+DEBUG [2015-08-13 19:22:30,944] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = [io.dropwizard.lifecycle.ExecutorServiceManager@5d5c04f9(TimeBoundHealthCheck-pool-%d), io.dropwizard.hibernate.SessionFactoryManager@6f49d153]
+INFO  [2015-08-13 19:22:30,947] org.eclipse.jetty.server.Server: jetty-9.2.9.v20150224
+DEBUG [2015-08-13 19:22:31,458] io.dropwizard.jersey.DropwizardResourceConfig: resources = []
+DEBUG [2015-08-13 19:22:31,458] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResponseFeature, io.dropwizard.jersey.guava.OptionalMessageBodyWriter]
+INFO  [2015-08-13 19:22:31,478] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /api/pets (com.bms.base.resources.PetResource)
+    GET     /api/pets/{name} (com.bms.base.resources.PetResource)
+    GET     /api/playercharacters (com.bms.base.resources.PlayerCharacterResource)
+    GET     /api/playercharacters/{name} (com.bms.base.resources.PlayerCharacterResource)
+
+INFO  [2015-08-13 19:22:31,481] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@ef718de{/base,null,AVAILABLE}
+INFO  [2015-08-13 19:22:31,485] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+DEBUG [2015-08-13 19:22:31,485] io.dropwizard.setup.AdminEnvironment: health checks = [deadlocks, hibernate]
+INFO  [2015-08-13 19:22:31,489] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@16da476c{/,null,AVAILABLE}
+INFO  [2015-08-13 19:22:31,499] org.eclipse.jetty.server.ServerConnector: Started application@fcc6023{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:22:31,499] org.eclipse.jetty.server.ServerConnector: Started admin@67c5ac52{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-13 19:22:31,499] org.eclipse.jetty.server.Server: Started @3950ms
+INFO  [2015-08-13 19:22:49,472] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    48000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    212000 nanoseconds spent preparing 2 JDBC statements;
+    48388000 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    6465000 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    48000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-13 19:22:57,467] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    39000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    368000 nanoseconds spent preparing 5 JDBC statements;
+    2553000 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    643000 nanoseconds spent executing 1 flushes (flushing a total of 9 entities and 4 collections);
+    8000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-13 19:23:33,300] org.eclipse.jetty.server.ServerConnector: Stopped application@fcc6023{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:23:33,301] org.eclipse.jetty.server.ServerConnector: Stopped admin@67c5ac52{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-13 19:23:33,302] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@16da476c{/,null,UNAVAILABLE}
+INFO  [2015-08-13 19:23:33,305] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@ef718de{/base,null,UNAVAILABLE}
+INFO  [2015-08-13 19:23:53,459] org.eclipse.jetty.util.log: Logging initialized @1063ms
+INFO  [2015-08-13 19:23:53,624] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-13 19:23:53,629] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-13 19:23:53,630] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-13 19:23:53,631] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-13 19:23:53,647] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.Pet, com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-13 19:23:54,060] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-13 19:23:54,069] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-13 19:23:54,191] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2015-08-13 19:23:54,194] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2015-08-13 19:23:54,258] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@1ab6718
+INFO  [2015-08-13 19:23:54,530] com.bms.base.BaseApplication: base run completed
+INFO  [2015-08-13 19:23:54,536] io.dropwizard.server.ServerFactory: Starting base
+ (                                                            (                    
+ )\ )                                                  (      )\ )                 
+(()/(     (          (  (     (                        )\ )  (()/(  (   (      (   
+ /(_))   ))\   (     )\))(   ))\  (    (     (     (  (()/(   /(_)) )\  )(    ))\  
+(_))_   /((_)  )\ ) ((_))\  /((_) )\   )\ )  )\    )\  /(_)) (_))_|((_)(()\  /((_) 
+ |   \ (_))(  _(_/(  (()(_)(_))  ((_) _(_/( ((_)  ((_)(_) _| | |_   (_) ((_)(_))   
+ | |) || || || ' \))/ _` | / -_)/ _ \| ' \))(_-< / _ \ |  _| | __|  | || '_|/ -_)  
+ |___/  \_,_||_||_| \__, | \___|\___/|_||_| /__/ \___/ |_|   |_|    |_||_|  \___|  
+                    |___/                                                          
+INFO  [2015-08-13 19:23:54,591] org.eclipse.jetty.setuid.SetUIDListener: Opened application@fcc6023{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:23:54,591] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@67c5ac52{HTTP/1.1}{0.0.0.0:8081}
+DEBUG [2015-08-13 19:23:54,591] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = [io.dropwizard.lifecycle.ExecutorServiceManager@5d5c04f9(TimeBoundHealthCheck-pool-%d), io.dropwizard.hibernate.SessionFactoryManager@6f49d153]
+INFO  [2015-08-13 19:23:54,594] org.eclipse.jetty.server.Server: jetty-9.2.9.v20150224
+DEBUG [2015-08-13 19:23:55,087] io.dropwizard.jersey.DropwizardResourceConfig: resources = []
+DEBUG [2015-08-13 19:23:55,087] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResponseFeature, io.dropwizard.jersey.guava.OptionalMessageBodyWriter]
+INFO  [2015-08-13 19:23:55,102] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /api/pets (com.bms.base.resources.PetResource)
+    GET     /api/pets/{name} (com.bms.base.resources.PetResource)
+    GET     /api/playercharacters (com.bms.base.resources.PlayerCharacterResource)
+    GET     /api/playercharacters/{name} (com.bms.base.resources.PlayerCharacterResource)
+
+INFO  [2015-08-13 19:23:55,105] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@287ae90c{/base,null,AVAILABLE}
+INFO  [2015-08-13 19:23:55,109] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+DEBUG [2015-08-13 19:23:55,109] io.dropwizard.setup.AdminEnvironment: health checks = [deadlocks, hibernate]
+INFO  [2015-08-13 19:23:55,113] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@2fd72332{/,null,AVAILABLE}
+INFO  [2015-08-13 19:23:55,119] org.eclipse.jetty.server.ServerConnector: Started application@fcc6023{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:23:55,120] org.eclipse.jetty.server.ServerConnector: Started admin@67c5ac52{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-13 19:23:55,120] org.eclipse.jetty.server.Server: Started @2725ms
+INFO  [2015-08-13 19:24:00,612] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    54000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    428000 nanoseconds spent preparing 5 JDBC statements;
+    5053000 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    6002000 nanoseconds spent executing 1 flushes (flushing a total of 9 entities and 4 collections);
+    42000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-13 19:24:12,616] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    36000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    303000 nanoseconds spent preparing 3 JDBC statements;
+    1861000 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    384000 nanoseconds spent executing 1 flushes (flushing a total of 7 entities and 2 collections);
+    7000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-13 19:25:09,104] org.eclipse.jetty.server.ServerConnector: Stopped application@fcc6023{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:25:09,105] org.eclipse.jetty.server.ServerConnector: Stopped admin@67c5ac52{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-13 19:25:09,106] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@2fd72332{/,null,UNAVAILABLE}
+INFO  [2015-08-13 19:25:09,109] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@287ae90c{/base,null,UNAVAILABLE}
+INFO  [2015-08-13 19:25:14,147] org.eclipse.jetty.util.log: Logging initialized @1102ms
+INFO  [2015-08-13 19:25:14,293] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-13 19:25:14,297] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-13 19:25:14,298] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-13 19:25:14,299] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-13 19:25:14,316] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.Pet, com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-13 19:25:14,722] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-13 19:25:14,731] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-13 19:25:14,841] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2015-08-13 19:25:14,844] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2015-08-13 19:25:14,907] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@4eb30d44
+INFO  [2015-08-13 19:25:15,187] com.bms.base.BaseApplication: base run completed
+INFO  [2015-08-13 19:25:15,193] io.dropwizard.server.ServerFactory: Starting base
+ (                                                            (                    
+ )\ )                                                  (      )\ )                 
+(()/(     (          (  (     (                        )\ )  (()/(  (   (      (   
+ /(_))   ))\   (     )\))(   ))\  (    (     (     (  (()/(   /(_)) )\  )(    ))\  
+(_))_   /((_)  )\ ) ((_))\  /((_) )\   )\ )  )\    )\  /(_)) (_))_|((_)(()\  /((_) 
+ |   \ (_))(  _(_/(  (()(_)(_))  ((_) _(_/( ((_)  ((_)(_) _| | |_   (_) ((_)(_))   
+ | |) || || || ' \))/ _` | / -_)/ _ \| ' \))(_-< / _ \ |  _| | __|  | || '_|/ -_)  
+ |___/  \_,_||_||_| \__, | \___|\___/|_||_| /__/ \___/ |_|   |_|    |_||_|  \___|  
+                    |___/                                                          
+INFO  [2015-08-13 19:25:15,246] org.eclipse.jetty.setuid.SetUIDListener: Opened application@44bd4b0a{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:25:15,246] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@6c008c24{HTTP/1.1}{0.0.0.0:8081}
+DEBUG [2015-08-13 19:25:15,247] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = [io.dropwizard.lifecycle.ExecutorServiceManager@292158f8(TimeBoundHealthCheck-pool-%d), io.dropwizard.hibernate.SessionFactoryManager@53ec2968]
+INFO  [2015-08-13 19:25:15,249] org.eclipse.jetty.server.Server: jetty-9.2.9.v20150224
+DEBUG [2015-08-13 19:25:15,735] io.dropwizard.jersey.DropwizardResourceConfig: resources = []
+DEBUG [2015-08-13 19:25:15,735] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResponseFeature, io.dropwizard.jersey.guava.OptionalMessageBodyWriter]
+INFO  [2015-08-13 19:25:15,751] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /api/playercharacters (com.bms.base.resources.PlayerCharacterResource)
+    GET     /api/playercharacters/{name} (com.bms.base.resources.PlayerCharacterResource)
+    GET     /api/pets (com.bms.base.resources.PetResource)
+    GET     /api/pets/{name} (com.bms.base.resources.PetResource)
+
+INFO  [2015-08-13 19:25:15,754] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@9b5f3c7{/base,null,AVAILABLE}
+INFO  [2015-08-13 19:25:15,759] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+DEBUG [2015-08-13 19:25:15,759] io.dropwizard.setup.AdminEnvironment: health checks = [deadlocks, hibernate]
+INFO  [2015-08-13 19:25:15,762] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@2e62ead7{/,null,AVAILABLE}
+INFO  [2015-08-13 19:25:15,769] org.eclipse.jetty.server.ServerConnector: Started application@44bd4b0a{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:25:15,769] org.eclipse.jetty.server.ServerConnector: Started admin@6c008c24{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-13 19:25:15,769] org.eclipse.jetty.server.Server: Started @2725ms
+INFO  [2015-08-13 19:25:26,914] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    44000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    513000 nanoseconds spent preparing 5 JDBC statements;
+    5293000 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    6049000 nanoseconds spent executing 1 flushes (flushing a total of 9 entities and 4 collections);
+    119000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-13 19:26:48,361] org.eclipse.jetty.server.ServerConnector: Stopped application@44bd4b0a{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:26:48,363] org.eclipse.jetty.server.ServerConnector: Stopped admin@6c008c24{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-13 19:26:48,364] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@2e62ead7{/,null,UNAVAILABLE}
+INFO  [2015-08-13 19:26:48,367] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@9b5f3c7{/base,null,UNAVAILABLE}
+INFO  [2015-08-13 19:27:15,074] org.eclipse.jetty.util.log: Logging initialized @1029ms
+INFO  [2015-08-13 19:27:15,226] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-13 19:27:15,231] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-13 19:27:15,233] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-13 19:27:15,235] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-13 19:27:15,250] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.Pet, com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-13 19:27:15,657] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-13 19:27:15,666] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-13 19:27:15,773] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2015-08-13 19:27:15,776] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2015-08-13 19:27:15,838] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@4eb30d44
+INFO  [2015-08-13 19:27:16,099] com.bms.base.BaseApplication: base run completed
+INFO  [2015-08-13 19:27:16,105] io.dropwizard.server.ServerFactory: Starting base
+ (                                                            (                    
+ )\ )                                                  (      )\ )                 
+(()/(     (          (  (     (                        )\ )  (()/(  (   (      (   
+ /(_))   ))\   (     )\))(   ))\  (    (     (     (  (()/(   /(_)) )\  )(    ))\  
+(_))_   /((_)  )\ ) ((_))\  /((_) )\   )\ )  )\    )\  /(_)) (_))_|((_)(()\  /((_) 
+ |   \ (_))(  _(_/(  (()(_)(_))  ((_) _(_/( ((_)  ((_)(_) _| | |_   (_) ((_)(_))   
+ | |) || || || ' \))/ _` | / -_)/ _ \| ' \))(_-< / _ \ |  _| | __|  | || '_|/ -_)  
+ |___/  \_,_||_||_| \__, | \___|\___/|_||_| /__/ \___/ |_|   |_|    |_||_|  \___|  
+                    |___/                                                          
+INFO  [2015-08-13 19:27:16,156] org.eclipse.jetty.setuid.SetUIDListener: Opened application@312b34e3{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:27:16,157] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@26844abb{HTTP/1.1}{0.0.0.0:8081}
+DEBUG [2015-08-13 19:27:16,157] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = [io.dropwizard.lifecycle.ExecutorServiceManager@73c9e8e8(TimeBoundHealthCheck-pool-%d), io.dropwizard.hibernate.SessionFactoryManager@de8039f]
+INFO  [2015-08-13 19:27:16,160] org.eclipse.jetty.server.Server: jetty-9.2.9.v20150224
+DEBUG [2015-08-13 19:27:16,636] io.dropwizard.jersey.DropwizardResourceConfig: resources = []
+DEBUG [2015-08-13 19:27:16,636] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResponseFeature, io.dropwizard.jersey.guava.OptionalMessageBodyWriter]
+INFO  [2015-08-13 19:27:16,650] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /api/pets (com.bms.base.resources.PetResource)
+    GET     /api/pets/{name} (com.bms.base.resources.PetResource)
+    GET     /api/playercharacters (com.bms.base.resources.PlayerCharacterResource)
+    GET     /api/playercharacters/{name} (com.bms.base.resources.PlayerCharacterResource)
+
+INFO  [2015-08-13 19:27:16,653] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@16da1abc{/base,null,AVAILABLE}
+INFO  [2015-08-13 19:27:16,657] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+DEBUG [2015-08-13 19:27:16,657] io.dropwizard.setup.AdminEnvironment: health checks = [deadlocks, hibernate]
+INFO  [2015-08-13 19:27:16,661] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@9f86dc3{/,null,AVAILABLE}
+INFO  [2015-08-13 19:27:16,667] org.eclipse.jetty.server.ServerConnector: Started application@312b34e3{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:27:16,668] org.eclipse.jetty.server.ServerConnector: Started admin@26844abb{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-13 19:27:16,668] org.eclipse.jetty.server.Server: Started @2624ms
+INFO  [2015-08-13 19:27:20,590] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    59000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    430000 nanoseconds spent preparing 5 JDBC statements;
+    4202000 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    5865000 nanoseconds spent executing 1 flushes (flushing a total of 9 entities and 4 collections);
+    49000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-13 19:28:54,670] org.eclipse.jetty.server.ServerConnector: Stopped application@312b34e3{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:28:54,671] org.eclipse.jetty.server.ServerConnector: Stopped admin@26844abb{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-13 19:28:54,672] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@9f86dc3{/,null,UNAVAILABLE}
+INFO  [2015-08-13 19:28:54,675] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@16da1abc{/base,null,UNAVAILABLE}
+INFO  [2015-08-13 19:28:58,440] org.eclipse.jetty.util.log: Logging initialized @1015ms
+INFO  [2015-08-13 19:28:58,590] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-13 19:28:58,594] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-13 19:28:58,595] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-13 19:28:58,596] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-13 19:28:58,611] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.Pet, com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-13 19:28:59,023] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-13 19:28:59,033] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-13 19:28:59,150] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2015-08-13 19:28:59,153] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2015-08-13 19:28:59,229] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@4eb30d44
+INFO  [2015-08-13 19:28:59,495] com.bms.base.BaseApplication: base run completed
+INFO  [2015-08-13 19:28:59,501] io.dropwizard.server.ServerFactory: Starting base
+ (                                                            (                    
+ )\ )                                                  (      )\ )                 
+(()/(     (          (  (     (                        )\ )  (()/(  (   (      (   
+ /(_))   ))\   (     )\))(   ))\  (    (     (     (  (()/(   /(_)) )\  )(    ))\  
+(_))_   /((_)  )\ ) ((_))\  /((_) )\   )\ )  )\    )\  /(_)) (_))_|((_)(()\  /((_) 
+ |   \ (_))(  _(_/(  (()(_)(_))  ((_) _(_/( ((_)  ((_)(_) _| | |_   (_) ((_)(_))   
+ | |) || || || ' \))/ _` | / -_)/ _ \| ' \))(_-< / _ \ |  _| | __|  | || '_|/ -_)  
+ |___/  \_,_||_||_| \__, | \___|\___/|_||_| /__/ \___/ |_|   |_|    |_||_|  \___|  
+                    |___/                                                          
+INFO  [2015-08-13 19:28:59,554] org.eclipse.jetty.setuid.SetUIDListener: Opened application@44bd4b0a{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:28:59,554] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@6c008c24{HTTP/1.1}{0.0.0.0:8081}
+DEBUG [2015-08-13 19:28:59,554] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = [io.dropwizard.lifecycle.ExecutorServiceManager@292158f8(TimeBoundHealthCheck-pool-%d), io.dropwizard.hibernate.SessionFactoryManager@53ec2968]
+INFO  [2015-08-13 19:28:59,556] org.eclipse.jetty.server.Server: jetty-9.2.9.v20150224
+DEBUG [2015-08-13 19:29:00,061] io.dropwizard.jersey.DropwizardResourceConfig: resources = []
+DEBUG [2015-08-13 19:29:00,061] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResponseFeature, io.dropwizard.jersey.guava.OptionalMessageBodyWriter]
+INFO  [2015-08-13 19:29:00,075] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /api/playercharacters (com.bms.base.resources.PlayerCharacterResource)
+    GET     /api/playercharacters/{name} (com.bms.base.resources.PlayerCharacterResource)
+    GET     /api/pets (com.bms.base.resources.PetResource)
+    GET     /api/pets/{name} (com.bms.base.resources.PetResource)
+
+INFO  [2015-08-13 19:29:00,078] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@9b5f3c7{/base,null,AVAILABLE}
+INFO  [2015-08-13 19:29:00,082] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+DEBUG [2015-08-13 19:29:00,083] io.dropwizard.setup.AdminEnvironment: health checks = [deadlocks, hibernate]
+INFO  [2015-08-13 19:29:00,086] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@2e62ead7{/,null,AVAILABLE}
+INFO  [2015-08-13 19:29:00,093] org.eclipse.jetty.server.ServerConnector: Started application@44bd4b0a{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:29:00,093] org.eclipse.jetty.server.ServerConnector: Started admin@6c008c24{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-13 19:29:00,093] org.eclipse.jetty.server.Server: Started @2669ms
+INFO  [2015-08-13 19:29:05,663] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    51000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    451000 nanoseconds spent preparing 5 JDBC statements;
+    5574000 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    6247000 nanoseconds spent executing 1 flushes (flushing a total of 9 entities and 4 collections);
+    44000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-13 19:29:36,069] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    34000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    467000 nanoseconds spent preparing 5 JDBC statements;
+    2935000 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    492000 nanoseconds spent executing 1 flushes (flushing a total of 9 entities and 4 collections);
+    6000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-13 19:29:46,653] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    36000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    416000 nanoseconds spent preparing 5 JDBC statements;
+    2173000 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    519000 nanoseconds spent executing 1 flushes (flushing a total of 9 entities and 4 collections);
+    6000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-13 19:29:55,630] org.eclipse.jetty.server.ServerConnector: Stopped application@44bd4b0a{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:29:55,631] org.eclipse.jetty.server.ServerConnector: Stopped admin@6c008c24{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-13 19:29:55,632] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@2e62ead7{/,null,UNAVAILABLE}
+INFO  [2015-08-13 19:29:55,635] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@9b5f3c7{/base,null,UNAVAILABLE}
+INFO  [2015-08-13 19:29:59,750] org.eclipse.jetty.util.log: Logging initialized @1093ms
+INFO  [2015-08-13 19:29:59,901] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-13 19:29:59,905] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-13 19:29:59,906] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-13 19:29:59,908] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-13 19:29:59,924] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.Pet, com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-13 19:30:00,348] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-13 19:30:00,357] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-13 19:30:00,462] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2015-08-13 19:30:00,465] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2015-08-13 19:30:00,529] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@4eb30d44
+INFO  [2015-08-13 19:30:00,792] com.bms.base.BaseApplication: base run completed
+INFO  [2015-08-13 19:30:00,798] io.dropwizard.server.ServerFactory: Starting base
+ (                                                            (                    
+ )\ )                                                  (      )\ )                 
+(()/(     (          (  (     (                        )\ )  (()/(  (   (      (   
+ /(_))   ))\   (     )\))(   ))\  (    (     (     (  (()/(   /(_)) )\  )(    ))\  
+(_))_   /((_)  )\ ) ((_))\  /((_) )\   )\ )  )\    )\  /(_)) (_))_|((_)(()\  /((_) 
+ |   \ (_))(  _(_/(  (()(_)(_))  ((_) _(_/( ((_)  ((_)(_) _| | |_   (_) ((_)(_))   
+ | |) || || || ' \))/ _` | / -_)/ _ \| ' \))(_-< / _ \ |  _| | __|  | || '_|/ -_)  
+ |___/  \_,_||_||_| \__, | \___|\___/|_||_| /__/ \___/ |_|   |_|    |_||_|  \___|  
+                    |___/                                                          
+INFO  [2015-08-13 19:30:00,852] org.eclipse.jetty.setuid.SetUIDListener: Opened application@1a865273{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:30:00,852] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@288ca5f0{HTTP/1.1}{0.0.0.0:8081}
+DEBUG [2015-08-13 19:30:00,852] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = [io.dropwizard.lifecycle.ExecutorServiceManager@1deceb67(TimeBoundHealthCheck-pool-%d), io.dropwizard.hibernate.SessionFactoryManager@582a764a]
+INFO  [2015-08-13 19:30:00,854] org.eclipse.jetty.server.Server: jetty-9.2.9.v20150224
+DEBUG [2015-08-13 19:30:01,335] io.dropwizard.jersey.DropwizardResourceConfig: resources = []
+DEBUG [2015-08-13 19:30:01,335] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResponseFeature, io.dropwizard.jersey.guava.OptionalMessageBodyWriter]
+INFO  [2015-08-13 19:30:01,349] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /api/pets (com.bms.base.resources.PetResource)
+    GET     /api/pets/{name} (com.bms.base.resources.PetResource)
+    GET     /api/playercharacters (com.bms.base.resources.PlayerCharacterResource)
+    GET     /api/playercharacters/{name} (com.bms.base.resources.PlayerCharacterResource)
+
+INFO  [2015-08-13 19:30:01,352] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1c52552f{/base,null,AVAILABLE}
+INFO  [2015-08-13 19:30:01,357] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+DEBUG [2015-08-13 19:30:01,357] io.dropwizard.setup.AdminEnvironment: health checks = [deadlocks, hibernate]
+INFO  [2015-08-13 19:30:01,361] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@662e682a{/,null,AVAILABLE}
+INFO  [2015-08-13 19:30:01,368] org.eclipse.jetty.server.ServerConnector: Started application@1a865273{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:30:01,368] org.eclipse.jetty.server.ServerConnector: Started admin@288ca5f0{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-13 19:30:01,368] org.eclipse.jetty.server.Server: Started @2712ms
+INFO  [2015-08-13 19:30:04,376] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    95000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    433000 nanoseconds spent preparing 5 JDBC statements;
+    5232000 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    6029000 nanoseconds spent executing 1 flushes (flushing a total of 9 entities and 4 collections);
+    49000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-13 19:30:19,018] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    50000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    366000 nanoseconds spent preparing 5 JDBC statements;
+    1837000 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    355000 nanoseconds spent executing 1 flushes (flushing a total of 9 entities and 4 collections);
+    7000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-13 19:30:23,951] org.eclipse.jetty.server.ServerConnector: Stopped application@1a865273{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:30:23,952] org.eclipse.jetty.server.ServerConnector: Stopped admin@288ca5f0{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-13 19:30:23,953] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@662e682a{/,null,UNAVAILABLE}
+INFO  [2015-08-13 19:30:23,957] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@1c52552f{/base,null,UNAVAILABLE}
+INFO  [2015-08-13 19:30:28,527] org.eclipse.jetty.util.log: Logging initialized @1084ms
+INFO  [2015-08-13 19:30:28,679] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-13 19:30:28,684] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-13 19:30:28,685] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-13 19:30:28,686] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-13 19:30:28,701] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.Pet, com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-13 19:30:29,119] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-13 19:30:29,127] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-13 19:30:29,250] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2015-08-13 19:30:29,253] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2015-08-13 19:30:29,321] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@4eb30d44
+INFO  [2015-08-13 19:30:29,583] com.bms.base.BaseApplication: base run completed
+INFO  [2015-08-13 19:30:29,589] io.dropwizard.server.ServerFactory: Starting base
+ (                                                            (                    
+ )\ )                                                  (      )\ )                 
+(()/(     (          (  (     (                        )\ )  (()/(  (   (      (   
+ /(_))   ))\   (     )\))(   ))\  (    (     (     (  (()/(   /(_)) )\  )(    ))\  
+(_))_   /((_)  )\ ) ((_))\  /((_) )\   )\ )  )\    )\  /(_)) (_))_|((_)(()\  /((_) 
+ |   \ (_))(  _(_/(  (()(_)(_))  ((_) _(_/( ((_)  ((_)(_) _| | |_   (_) ((_)(_))   
+ | |) || || || ' \))/ _` | / -_)/ _ \| ' \))(_-< / _ \ |  _| | __|  | || '_|/ -_)  
+ |___/  \_,_||_||_| \__, | \___|\___/|_||_| /__/ \___/ |_|   |_|    |_||_|  \___|  
+                    |___/                                                          
+INFO  [2015-08-13 19:30:29,643] org.eclipse.jetty.setuid.SetUIDListener: Opened application@216e0771{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:30:29,643] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@21079a12{HTTP/1.1}{0.0.0.0:8081}
+DEBUG [2015-08-13 19:30:29,643] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = [io.dropwizard.lifecycle.ExecutorServiceManager@58ff8d79(TimeBoundHealthCheck-pool-%d), io.dropwizard.hibernate.SessionFactoryManager@7e19755a]
+INFO  [2015-08-13 19:30:29,646] org.eclipse.jetty.server.Server: jetty-9.2.9.v20150224
+DEBUG [2015-08-13 19:30:30,121] io.dropwizard.jersey.DropwizardResourceConfig: resources = []
+DEBUG [2015-08-13 19:30:30,121] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResponseFeature, io.dropwizard.jersey.guava.OptionalMessageBodyWriter]
+INFO  [2015-08-13 19:30:30,136] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /api/pets (com.bms.base.resources.PetResource)
+    GET     /api/pets/{name} (com.bms.base.resources.PetResource)
+    GET     /api/playercharacters (com.bms.base.resources.PlayerCharacterResource)
+    GET     /api/playercharacters/{name} (com.bms.base.resources.PlayerCharacterResource)
+
+INFO  [2015-08-13 19:30:30,139] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@61ae0d43{/base,null,AVAILABLE}
+INFO  [2015-08-13 19:30:30,143] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+DEBUG [2015-08-13 19:30:30,143] io.dropwizard.setup.AdminEnvironment: health checks = [deadlocks, hibernate]
+INFO  [2015-08-13 19:30:30,148] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@bf75b5c{/,null,AVAILABLE}
+INFO  [2015-08-13 19:30:30,154] org.eclipse.jetty.server.ServerConnector: Started application@216e0771{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:30:30,155] org.eclipse.jetty.server.ServerConnector: Started admin@21079a12{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-13 19:30:30,155] org.eclipse.jetty.server.Server: Started @2712ms
+INFO  [2015-08-13 19:30:32,186] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    48000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    557000 nanoseconds spent preparing 5 JDBC statements;
+    5247000 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    45000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+ERROR [2015-08-13 19:30:32,193] io.dropwizard.jersey.errors.LoggingExceptionMapper: Error handling a request: f0ccf5f3020e9fed
+! java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to com.bms.base.core.PlayerCharacter
+! at com.bms.base.resources.PlayerCharacterResource.getPlayerCharacters(PlayerCharacterResource.java:36) ~[classes/:na]
+! at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_05]
+! at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_05]
+! at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_05]
+! at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_05]
+! at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81) ~[jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144) ~[jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161) ~[jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160) ~[jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99) ~[jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389) ~[jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347) ~[jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102) ~[jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:308) ~[jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271) [jersey-common-2.19.jar:na]
+! at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267) [jersey-common-2.19.jar:na]
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:315) [jersey-common-2.19.jar:na]
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:297) [jersey-common-2.19.jar:na]
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:267) [jersey-common-2.19.jar:na]
+! at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317) [jersey-common-2.19.jar:na]
+! at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:291) [jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1140) [jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:403) [jersey-container-servlet-core-2.19.jar:na]
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:386) [jersey-container-servlet-core-2.19.jar:na]
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:334) [jersey-container-servlet-core-2.19.jar:na]
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221) [jersey-container-servlet-core-2.19.jar:na]
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:49) [dropwizard-jetty-0.8.2.jar:0.8.2]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669) [jetty-servlet-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:83) [jetty-servlets-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:364) [jetty-servlets-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at io.dropwizard.jetty.BiDiGzipFilter.doFilter(BiDiGzipFilter.java:134) [dropwizard-jetty-0.8.2.jar:0.8.2]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29) [dropwizard-servlets-0.8.2.jar:0.8.2]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:44) [dropwizard-jersey-0.8.2.jar:0.8.2]
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:39) [dropwizard-jersey-0.8.2.jar:0.8.2]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585) [jetty-servlet-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515) [jetty-servlet-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:240) [metrics-jetty9-3.1.1.jar:3.1.1]
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:51) [dropwizard-jetty-0.8.2.jar:0.8.2]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:95) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:159) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.Server.handle(Server.java:497) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540) [jetty-io-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635) [jetty-util-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555) [jetty-util-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at java.lang.Thread.run(Thread.java:745) [na:1.8.0_05]
+INFO  [2015-08-13 19:31:26,934] org.eclipse.jetty.server.ServerConnector: Stopped application@216e0771{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-13 19:31:26,936] org.eclipse.jetty.server.ServerConnector: Stopped admin@21079a12{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-13 19:31:26,937] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@bf75b5c{/,null,UNAVAILABLE}
+INFO  [2015-08-13 19:31:26,940] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@61ae0d43{/base,null,UNAVAILABLE}

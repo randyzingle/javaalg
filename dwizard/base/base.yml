@@ -1,0 +1,68 @@
+applicationName: base
+
+server:
+  applicationContextPath: /base
+  applicationConnectors:
+    - type: http
+      port: 8080
+
+logging:
+  level: INFO
+  loggers:
+    io.dropwizard: DEBUG
+    com.amplify.burst: DEBUG
+  appenders:
+
+   # CONSOLE LOG AT WARNING LEVEL
+   - type: console
+     threshold: DEBUG
+     target: stdout
+
+   # MAIN SERVER LOG FILE
+   - type: file
+     threshold: INFO
+     currentLogFilename: ./logs/server.log
+     archivedLogFilenamePattern: ./logs/server-%d.log.gz
+     archivedFileCount: 5
+
+   # DEBUG SERVER LOG FILE
+   - type: file
+     threshold: DEBUG
+     currentLogFilename: ./logs/debug.log
+     archivedLogFilenamePattern: ./logs/debug-%d{yyyy-MM-dd-hh}.log.gz
+     archivedFileCount: 6
+
+database:
+  # the name of your JDBC driver
+  driverClass: org.postgresql.Driver
+
+  # the username
+  user: pnauser
+
+  # the password
+  password: pnauser123
+
+  # the JDBC URL
+  # run on local postgres database
+  url: jdbc:postgresql://localhost/base
+ 
+
+  properties:
+      charSet: UTF-8
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  # the maximum amount of time to wait on an empty pool before throwing an exception
+  maxWaitForConnection: 1s
+
+  # the SQL query to run when validating a connection's liveness
+  validationQuery: "/* MyApplication Health Check */ SELECT 1"
+
+
+  # the minimum number of connections to keep open
+  minSize: 8
+
+  # the maximum number of connections to keep open
+  maxSize: 32
+
+  # whether or not idle connections should be validated
+  checkConnectionWhileIdle: false

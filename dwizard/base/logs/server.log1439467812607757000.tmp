@@ -1,0 +1,1837 @@
+INFO  [2015-08-12 14:30:27,430] org.eclipse.jetty.util.log: Logging initialized @2291ms
+INFO  [2015-08-12 14:30:27,720] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-12 14:30:27,729] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-12 14:30:27,732] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-12 14:30:27,734] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-12 14:30:27,770] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-12 14:30:28,669] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-12 14:30:28,683] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-12 14:30:28,850] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2015-08-12 14:30:28,857] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2015-08-12 14:30:28,986] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@3965bdf9
+INFO  [2015-08-12 14:30:29,367] com.bms.base.BaseApplication: base run completed
+INFO  [2015-08-12 14:30:29,379] io.dropwizard.server.ServerFactory: Starting base
+ (                                                            (                    
+ )\ )                                                  (      )\ )                 
+(()/(     (          (  (     (                        )\ )  (()/(  (   (      (   
+ /(_))   ))\   (     )\))(   ))\  (    (     (     (  (()/(   /(_)) )\  )(    ))\  
+(_))_   /((_)  )\ ) ((_))\  /((_) )\   )\ )  )\    )\  /(_)) (_))_|((_)(()\  /((_) 
+ |   \ (_))(  _(_/(  (()(_)(_))  ((_) _(_/( ((_)  ((_)(_) _| | |_   (_) ((_)(_))   
+ | |) || || || ' \))/ _` | / -_)/ _ \| ' \))(_-< / _ \ |  _| | __|  | || '_|/ -_)  
+ |___/  \_,_||_||_| \__, | \___|\___/|_||_| /__/ \___/ |_|   |_|    |_||_|  \___|  
+                    |___/                                                          
+INFO  [2015-08-12 14:30:29,470] org.eclipse.jetty.setuid.SetUIDListener: Opened application@40943a6{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 14:30:29,470] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@798cb6d9{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 14:30:29,474] org.eclipse.jetty.server.Server: jetty-9.2.9.v20150224
+INFO  [2015-08-12 14:30:30,215] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /api/playercharacters (com.bms.base.resources.PlayerCharacterResource)
+
+INFO  [2015-08-12 14:30:30,218] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@26a45089{/base,null,AVAILABLE}
+INFO  [2015-08-12 14:30:30,225] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2015-08-12 14:30:30,230] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@d66502{/,null,AVAILABLE}
+INFO  [2015-08-12 14:30:30,253] org.eclipse.jetty.server.ServerConnector: Started application@40943a6{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 14:30:30,258] org.eclipse.jetty.server.ServerConnector: Started admin@798cb6d9{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 14:30:30,261] org.eclipse.jetty.server.Server: Started @5123ms
+INFO  [2015-08-12 14:34:17,240] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    100000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+ERROR [2015-08-12 14:34:17,251] io.dropwizard.jersey.errors.LoggingExceptionMapper: Error handling a request: eae5adc8d2fc5d45
+! java.lang.NullPointerException: null
+! at com.bms.base.resources.PlayerCharacterResource.getPlayerCharacters(PlayerCharacterResource.java:35) ~[classes/:na]
+! at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_05]
+! at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_05]
+! at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_05]
+! at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_05]
+! at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81) ~[jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144) ~[jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161) ~[jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160) ~[jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99) ~[jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389) ~[jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347) ~[jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102) ~[jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:308) ~[jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271) [jersey-common-2.19.jar:na]
+! at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267) [jersey-common-2.19.jar:na]
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:315) [jersey-common-2.19.jar:na]
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:297) [jersey-common-2.19.jar:na]
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:267) [jersey-common-2.19.jar:na]
+! at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317) [jersey-common-2.19.jar:na]
+! at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:291) [jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1140) [jersey-server-2.19.jar:na]
+! at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:403) [jersey-container-servlet-core-2.19.jar:na]
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:386) [jersey-container-servlet-core-2.19.jar:na]
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:334) [jersey-container-servlet-core-2.19.jar:na]
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221) [jersey-container-servlet-core-2.19.jar:na]
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:49) [dropwizard-jetty-0.8.2.jar:0.8.2]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669) [jetty-servlet-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:83) [jetty-servlets-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:364) [jetty-servlets-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at io.dropwizard.jetty.BiDiGzipFilter.doFilter(BiDiGzipFilter.java:134) [dropwizard-jetty-0.8.2.jar:0.8.2]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29) [dropwizard-servlets-0.8.2.jar:0.8.2]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:44) [dropwizard-jersey-0.8.2.jar:0.8.2]
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:39) [dropwizard-jersey-0.8.2.jar:0.8.2]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585) [jetty-servlet-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515) [jetty-servlet-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:240) [metrics-jetty9-3.1.1.jar:3.1.1]
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:51) [dropwizard-jetty-0.8.2.jar:0.8.2]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:95) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:159) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.Server.handle(Server.java:497) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257) [jetty-server-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540) [jetty-io-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635) [jetty-util-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555) [jetty-util-9.2.9.v20150224.jar:9.2.9.v20150224]
+! at java.lang.Thread.run(Thread.java:745) [na:1.8.0_05]
+INFO  [2015-08-12 14:36:21,685] org.eclipse.jetty.util.log: Logging initialized @1932ms
+INFO  [2015-08-12 14:36:21,945] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-12 14:36:21,954] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-12 14:36:21,957] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-12 14:36:21,959] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-12 14:36:21,995] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-12 14:36:22,573] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-12 14:36:22,587] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-12 14:36:22,741] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2015-08-12 14:36:22,747] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2015-08-12 14:36:22,871] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@3ddb774f
+INFO  [2015-08-12 14:36:23,243] com.bms.base.BaseApplication: base run completed
+INFO  [2015-08-12 14:36:23,254] io.dropwizard.server.ServerFactory: Starting base
+ (                                                            (                    
+ )\ )                                                  (      )\ )                 
+(()/(     (          (  (     (                        )\ )  (()/(  (   (      (   
+ /(_))   ))\   (     )\))(   ))\  (    (     (     (  (()/(   /(_)) )\  )(    ))\  
+(_))_   /((_)  )\ ) ((_))\  /((_) )\   )\ )  )\    )\  /(_)) (_))_|((_)(()\  /((_) 
+ |   \ (_))(  _(_/(  (()(_)(_))  ((_) _(_/( ((_)  ((_)(_) _| | |_   (_) ((_)(_))   
+ | |) || || || ' \))/ _` | / -_)/ _ \| ' \))(_-< / _ \ |  _| | __|  | || '_|/ -_)  
+ |___/  \_,_||_||_| \__, | \___|\___/|_||_| /__/ \___/ |_|   |_|    |_||_|  \___|  
+                    |___/                                                          
+INFO  [2015-08-12 14:36:23,349] org.eclipse.jetty.setuid.SetUIDListener: Opened application@3d3a1903{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 14:36:23,349] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@26582ca{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 14:36:23,353] org.eclipse.jetty.server.Server: jetty-9.2.9.v20150224
+INFO  [2015-08-12 14:36:24,066] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /api/playercharacters (com.bms.base.resources.PlayerCharacterResource)
+
+INFO  [2015-08-12 14:36:24,069] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@3e8b8f0{/base,null,AVAILABLE}
+INFO  [2015-08-12 14:36:24,075] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2015-08-12 14:36:24,080] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@696174d3{/,null,AVAILABLE}
+INFO  [2015-08-12 14:36:24,093] org.eclipse.jetty.server.ServerConnector: Started application@3d3a1903{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 14:36:24,094] org.eclipse.jetty.server.ServerConnector: Started admin@26582ca{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 14:36:24,094] org.eclipse.jetty.server.Server: Started @4342ms
+INFO  [2015-08-12 14:36:49,566] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    84000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    135000 nanoseconds spent preparing 1 JDBC statements;
+    27302000 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    6128000 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 0 collections);
+    63000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-12 14:44:24,772] org.eclipse.jetty.util.log: Logging initialized @1883ms
+INFO  [2015-08-12 14:44:25,034] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-12 14:44:25,044] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-12 14:44:25,046] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-12 14:44:25,048] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-12 14:44:25,079] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-12 14:44:25,635] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-12 14:44:25,650] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-12 14:44:25,790] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2015-08-12 14:44:25,798] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2015-08-12 14:44:25,925] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@78cfa264
+INFO  [2015-08-12 14:44:26,306] com.bms.base.BaseApplication: base run completed
+INFO  [2015-08-12 14:44:26,318] io.dropwizard.server.ServerFactory: Starting base
+ (                                                            (                    
+ )\ )                                                  (      )\ )                 
+(()/(     (          (  (     (                        )\ )  (()/(  (   (      (   
+ /(_))   ))\   (     )\))(   ))\  (    (     (     (  (()/(   /(_)) )\  )(    ))\  
+(_))_   /((_)  )\ ) ((_))\  /((_) )\   )\ )  )\    )\  /(_)) (_))_|((_)(()\  /((_) 
+ |   \ (_))(  _(_/(  (()(_)(_))  ((_) _(_/( ((_)  ((_)(_) _| | |_   (_) ((_)(_))   
+ | |) || || || ' \))/ _` | / -_)/ _ \| ' \))(_-< / _ \ |  _| | __|  | || '_|/ -_)  
+ |___/  \_,_||_||_| \__, | \___|\___/|_||_| /__/ \___/ |_|   |_|    |_||_|  \___|  
+                    |___/                                                          
+INFO  [2015-08-12 14:44:26,409] org.eclipse.jetty.setuid.SetUIDListener: Opened application@6f6cc7da{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 14:44:26,409] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@40717ed{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 14:44:26,413] org.eclipse.jetty.server.Server: jetty-9.2.9.v20150224
+INFO  [2015-08-12 14:44:27,087] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /api/playercharacters (com.bms.base.resources.PlayerCharacterResource)
+    GET     /api/playercharacters/{name} (com.bms.base.resources.PlayerCharacterResource)
+
+INFO  [2015-08-12 14:44:27,089] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@77e9dca8{/base,null,AVAILABLE}
+INFO  [2015-08-12 14:44:27,103] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2015-08-12 14:44:27,108] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@45297e7{/,null,AVAILABLE}
+INFO  [2015-08-12 14:44:27,119] org.eclipse.jetty.server.ServerConnector: Started application@6f6cc7da{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 14:44:27,119] org.eclipse.jetty.server.ServerConnector: Started admin@40717ed{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 14:44:27,120] org.eclipse.jetty.server.Server: Started @4232ms
+INFO  [2015-08-12 14:44:46,888] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    59000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    134000 nanoseconds spent preparing 1 JDBC statements;
+    4830000 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    4903000 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    84000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-12 14:44:57,715] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    35000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    79000 nanoseconds spent preparing 1 JDBC statements;
+    1290000 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    173000 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    9000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-12 14:45:53,960] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    46000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    112000 nanoseconds spent preparing 1 JDBC statements;
+    737000 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    150000 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    11000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-12 18:39:35,944] org.eclipse.jetty.util.log: Logging initialized @2051ms
+INFO  [2015-08-12 18:39:36,175] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-12 18:39:36,181] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-12 18:39:36,183] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-12 18:39:36,184] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-12 18:39:36,209] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-12 18:39:36,730] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-12 18:39:36,743] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-12 18:41:42,919] org.eclipse.jetty.util.log: Logging initialized @1017ms
+INFO  [2015-08-12 18:41:43,074] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-12 18:41:43,079] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-12 18:41:43,080] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-12 18:41:43,081] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-12 18:41:43,100] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-12 18:41:43,532] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-12 18:41:43,541] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-12 18:43:22,652] org.eclipse.jetty.util.log: Logging initialized @1023ms
+INFO  [2015-08-12 18:43:22,805] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-12 18:43:22,809] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-12 18:43:22,811] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-12 18:43:22,812] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-12 18:43:22,828] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.Pet, com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-12 18:43:23,223] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-12 18:43:23,231] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-12 18:43:23,337] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2015-08-12 18:43:23,341] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2015-08-12 18:43:23,407] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@4eb30d44
+INFO  [2015-08-12 18:43:23,694] com.bms.base.BaseApplication: base run completed
+INFO  [2015-08-12 18:43:23,704] io.dropwizard.server.ServerFactory: Starting base
+ (                                                            (                    
+ )\ )                                                  (      )\ )                 
+(()/(     (          (  (     (                        )\ )  (()/(  (   (      (   
+ /(_))   ))\   (     )\))(   ))\  (    (     (     (  (()/(   /(_)) )\  )(    ))\  
+(_))_   /((_)  )\ ) ((_))\  /((_) )\   )\ )  )\    )\  /(_)) (_))_|((_)(()\  /((_) 
+ |   \ (_))(  _(_/(  (()(_)(_))  ((_) _(_/( ((_)  ((_)(_) _| | |_   (_) ((_)(_))   
+ | |) || || || ' \))/ _` | / -_)/ _ \| ' \))(_-< / _ \ |  _| | __|  | || '_|/ -_)  
+ |___/  \_,_||_||_| \__, | \___|\___/|_||_| /__/ \___/ |_|   |_|    |_||_|  \___|  
+                    |___/                                                          
+INFO  [2015-08-12 18:43:23,769] org.eclipse.jetty.setuid.SetUIDListener: Opened application@2b2f5fcf{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 18:43:23,769] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@858d8b4{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 18:43:23,772] org.eclipse.jetty.server.Server: jetty-9.2.9.v20150224
+INFO  [2015-08-12 18:43:24,291] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /api/pet (com.bms.base.resources.PetResource)
+    GET     /api/pet/{name} (com.bms.base.resources.PetResource)
+    GET     /api/playercharacters (com.bms.base.resources.PlayerCharacterResource)
+    GET     /api/playercharacters/{name} (com.bms.base.resources.PlayerCharacterResource)
+
+INFO  [2015-08-12 18:43:24,293] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@63f9b562{/base,null,AVAILABLE}
+INFO  [2015-08-12 18:43:24,297] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2015-08-12 18:43:24,302] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@2fbe26da{/,null,AVAILABLE}
+INFO  [2015-08-12 18:43:24,313] org.eclipse.jetty.server.ServerConnector: Started application@2b2f5fcf{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 18:43:24,314] org.eclipse.jetty.server.ServerConnector: Started admin@858d8b4{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 18:43:24,314] org.eclipse.jetty.server.Server: Started @2686ms
+INFO  [2015-08-12 18:43:57,573] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    46000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    306000 nanoseconds spent preparing 3 JDBC statements;
+    9699000 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    5794000 nanoseconds spent executing 1 flushes (flushing a total of 6 entities and 2 collections);
+    44000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-12 18:44:13,306] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    46000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    139000 nanoseconds spent preparing 2 JDBC statements;
+    1765000 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    183000 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    9000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-12 18:44:25,567] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    43000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    253000 nanoseconds spent preparing 3 JDBC statements;
+    1593000 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    277000 nanoseconds spent executing 1 flushes (flushing a total of 6 entities and 2 collections);
+    7000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-12 18:45:24,470] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    39000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    69000 nanoseconds spent preparing 1 JDBC statements;
+    504000 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    264000 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 4 collections);
+    7000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-12 18:47:18,831] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    36000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    80000 nanoseconds spent preparing 1 JDBC statements;
+    503000 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    268000 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 4 collections);
+    6000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-12 18:58:53,098] org.eclipse.jetty.server.ServerConnector: Stopped application@2b2f5fcf{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 18:58:53,099] org.eclipse.jetty.server.ServerConnector: Stopped admin@858d8b4{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 18:58:53,100] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@2fbe26da{/,null,UNAVAILABLE}
+INFO  [2015-08-12 18:58:53,103] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@63f9b562{/base,null,UNAVAILABLE}
+INFO  [2015-08-12 18:59:07,987] org.eclipse.jetty.util.log: Logging initialized @1302ms
+INFO  [2015-08-12 18:59:08,193] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-12 18:59:08,200] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-12 18:59:08,202] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-12 18:59:08,203] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-12 18:59:08,226] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.Pet, com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-12 18:59:08,685] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-12 18:59:08,700] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-12 18:59:08,862] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2015-08-12 18:59:08,867] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2015-08-12 18:59:08,957] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@3c0e00a8
+INFO  [2015-08-12 18:59:09,472] com.bms.base.BaseApplication: base run completed
+INFO  [2015-08-12 18:59:09,492] io.dropwizard.server.ServerFactory: Starting base
+ (                                                            (                    
+ )\ )                                                  (      )\ )                 
+(()/(     (          (  (     (                        )\ )  (()/(  (   (      (   
+ /(_))   ))\   (     )\))(   ))\  (    (     (     (  (()/(   /(_)) )\  )(    ))\  
+(_))_   /((_)  )\ ) ((_))\  /((_) )\   )\ )  )\    )\  /(_)) (_))_|((_)(()\  /((_) 
+ |   \ (_))(  _(_/(  (()(_)(_))  ((_) _(_/( ((_)  ((_)(_) _| | |_   (_) ((_)(_))   
+ | |) || || || ' \))/ _` | / -_)/ _ \| ' \))(_-< / _ \ |  _| | __|  | || '_|/ -_)  
+ |___/  \_,_||_||_| \__, | \___|\___/|_||_| /__/ \___/ |_|   |_|    |_||_|  \___|  
+                    |___/                                                          
+INFO  [2015-08-12 18:59:09,561] org.eclipse.jetty.setuid.SetUIDListener: Opened application@7e5efcab{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 18:59:09,562] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@5a4dda2{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 18:59:09,565] org.eclipse.jetty.server.Server: jetty-9.2.9.v20150224
+INFO  [2015-08-12 18:59:10,229] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /api/pet (com.bms.base.resources.PetResource)
+    GET     /api/pet/{name} (com.bms.base.resources.PetResource)
+    GET     /api/playercharacters (com.bms.base.resources.PlayerCharacterResource)
+    GET     /api/playercharacters/{name} (com.bms.base.resources.PlayerCharacterResource)
+
+INFO  [2015-08-12 18:59:10,232] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@13e1e816{/base,null,AVAILABLE}
+INFO  [2015-08-12 18:59:10,240] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2015-08-12 18:59:10,246] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@a69f9d{/,null,AVAILABLE}
+INFO  [2015-08-12 18:59:10,254] org.eclipse.jetty.server.ServerConnector: Started application@7e5efcab{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 18:59:10,255] org.eclipse.jetty.server.ServerConnector: Started admin@5a4dda2{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 18:59:10,255] org.eclipse.jetty.server.Server: Started @3572ms
+INFO  [2015-08-12 19:08:14,031] org.eclipse.jetty.util.log: Logging initialized @1496ms
+INFO  [2015-08-12 19:08:14,231] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-12 19:08:14,239] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-12 19:08:14,241] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-12 19:08:14,242] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-12 19:08:14,266] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.Pet, com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-12 19:08:14,744] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-12 19:08:14,756] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-12 19:08:14,906] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2015-08-12 19:08:14,910] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2015-08-12 19:08:15,008] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@3135bf25
+INFO  [2015-08-12 19:08:15,377] com.bms.base.BaseApplication: base run completed
+INFO  [2015-08-12 19:08:15,386] io.dropwizard.server.ServerFactory: Starting base
+ (                                                            (                    
+ )\ )                                                  (      )\ )                 
+(()/(     (          (  (     (                        )\ )  (()/(  (   (      (   
+ /(_))   ))\   (     )\))(   ))\  (    (     (     (  (()/(   /(_)) )\  )(    ))\  
+(_))_   /((_)  )\ ) ((_))\  /((_) )\   )\ )  )\    )\  /(_)) (_))_|((_)(()\  /((_) 
+ |   \ (_))(  _(_/(  (()(_)(_))  ((_) _(_/( ((_)  ((_)(_) _| | |_   (_) ((_)(_))   
+ | |) || || || ' \))/ _` | / -_)/ _ \| ' \))(_-< / _ \ |  _| | __|  | || '_|/ -_)  
+ |___/  \_,_||_||_| \__, | \___|\___/|_||_| /__/ \___/ |_|   |_|    |_||_|  \___|  
+                    |___/                                                          
+INFO  [2015-08-12 19:08:15,459] org.eclipse.jetty.setuid.SetUIDListener: Opened application@560271a1{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 19:08:15,459] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@4b9c411{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 19:08:15,463] org.eclipse.jetty.server.Server: jetty-9.2.9.v20150224
+INFO  [2015-08-12 19:08:16,047] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /api/playercharacters (com.bms.base.resources.PlayerCharacterResource)
+    GET     /api/playercharacters/{name} (com.bms.base.resources.PlayerCharacterResource)
+    GET     /api/pet (com.bms.base.resources.PetResource)
+    GET     /api/pet/{name} (com.bms.base.resources.PetResource)
+
+INFO  [2015-08-12 19:08:16,049] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@5a8dcfbb{/base,null,AVAILABLE}
+INFO  [2015-08-12 19:08:16,057] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2015-08-12 19:08:16,062] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@e97f115{/,null,AVAILABLE}
+INFO  [2015-08-12 19:08:16,071] org.eclipse.jetty.server.ServerConnector: Started application@560271a1{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 19:08:16,074] org.eclipse.jetty.server.ServerConnector: Started admin@4b9c411{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 19:08:16,078] org.eclipse.jetty.server.Server: Started @3543ms
+INFO  [2015-08-12 19:11:39,292] org.eclipse.jetty.util.log: Logging initialized @1021ms
+INFO  [2015-08-12 19:11:39,438] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-12 19:11:39,442] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-12 19:11:39,443] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-12 19:11:39,444] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-12 19:11:39,461] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.Pet, com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-12 19:11:39,859] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-12 19:11:39,868] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-12 19:11:39,981] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2015-08-12 19:11:39,986] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2015-08-12 19:11:40,053] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@4eb30d44
+INFO  [2015-08-12 19:11:40,325] com.bms.base.BaseApplication: base run completed
+INFO  [2015-08-12 19:11:40,331] io.dropwizard.server.ServerFactory: Starting base
+ (                                                            (                    
+ )\ )                                                  (      )\ )                 
+(()/(     (          (  (     (                        )\ )  (()/(  (   (      (   
+ /(_))   ))\   (     )\))(   ))\  (    (     (     (  (()/(   /(_)) )\  )(    ))\  
+(_))_   /((_)  )\ ) ((_))\  /((_) )\   )\ )  )\    )\  /(_)) (_))_|((_)(()\  /((_) 
+ |   \ (_))(  _(_/(  (()(_)(_))  ((_) _(_/( ((_)  ((_)(_) _| | |_   (_) ((_)(_))   
+ | |) || || || ' \))/ _` | / -_)/ _ \| ' \))(_-< / _ \ |  _| | __|  | || '_|/ -_)  
+ |___/  \_,_||_||_| \__, | \___|\___/|_||_| /__/ \___/ |_|   |_|    |_||_|  \___|  
+                    |___/                                                          
+INFO  [2015-08-12 19:11:40,386] org.eclipse.jetty.setuid.SetUIDListener: Opened application@2b2f5fcf{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 19:11:40,386] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@858d8b4{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 19:11:40,389] org.eclipse.jetty.server.Server: jetty-9.2.9.v20150224
+INFO  [2015-08-12 19:11:40,895] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /api/pet (com.bms.base.resources.PetResource)
+    GET     /api/pet/{name} (com.bms.base.resources.PetResource)
+    GET     /api/playercharacters (com.bms.base.resources.PlayerCharacterResource)
+    GET     /api/playercharacters/{name} (com.bms.base.resources.PlayerCharacterResource)
+
+INFO  [2015-08-12 19:11:40,897] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@63f9b562{/base,null,AVAILABLE}
+INFO  [2015-08-12 19:11:40,903] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2015-08-12 19:11:40,908] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@2fbe26da{/,null,AVAILABLE}
+INFO  [2015-08-12 19:11:40,915] org.eclipse.jetty.server.ServerConnector: Started application@2b2f5fcf{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 19:11:40,915] org.eclipse.jetty.server.ServerConnector: Started admin@858d8b4{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 19:11:40,915] org.eclipse.jetty.server.Server: Started @2646ms
+INFO  [2015-08-12 19:11:44,822] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    48000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    207000 nanoseconds spent preparing 2 JDBC statements;
+    3371000 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    42000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+ERROR [2015-08-12 19:11:44,831] io.dropwizard.jersey.errors.LoggingExceptionMapper: Error handling a request: 6f65aa2f143daf1e
+! java.lang.StackOverflowError: null
+! at java.lang.Long.toString(Long.java:1032) ~[na:1.8.0_05]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:128) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at java.util.AbstractCollection.toString(AbstractCollection.java:462) ~[na:1.8.0_05]
+! at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:317) ~[hibernate-core-4.3.5.Final.jar:4.3.5.Final]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.PlayerCharacter.toString(PlayerCharacter.java:117) ~[classes/:na]
+! at java.lang.String.valueOf(String.java:2979) ~[na:1.8.0_05]
+! at java.lang.StringBuilder.append(StringBuilder.java:131) ~[na:1.8.0_05]
+! at com.bms.base.core.Pet.toString(Pet.java:136) ~[classes/:na]
+INFO  [2015-08-12 19:12:47,970] org.eclipse.jetty.server.ServerConnector: Stopped application@2b2f5fcf{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 19:12:47,971] org.eclipse.jetty.server.ServerConnector: Stopped admin@858d8b4{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 19:12:47,972] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@2fbe26da{/,null,UNAVAILABLE}
+INFO  [2015-08-12 19:12:47,975] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@63f9b562{/base,null,UNAVAILABLE}
+INFO  [2015-08-12 19:12:52,557] org.eclipse.jetty.util.log: Logging initialized @1061ms
+INFO  [2015-08-12 19:12:52,708] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-12 19:12:52,712] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-12 19:12:52,713] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-12 19:12:52,715] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-12 19:12:52,729] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.Pet, com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-12 19:12:53,131] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-12 19:12:53,140] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-12 19:12:53,251] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2015-08-12 19:12:53,254] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2015-08-12 19:12:53,325] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@4eb30d44
+INFO  [2015-08-12 19:12:53,619] com.bms.base.BaseApplication: base run completed
+INFO  [2015-08-12 19:12:53,625] io.dropwizard.server.ServerFactory: Starting base
+ (                                                            (                    
+ )\ )                                                  (      )\ )                 
+(()/(     (          (  (     (                        )\ )  (()/(  (   (      (   
+ /(_))   ))\   (     )\))(   ))\  (    (     (     (  (()/(   /(_)) )\  )(    ))\  
+(_))_   /((_)  )\ ) ((_))\  /((_) )\   )\ )  )\    )\  /(_)) (_))_|((_)(()\  /((_) 
+ |   \ (_))(  _(_/(  (()(_)(_))  ((_) _(_/( ((_)  ((_)(_) _| | |_   (_) ((_)(_))   
+ | |) || || || ' \))/ _` | / -_)/ _ \| ' \))(_-< / _ \ |  _| | __|  | || '_|/ -_)  
+ |___/  \_,_||_||_| \__, | \___|\___/|_||_| /__/ \___/ |_|   |_|    |_||_|  \___|  
+                    |___/                                                          
+INFO  [2015-08-12 19:12:53,681] org.eclipse.jetty.setuid.SetUIDListener: Opened application@2b2f5fcf{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 19:12:53,681] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@858d8b4{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 19:12:53,684] org.eclipse.jetty.server.Server: jetty-9.2.9.v20150224
+INFO  [2015-08-12 19:12:54,214] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /api/pet (com.bms.base.resources.PetResource)
+    GET     /api/pet/{name} (com.bms.base.resources.PetResource)
+    GET     /api/playercharacters (com.bms.base.resources.PlayerCharacterResource)
+    GET     /api/playercharacters/{name} (com.bms.base.resources.PlayerCharacterResource)
+
+INFO  [2015-08-12 19:12:54,217] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@63f9b562{/base,null,AVAILABLE}
+INFO  [2015-08-12 19:12:54,222] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2015-08-12 19:12:54,226] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@2fbe26da{/,null,AVAILABLE}
+INFO  [2015-08-12 19:12:54,233] org.eclipse.jetty.server.ServerConnector: Started application@2b2f5fcf{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 19:12:54,234] org.eclipse.jetty.server.ServerConnector: Started admin@858d8b4{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 19:12:54,234] org.eclipse.jetty.server.Server: Started @2738ms
+INFO  [2015-08-12 19:12:58,061] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    49000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    441000 nanoseconds spent preparing 5 JDBC statements;
+    4779000 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    6910000 nanoseconds spent executing 1 flushes (flushing a total of 8 entities and 4 collections);
+    44000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-12 19:13:41,252] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    35000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    193000 nanoseconds spent preparing 3 JDBC statements;
+    1416000 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    303000 nanoseconds spent executing 1 flushes (flushing a total of 6 entities and 2 collections);
+    7000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-12 19:14:41,334] org.eclipse.jetty.server.ServerConnector: Stopped application@2b2f5fcf{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 19:14:41,336] org.eclipse.jetty.server.ServerConnector: Stopped admin@858d8b4{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 19:14:41,337] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@2fbe26da{/,null,UNAVAILABLE}
+INFO  [2015-08-12 19:14:41,341] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@63f9b562{/base,null,UNAVAILABLE}
+INFO  [2015-08-12 19:16:14,551] org.eclipse.jetty.util.log: Logging initialized @1020ms
+INFO  [2015-08-12 19:16:14,711] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-12 19:16:14,715] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-12 19:16:14,716] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-12 19:16:14,718] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-12 19:16:14,734] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.Pet, com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-12 19:16:15,133] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-12 19:16:15,142] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-12 19:16:15,253] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2015-08-12 19:16:15,256] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2015-08-12 19:16:15,321] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@4eb30d44
+INFO  [2015-08-12 19:16:15,599] com.bms.base.BaseApplication: base run completed
+INFO  [2015-08-12 19:16:15,606] io.dropwizard.server.ServerFactory: Starting base
+ (                                                            (                    
+ )\ )                                                  (      )\ )                 
+(()/(     (          (  (     (                        )\ )  (()/(  (   (      (   
+ /(_))   ))\   (     )\))(   ))\  (    (     (     (  (()/(   /(_)) )\  )(    ))\  
+(_))_   /((_)  )\ ) ((_))\  /((_) )\   )\ )  )\    )\  /(_)) (_))_|((_)(()\  /((_) 
+ |   \ (_))(  _(_/(  (()(_)(_))  ((_) _(_/( ((_)  ((_)(_) _| | |_   (_) ((_)(_))   
+ | |) || || || ' \))/ _` | / -_)/ _ \| ' \))(_-< / _ \ |  _| | __|  | || '_|/ -_)  
+ |___/  \_,_||_||_| \__, | \___|\___/|_||_| /__/ \___/ |_|   |_|    |_||_|  \___|  
+                    |___/                                                          
+INFO  [2015-08-12 19:16:15,664] org.eclipse.jetty.setuid.SetUIDListener: Opened application@312b34e3{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 19:16:15,664] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@26844abb{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 19:16:15,668] org.eclipse.jetty.server.Server: jetty-9.2.9.v20150224
+INFO  [2015-08-12 19:16:16,179] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /api/pet (com.bms.base.resources.PetResource)
+    GET     /api/pet/{name} (com.bms.base.resources.PetResource)
+    GET     /api/playercharacters (com.bms.base.resources.PlayerCharacterResource)
+    GET     /api/playercharacters/{name} (com.bms.base.resources.PlayerCharacterResource)
+
+INFO  [2015-08-12 19:16:16,182] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@16da1abc{/base,null,AVAILABLE}
+INFO  [2015-08-12 19:16:16,188] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2015-08-12 19:16:16,192] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@9f86dc3{/,null,AVAILABLE}
+INFO  [2015-08-12 19:16:16,199] org.eclipse.jetty.server.ServerConnector: Started application@312b34e3{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 19:16:16,200] org.eclipse.jetty.server.ServerConnector: Started admin@26844abb{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 19:16:16,200] org.eclipse.jetty.server.Server: Started @2671ms
+INFO  [2015-08-12 19:16:32,118] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    57000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    470000 nanoseconds spent preparing 5 JDBC statements;
+    4405000 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    5841000 nanoseconds spent executing 1 flushes (flushing a total of 8 entities and 4 collections);
+    102000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-12 19:20:39,303] org.eclipse.jetty.server.ServerConnector: Stopped application@312b34e3{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 19:20:39,304] org.eclipse.jetty.server.ServerConnector: Stopped admin@26844abb{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 19:20:39,305] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@9f86dc3{/,null,UNAVAILABLE}
+INFO  [2015-08-12 19:20:39,317] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@16da1abc{/base,null,UNAVAILABLE}
+INFO  [2015-08-12 19:24:08,143] org.eclipse.jetty.util.log: Logging initialized @1613ms
+INFO  [2015-08-12 19:24:08,366] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-12 19:24:08,374] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-12 19:24:08,375] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-12 19:24:08,377] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-12 19:24:08,408] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.Pet, com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-12 19:24:08,953] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-12 19:24:08,965] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-12 19:24:09,117] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2015-08-12 19:24:09,121] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2015-08-12 19:24:09,221] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@4eb30d44
+INFO  [2015-08-12 19:24:09,589] com.bms.base.BaseApplication: base run completed
+INFO  [2015-08-12 19:24:09,640] io.dropwizard.server.ServerFactory: Starting base
+ (                                                            (                    
+ )\ )                                                  (      )\ )                 
+(()/(     (          (  (     (                        )\ )  (()/(  (   (      (   
+ /(_))   ))\   (     )\))(   ))\  (    (     (     (  (()/(   /(_)) )\  )(    ))\  
+(_))_   /((_)  )\ ) ((_))\  /((_) )\   )\ )  )\    )\  /(_)) (_))_|((_)(()\  /((_) 
+ |   \ (_))(  _(_/(  (()(_)(_))  ((_) _(_/( ((_)  ((_)(_) _| | |_   (_) ((_)(_))   
+ | |) || || || ' \))/ _` | / -_)/ _ \| ' \))(_-< / _ \ |  _| | __|  | || '_|/ -_)  
+ |___/  \_,_||_||_| \__, | \___|\___/|_||_| /__/ \___/ |_|   |_|    |_||_|  \___|  
+                    |___/                                                          
+INFO  [2015-08-12 19:24:09,718] org.eclipse.jetty.setuid.SetUIDListener: Opened application@312b34e3{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 19:24:09,718] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@26844abb{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 19:24:09,721] org.eclipse.jetty.server.Server: jetty-9.2.9.v20150224
+INFO  [2015-08-12 19:24:10,260] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /api/pets (com.bms.base.resources.PetResource)
+    GET     /api/pets/{name} (com.bms.base.resources.PetResource)
+    GET     /api/playercharacters (com.bms.base.resources.PlayerCharacterResource)
+    GET     /api/playercharacters/{name} (com.bms.base.resources.PlayerCharacterResource)
+
+INFO  [2015-08-12 19:24:10,262] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@16da1abc{/base,null,AVAILABLE}
+INFO  [2015-08-12 19:24:10,267] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2015-08-12 19:24:10,272] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@9f86dc3{/,null,AVAILABLE}
+INFO  [2015-08-12 19:24:10,282] org.eclipse.jetty.server.ServerConnector: Started application@312b34e3{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 19:24:10,282] org.eclipse.jetty.server.ServerConnector: Started admin@26844abb{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 19:24:10,283] org.eclipse.jetty.server.Server: Started @3754ms
+INFO  [2015-08-12 19:24:18,966] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    49000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    368000 nanoseconds spent preparing 3 JDBC statements;
+    5011000 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    6592000 nanoseconds spent executing 1 flushes (flushing a total of 6 entities and 2 collections);
+    92000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-12 19:26:10,868] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    35000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    299000 nanoseconds spent preparing 3 JDBC statements;
+    1923000 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    451000 nanoseconds spent executing 1 flushes (flushing a total of 7 entities and 2 collections);
+    8000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-12 19:27:55,300] org.eclipse.jetty.server.ServerConnector: Stopped application@312b34e3{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 19:27:55,301] org.eclipse.jetty.server.ServerConnector: Stopped admin@26844abb{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 19:27:55,303] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@9f86dc3{/,null,UNAVAILABLE}
+INFO  [2015-08-12 19:27:55,306] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@16da1abc{/base,null,UNAVAILABLE}
+INFO  [2015-08-12 19:27:59,632] org.eclipse.jetty.util.log: Logging initialized @1038ms
+INFO  [2015-08-12 19:27:59,783] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-12 19:27:59,787] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-12 19:27:59,789] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-12 19:27:59,790] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-12 19:27:59,804] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.Pet, com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-12 19:28:00,201] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-12 19:28:00,210] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-12 19:28:00,317] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2015-08-12 19:28:00,320] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2015-08-12 19:28:00,382] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@1ab6718
+INFO  [2015-08-12 19:28:00,649] com.bms.base.BaseApplication: base run completed
+INFO  [2015-08-12 19:28:00,656] io.dropwizard.server.ServerFactory: Starting base
+ (                                                            (                    
+ )\ )                                                  (      )\ )                 
+(()/(     (          (  (     (                        )\ )  (()/(  (   (      (   
+ /(_))   ))\   (     )\))(   ))\  (    (     (     (  (()/(   /(_)) )\  )(    ))\  
+(_))_   /((_)  )\ ) ((_))\  /((_) )\   )\ )  )\    )\  /(_)) (_))_|((_)(()\  /((_) 
+ |   \ (_))(  _(_/(  (()(_)(_))  ((_) _(_/( ((_)  ((_)(_) _| | |_   (_) ((_)(_))   
+ | |) || || || ' \))/ _` | / -_)/ _ \| ' \))(_-< / _ \ |  _| | __|  | || '_|/ -_)  
+ |___/  \_,_||_||_| \__, | \___|\___/|_||_| /__/ \___/ |_|   |_|    |_||_|  \___|  
+                    |___/                                                          
+INFO  [2015-08-12 19:28:00,708] org.eclipse.jetty.setuid.SetUIDListener: Opened application@4068102e{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 19:28:00,708] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@44bd4b0a{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 19:28:00,711] org.eclipse.jetty.server.Server: jetty-9.2.9.v20150224
+INFO  [2015-08-12 19:28:01,215] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /api/pets (com.bms.base.resources.PetResource)
+    GET     /api/pets/{name} (com.bms.base.resources.PetResource)
+    GET     /api/playercharacters (com.bms.base.resources.PlayerCharacterResource)
+    GET     /api/playercharacters/{name} (com.bms.base.resources.PlayerCharacterResource)
+
+INFO  [2015-08-12 19:28:01,218] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1b0e9707{/base,null,AVAILABLE}
+INFO  [2015-08-12 19:28:01,223] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2015-08-12 19:28:01,228] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@649f25f3{/,null,AVAILABLE}
+INFO  [2015-08-12 19:28:01,234] org.eclipse.jetty.server.ServerConnector: Started application@4068102e{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 19:28:01,235] org.eclipse.jetty.server.ServerConnector: Started admin@44bd4b0a{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 19:28:01,235] org.eclipse.jetty.server.Server: Started @2643ms
+INFO  [2015-08-12 19:28:08,907] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    54000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    397000 nanoseconds spent preparing 3 JDBC statements;
+    11621000 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    5816000 nanoseconds spent executing 1 flushes (flushing a total of 7 entities and 2 collections);
+    46000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2015-08-12 19:28:37,923] org.eclipse.jetty.server.ServerConnector: Stopped application@4068102e{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 19:28:37,924] org.eclipse.jetty.server.ServerConnector: Stopped admin@44bd4b0a{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 19:28:37,925] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@649f25f3{/,null,UNAVAILABLE}
+INFO  [2015-08-12 19:28:37,928] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@1b0e9707{/base,null,UNAVAILABLE}
+INFO  [2015-08-12 19:28:42,528] org.eclipse.jetty.util.log: Logging initialized @1040ms
+INFO  [2015-08-12 19:28:42,677] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [2015-08-12 19:28:42,681] org.hibernate.Version: HHH000412: Hibernate Core {4.3.5.Final}
+INFO  [2015-08-12 19:28:42,682] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2015-08-12 19:28:42,683] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2015-08-12 19:28:42,697] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.bms.base.core.Pet, com.bms.base.core.PlayerCharacter]
+INFO  [2015-08-12 19:28:43,118] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  [2015-08-12 19:28:43,127] org.hibernate.engine.jdbc.internal.LobCreatorBuilder: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO  [2015-08-12 19:28:43,244] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2015-08-12 19:28:43,247] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2015-08-12 19:28:43,309] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@1ab6718
+INFO  [2015-08-12 19:28:43,585] com.bms.base.BaseApplication: base run completed
+INFO  [2015-08-12 19:28:43,591] io.dropwizard.server.ServerFactory: Starting base
+ (                                                            (                    
+ )\ )                                                  (      )\ )                 
+(()/(     (          (  (     (                        )\ )  (()/(  (   (      (   
+ /(_))   ))\   (     )\))(   ))\  (    (     (     (  (()/(   /(_)) )\  )(    ))\  
+(_))_   /((_)  )\ ) ((_))\  /((_) )\   )\ )  )\    )\  /(_)) (_))_|((_)(()\  /((_) 
+ |   \ (_))(  _(_/(  (()(_)(_))  ((_) _(_/( ((_)  ((_)(_) _| | |_   (_) ((_)(_))   
+ | |) || || || ' \))/ _` | / -_)/ _ \| ' \))(_-< / _ \ |  _| | __|  | || '_|/ -_)  
+ |___/  \_,_||_||_| \__, | \___|\___/|_||_| /__/ \___/ |_|   |_|    |_||_|  \___|  
+                    |___/                                                          
+INFO  [2015-08-12 19:28:43,649] org.eclipse.jetty.setuid.SetUIDListener: Opened application@4068102e{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 19:28:43,649] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@44bd4b0a{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 19:28:43,652] org.eclipse.jetty.server.Server: jetty-9.2.9.v20150224
+INFO  [2015-08-12 19:28:44,139] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /api/pets (com.bms.base.resources.PetResource)
+    GET     /api/pets/{name} (com.bms.base.resources.PetResource)
+    GET     /api/playercharacters (com.bms.base.resources.PlayerCharacterResource)
+    GET     /api/playercharacters/{name} (com.bms.base.resources.PlayerCharacterResource)
+
+INFO  [2015-08-12 19:28:44,141] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1b0e9707{/base,null,AVAILABLE}
+INFO  [2015-08-12 19:28:44,145] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2015-08-12 19:28:44,149] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@649f25f3{/,null,AVAILABLE}
+INFO  [2015-08-12 19:28:44,155] org.eclipse.jetty.server.ServerConnector: Started application@4068102e{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-08-12 19:28:44,156] org.eclipse.jetty.server.ServerConnector: Started admin@44bd4b0a{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2015-08-12 19:28:44,156] org.eclipse.jetty.server.Server: Started @2669ms
+INFO  [2015-08-12 19:28:54,754] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    49000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    385000 nanoseconds spent preparing 3 JDBC statements;
+    4326000 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    7603000 nanoseconds spent executing 1 flushes (flushing a total of 7 entities and 2 collections);
+    53000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}

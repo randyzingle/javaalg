@@ -1,0 +1,87 @@
+plugins {
+    id 'java'
+    id 'application'
+    id "com.github.johnrengelman.shadow" version "1.2.1"
+}
+
+sourceCompatibility = 1.8
+version = '1.0'
+mainClassName = 'com.amplify.bauth.Server'
+
+sourceSets {
+    integration {
+        java {
+            srcDir 'src/test-integration/java'
+        }
+        resources {
+            srcDir 'src/test-integration/resources'
+        }
+        compileClasspath += sourceSets.main.runtimeClasspath
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'io.dropwizard', name: 'dropwizard-core', version: '0.8.2'
+    compile group: 'io.dropwizard', name: 'dropwizard-hibernate', version: '0.8.2'
+    compile group: 'io.dropwizard', name: 'dropwizard-migrations', version: '0.8.2'
+    compile group: 'io.swagger', name: 'swagger-jersey2-jaxrs', version: '1.5.0'
+    runtime group: 'org.postgresql', name: 'postgresql', version: '9.3-1100-jdbc4'
+    testCompile group: 'org.apache.derby', name: 'derby', version:'10.11.1.1'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile group: 'org.testng', name: 'testng', version: '6.9.4'
+    testCompile group: 'io.dropwizard', name: 'dropwizard-testing', version: '0.8.1'
+    integrationCompile group: 'junit', name: 'junit', version: '4.11'
+    integrationCompile group: 'io.dropwizard', name: 'dropwizard-testing', version: '0.8.1'
+    integrationCompile group: 'org.testng', name: 'testng', version: '6.9.4'
+}
+
+shadowJar {
+    mergeServiceFiles()
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+}
+
+task printEnv () << {
+    println 'Execution ENV = ' + project.properties['env']
+}
+
+task buildDistJar (dependsOn: [clean, shadowJar]) << {
+    println '----- build dist jar completed -----'
+}
+
+task startServer(dependsOn: [shadowJar]) << {
+    exec {
+        println 'Execution ENV = ' + project.properties['env']
+        def configFile = project.properties['env'] == 'test' ? 'burst-authoring-server-test.yml' : 'burst-authoring-server.yml'
+        def distJar = buildDir.name + '/' + libsDir.name + '/' + rootProject.name + '-' + version + '-all.jar'
+        commandLine = ['java']
+        args = ['-jar', distJar, 'server', configFile]
+    }
+}
+
+task dbinit(dependsOn: [shadowJar]) {
+    doLast {
+        exec {
+            println 'Execution ENV = ' + project.properties['env']
+            def configFile = project.properties['env'] == 'test' ? 'burst-authoring-server-test.yml' : 'burst-authoring-server.yml'
+            def distJar = buildDir.name + '/' + libsDir.name + '/' + rootProject.name + '-' + version + '-all.jar'
+            commandLine = ['java']
+            args = ['-jar', distJar, 'db', 'migrate', configFile]
+        }
+    }
+}
+
+task integration(type: Test) {
+    useTestNG()
+    options.suiteName = "IntegrationSuite"
+    options.suiteXmlFiles = [file("src/test-integration/resources/testng.xml")]
+
+    integration.reports.html.destination = file("$buildDir/reports/tests-integration")
+    testClassesDir = sourceSets.integration.output.classesDir
+    classpath = sourceSets.integration.runtimeClasspath + sourceSets.main.runtimeClasspath
+}

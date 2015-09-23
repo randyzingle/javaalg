@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AmplifyMath Burst: Login</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel='stylesheet' href='login.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+        window.applicationEnv = 'playtest';
+    </script>
+</head>
+<body>
+<div class="app-content">   
+
+    <script>
+        function validateForm() {
+            var sid = document.forms["student_id_input"]["studentId"].value;
+            if (sid == null || sid == "") {
+                alert("Please enter a Student ID.");
+                return false;
+            }
+        }
+        </script>
+
+    <div class="login-content">
+    <div class="pna-brand-text-medium">Welcome to</div>
+    <div class="pna-brand-text-large"><span class="amplify-text-orange">Amplify</span>Math Burst<span class="amplify-text-orange">.</span></div>   
+    
+    <hr>
+      <form class="form-signin" role="form" name="student_id_input"  action='/playTestLogin' method="get" onsubmit="return validateForm()">
+        Student ID
+         <input type="login"  name="studentId" class="form-control" required autofocus>
+         <button class="btn-lg btn-block" type="submit">Login</button>
+      </form>
+
+    </div> 
+
+</div>
+</body>
+</html>
