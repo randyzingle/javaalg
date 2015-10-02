@@ -1,0 +1,9 @@
+li > span {
+	display: none;
+	font-size: 3em;
+}
+
+.photos li {
+	list-style-type: none;
+	display: inline;
+}
