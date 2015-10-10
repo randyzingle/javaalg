@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doing some jquery stuff</title>
+  <script src="jquery/dist/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#name').animate({fontSize: '48px'}, "slow");
+    });
+  </script>
+</head>
+<body>
+  <p id="name" th:text="'Hello, ' + ${name}"></p>
+  <ol>
+    <li th:each="chapter : ${chapters}" th:text="${chapter}"></li>
+  </ol>
+</body>
+</html>

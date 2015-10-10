@@ -1,4 +1,0 @@
-Where do you wish to venture into (enter the corresponding number to make your choice).
-1. To the cave of wolves.
-2. Protect caravans from goblin ambushes.
-3. Clear out the orc camp.

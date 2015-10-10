@@ -1,0 +1,21 @@
+{
+  "name": "sb3",
+  "version": "0.1.0",
+  "homepage": "http://www.bms.com",
+  "authors": [
+    "Randy Zingle <rzingle@amplify.com>"
+  ],
+  "description": "simple jquery based application",
+  "license": "BMS",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

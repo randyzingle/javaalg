@@ -10,6 +10,7 @@ public class EnvStuff {
 		for (String s: args) {
 			System.out.println(s);
 		}
+		// print out the env variables - note eclipse does NOT read your .bash_profile
 		System.out.println("Environment variables: ");
 		Map<String, String> env = System.getenv();
 		for (String key: env.keySet()) {
