@@ -14,7 +14,7 @@
 	function loadComplete() {
 		setupStage();
 		buildButterflies();
-	};
+	}
 	
 	function setupStage() {
 		stage = new createjs.Stage('canvas');
@@ -23,7 +23,7 @@
 		createjs.Ticker.addEventListener("tick", runGame);
 		// create dynamic shapes
 		createCircle();
-	};
+	}
 	
 	function runGame(e) {
 		if(!e.paused) {
@@ -31,7 +31,7 @@
 			updateCircle();
 			stage.update();
 		}
-	};
+	}
 	
 	function updateCircle() {
 		var nextx = circle.x + circle.direction * circle.speed;
@@ -69,7 +69,7 @@
 				.call(butterflyComplete);
 			sound = createjs.Sound.play('woosh', createjs.Sound.INTERRUPT_NONE, i*1000);
 		}
-	};
+	}
 	
 	function butterflyComplete() {
 		stage.removeChild(this);		
@@ -78,7 +78,7 @@
 			stage.removeChild(circle);
 			createjs.Ticker.setPaused(true);
 		}
-	};
+	}
 	
 	
 })();

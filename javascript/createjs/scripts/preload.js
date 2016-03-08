@@ -13,13 +13,13 @@
 		stage = new createjs.Stage('canvas');
 		createjs.Ticker.setFPS(60);
 		createjs.Ticker.addEventListener("tick", updateLoop);
-	};
+	}
 	
 	function updateLoop(e) {
 		updateLoaderBar();
 		stage.update();
 		//console.log('kup');
-	};
+	}
 	
 	function buildLoadBar() {
 		console.log('building the load bar');
@@ -29,7 +29,7 @@
 		loaderBar.graphics.beginStroke("#000");
 		loaderBar.graphics.drawRect(0,0,LOADER_WIDTH, 40);
 		stage.addChild(loaderBar);
-	};
+	}
 	
 	function updateLoaderBar() {
 		loaderBar.graphics.clear();
@@ -45,7 +45,7 @@
 	function startLoad() {
 		console.log('loading...');
 		loadInterval = setInterval(updateLoad, 20);
-	};
+	}
 	
 	function updateLoad() {
 		percentLoaded += 0.005;

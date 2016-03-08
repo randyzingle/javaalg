@@ -1,3 +1,6 @@
+/*jshint
+  expr: true
+*/
 (function () {
 	var stage;
 	var circles = [];
@@ -23,7 +26,7 @@
 			circles.push(createCircle());
 		}
 		createjs.Sound.play('traffic');
-	};
+	}
 
 	function createCircle() {
 		var r = Math.floor(Math.random() * 255);
@@ -115,7 +118,7 @@
 
 		});
 
-	};
+	}
 
 	function updateLoop(e) {
 		if (!e.paused) {
@@ -130,5 +133,5 @@
 				stage.update();
 			}
 		}
-	};
+	}
 })();
